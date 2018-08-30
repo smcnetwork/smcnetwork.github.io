@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+    font: Lato, sans-serif;
+    color: #555;
+  }
+
+  .dropdown-menu {
+      text-align: center;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+
+  .panel-footer.panel-custom {
+    background: #006580;
+    color: white;
+    text-align: center;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container-fluid" style="padding: 0">
+
+      <a href="index.html" style="text-decoration: none;">
+        <div class="jumbotron">
+          <h1><b>Sound and Music Computing Network</b></h1>
+        </div>
+      </a>
+  </header>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-fill w-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="whatis.html">What is SMC</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="connected.html">Stay connected</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              SMC Summer School & Conference
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="host.html">How to host SMC</a>
+              <a class="dropdown-item" href="conf.html">Current and past editions</a>
+              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
+              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
+              <a class="dropdown-item" href="school.html">SMC Summer School</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Roadmap
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
+              <a class="dropdown-item" href="definition.html">Definition</a>
+              <a class="dropdown-item" href="context.html">Context</a>
+              <a class="dropdown-item" href="challenges.html">Challenges</a>
+              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="centers.html">Centers</a>
+              <a class="dropdown-item" href="associations.html">Associations</a>
+              <a class="dropdown-item" href="journals.html">Journals</a>
+              <a class="dropdown-item" href="conferences.html">Conferences</a>
+              <a class="dropdown-item" href="software.html">Software</a>
+              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 500px";>
+    <div class="col-sm-12">
+      <h1>
+        Definition of the field
+      </h1>
+      <p>
+        We propose the following deﬁnition for SMC:
+        <br /><br />
+        <i><b>
+          Sound and Music Computing (SMC) research approaches the whole sound and music communication chain from a multidisciplinary point of view. By combining scientiﬁc, technological and artistic methodologies it aims at understanding, modelling and generating sound and music through computational approaches.
+        </b></i>
+        <br /><br />
+        The central focus of the research ﬁeld is sound and music. Sound is the resonance of objects and materials that we can listen to. Music is the intended organisation of sounds for particular uses in social and cultural contexts. The sound and music communication chain covers all aspects of the relationship between sonic energy and meaningful information, both from sound to sense (as in musical content extraction or perception), and from sense to sound (as in music composition or sound synthesis). This definition is generally considered to include all types of sounds and human communication processes except speech. Speech research has its own aims and methodologies and is outside the SMC field.
+        <br /><br />
+        The other elements contained in the definition statement above can be briefly explained as follows:
+        <br /><br />
+        The <i>multidisciplinary point of view</i> relates to the use of various research methodologies and disciplines from the natural and human sciences. SMC also includes various research goals and approaches that deal with cross-modality, such as the relationship between perception and action and the integration of different senses involved in human-machine interaction (hearing, vision, movement, haptics, etc.), both in individual and social contexts.
+        <br /><br />
+        <i>Scientific and technological methodologies</i> refer to empirically-based and modelling-based approaches that draw upon advanced tools for measuring and processing information. <i>Artistic methodologies</i> refer to approaches that explore human experience and expression.
+        <br /><br />
+        <i>Understanding</i> refers to our knowledge of the mechanisms that underlie how people deal with sound and music in terms of its content and experience.
+        <br /><br />
+        <i>Modelling</i> refers to the representation of knowledge through algorithms and tools.The resulting models are used both in applications that aim at scientific understanding (e.g. simulation of perceptual processes) and also in applications that aim at practical understanding (e.g. in sound-aware objects, music information retrieval systems, music production companions).
+        <br /><br />
+        <i>Production</i> refers to the creative use of algorithms and tools to develop new content in which sound and music are communicated, as in sound environments, interactive artistic works and sonic design.
+        <br /><br />
+        <i>Computational approaches</i> refer to the core processing which allows the development of tools linking sonic energy with subjective experience. Computing is the shared practice that connects scientific understanding, the development of technological equipment and content-based creation.
+      </p>
+      <h2>Disciplines involved</h2>
+      <p>
+        The disciplines involved in SMC cover both human and natural sciences. Its core academic subjects relate to music (composition, performance, musicology), science and technology (physics, mathematics, engineering) and psychology (including psychoacoustics, experimental psychology and neurosciences).
+      </p>
+      <h4>
+        Music
+      </h4>
+      <p>
+        As the name itself indicates, Music provides the core investigation area for SMC. It supplies both an endless material (both in scope and depth) for analytical investigation (Musicology) and the requirements to extend expressive means of creation (Music Composition), while Music Performance yields interest on both sides (analytical and expressive).
+        <br /><br />
+        <i><b>Music Composition:</b></i> This concerns all research that has a focus on musical content creation and sound design. It includes creating music as a score, as an interactive artistic event, as a sound installation, as a soundtrack, and as any form of organised sound event which communicates information.
+        <br /><br />
+        <i><b>Music Performance: </b></i>Music performance is a complex activity involving physical, acoustic, physiological, psychological, social and artistic issues. At the same time, it is also a deeply human activity, relating to emotional as well as cognitive and artistic categories. The research in this ﬁeld can be seen as ranging from studies aimed at understanding expressive performance to attempts at modelling aspects of performance in a formal, quantitative and predictive way.
+        <br /><br />
+        <i><b>Musicology: </b></i>All research that deals with musical meaning formation, musical content description, and associated mediation technologies in particular sociocultural contexts. It comprises the study of how musical content can be described and how the subjective and sociocultural background of users plays a role in the production, distribution and consumption of music.
+        <br /><br />
+      </p>
+      <h4>
+        Science and Technology
+      </h4>
+      <p>
+        Due to the interdisciplinary and problem oriented character of SMC, many disciplines in the scientiﬁc and technological ﬁeld are needed. Physics and mathematics deal with the physical vs. abstract side of SMC, while engineering disciplines face the technological needs to build systems and develop applications.
+        <br /><br />
+        <i><b>Physics: </b></i>Acoustics is the science concerned with the production, control, transmission, reception and effects of sound as a physical phenomenon. The branch of acoustics of special interest to the SMC community is music acoustics. It includes the acoustics of musical signals (such as in expressive music performance), musical instruments and singing voices.
+        <br /><br />
+        <i><b>Mathematics: </b></i>This area is concerned with the mathematical approaches to musical structures and processes, including mathematical investigations into music–theoretic or compositional issues as well as mathematically motivated analyses of musical works or performances.
+        <br /><br />
+        <i><b>Engineering: </b></i>This includes all the research in computer science and engineering, signal processing and electronics that deals with sound and music information representation, processing and communication. It comprises multimedia information systems, artificial intelligence, audio signal processing, robotics, sensors and interface technology.
+        <br /><br />
+        <i><b>Psychology: </b></i>This includes all research into music–related behaviour and brain processes, including the roles of perception, cognition, emotion and motor activities. Psychology is here understood to cover the whole domain from psychoacoustics to experimental psychology to neurosciences.
+        <br /><br />
+      </p>
+      <h2>
+        Areas of Application
+      </h2>
+      <p>
+        SMC research can also be ﬁnalised towards applications that can acquire an important role in the deﬁnition of the ﬁeld. Current areas of application include digital music instruments, music production, music information retrieval, digital music libraries, interactive multimedia systems, auditory interfaces and augmented action and perception (e.g. games, interactive artifacts, and appliances).
+        <br /><br />
+        <i><b>Digital music instruments: </b></i>This application focuses on musical sound generation and processing devices. It encompasses simulation of traditional instruments, transformation of sound in recording studios or at live performances and musical interfaces for augmented or collaborative instruments.
+        <br /><br />
+        <i><b>Music production: </b></i>This application domain focuses on technologies and tools for music composition. Applications range from music modelling and generation to tools for music post–production and audio editing.
+        <br /><br />
+        <i><b>Music information retrieval: </b></i>This application domain focuses on retrieval technologies for music (both audio and symbolic data). Applications range from music audio–identiﬁcation and broadcast monitoring to higher–level semantic descriptions and all associated tools for search and retrieval.
+        <br /><br />
+        <i><b>Digital music libraries: </b></i>This application places particular emphasis on preservation, conservation and archiving and the integration of musical audio content and meta–data descriptions, with a focus on ﬂexible access. Applications range from large distributed libraries to mobile access platforms.
+        <br /><br />
+        <i><b>Interactive multimedia systems: </b></i>These are for use in everyday appliances and in artistic and entertainment applications. They aim to facilitate music–related human–machine interaction involving various modalities of action and perception (e.g. auditory, visual, olfactory, tactile, haptic, and all kinds of body movements) which can be captured through the use of audio/visual, kinematic and bioparametric (skin conduction, temperature) devices.
+        <br /><br />
+        <i><b>Auditory interfaces: </b></i>These include all applications where non–verbal sound is employed in the communication channel between the user and the computing device. Auditory displays are used in applications and objects that require monitoring of some type of information. Soniﬁcation is used as a method for data display in a wide range of application domains where auditory inspection, analysis and summarisation can be more efficient than traditional visual display.
+        <br /><br />
+        <i><b>Augmented action and perception: </b></i>This refers to tools that increase the normal action and perception capabilities of humans. The system adds virtual information to a user’s sensory perception by merging real images, sounds, and haptic sensation with virtual ones. This has the effect of augmenting the user’s sense of presence, and of making possible a symbiosis between her view of the world and the computer interface. Possible applications are in the medical domain, manufacturing and repair, entertainment, annotation and visualisation, and robot teleoperation.
+      </p>
+      <h2>References</h2>
+      <p>
+        [Camurri et al., 1995] Camurri, A., De Poli, G., and Rocchesso, D. (1995). A taxonomy for Sound and Music Computing. Computer Music Journal, 19(2):4–5.
+        <br /><br />
+        [Coulter (ed.), 1998] Coulter (ed.), N. (1998). ACM computing classification system (1998). <a href="http://www.acm.org/class/1998">http://www.acm.org/class/1998</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+
+  <script>
+      $(document).ready(function() {
+    // Custom
+    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+      var stickyHeight = sticky.outerHeight();
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop){
+        stickyWrapper.height(stickyHeight);
+        sticky.addClass("is-sticky");
+      }
+      else{
+        sticky.removeClass("is-sticky");
+        stickyWrapper.height('auto');
+      }
+    };
+
+    // Find all data-toggle="sticky-onscroll" elements
+    $('[data-toggle="sticky-onscroll"]').each(function() {
+      var sticky = $(this);
+      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+      sticky.before(stickyWrapper);
+      sticky.addClass('sticky');
+
+      // Scroll & resize events
+      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+        stickyToggle(sticky, stickyWrapper, $(this));
+      });
+
+      // On page load
+      stickyToggle(sticky, stickyWrapper, $(window));
+    });
+    });
+  </script>
+
+</body>
+</html>

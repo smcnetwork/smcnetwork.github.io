@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+    font: Lato, sans-serif;
+    color: #555;
+  }
+
+  .dropdown-menu {
+      text-align: center;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+
+  .panel-footer.panel-custom {
+    background: #006580;
+    color: white;
+    text-align: center;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container-fluid" style="padding: 0">
+
+      <a href="index.html" style="text-decoration: none;">
+        <div class="jumbotron">
+          <h1><b>Sound and Music Computing Network</b></h1>
+        </div>
+      </a>
+  </header>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-fill w-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="whatis.html">What is SMC</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="connected.html">Stay connected</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              SMC Summer School & Conference
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="host.html">How to host SMC</a>
+              <a class="dropdown-item" href="conf.html">Current and past editions</a>
+              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
+              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
+              <a class="dropdown-item" href="school.html">SMC Summer School</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Roadmap
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
+              <a class="dropdown-item" href="definition.html">Definition</a>
+              <a class="dropdown-item" href="context.html">Context</a>
+              <a class="dropdown-item" href="challenges.html">Challenges</a>
+              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="centers.html">Centers</a>
+              <a class="dropdown-item" href="associations.html">Associations</a>
+              <a class="dropdown-item" href="journals.html">Journals</a>
+              <a class="dropdown-item" href="conferences.html">Conferences</a>
+              <a class="dropdown-item" href="software.html">Software</a>
+              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 500px";>
+    <div class="col-sm-12">
+      <h1>
+        List of Software Tools
+      </h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Software type</th>
+            <th>Software description</th>
+            <th>Download Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1742>Aubio</a></td>
+            <td>Analysis</td>
+            <td>library of functions written in C to perform audio feature extractions </td>
+            <td><a href="http://aubio.org/download">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/969>BeatRoot: An Interactive Beat Tracking and Visualisation System</a></td>
+            <td>Analysis</td>
+            <td>JAVA-based beat annotation software (audio, MIDI) for beat tracking written by Simon Dixon including a basic, but very useful graphical user interface.</td>
+            <td><a href="http://www.elec.qmul.ac.uk/people/simond/beatroot/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1741>Essentia</a></td>
+            <td>Analysis</td>
+            <td>C++ library for audio analysis and audio-based music information retrieval.</td>
+            <td><a href="http://essentia.upf.edu/download">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1630>HTK Speech Recognition Toolkit</a></td>
+            <td>Analysis</td>
+            <td>Toolkit for manipulating Hidden Markov Models (HMMs) specially designed for speech recognition.</td>
+            <td><a href="http://htk.eng.cam.ac.uk/download.shtml">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1625>Humdrum</a></td>
+            <td>Analysis</td>
+            <td>Tools intended to assist in music research at the symbolic level.</td>
+            <td><a href="http://musicog.ohio-state.edu/HumdrumDownload/downloading.html">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1945>jMIR</a></td>
+            <td>Analysis</td>
+            <td>Software suite implemented in Java for use in music information retrieval (MIR) research.</td>
+            <td><a href="http://jmir.sourceforge.net/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1440>MIRtoolbox</a></td>
+            <td>Analysis</td>
+            <td>Functions written in Matlab dedicated to the extraction of musical features from audio files.</td>
+            <td><a href="https://www.jyu.fi/hum/laitokset/musiikki/en/research/coe/materials/mirtoolbox/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/972>Sonic Visualiser</a></td>
+            <td>Analysis</td>
+            <td>An application for viewing and analysing the contents of music audio files.</td>
+            <td><a href="http://www.sonicvisualiser.org/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/271>Marsyas</a></td>
+            <td>Analysis+Synthesis</td>
+            <td>Marsyas (Music Analysis, Retrieval and Synthesis for Audio Signals) is an open source software framework for audio processing with specific emphasis on Music Information Retrieval applications.</td>
+            <td><a href="http://marsyas.info/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/272>Audacity</a></td>
+            <td>Audio Effects/Manipulation</td>
+            <td>Audacity is free, open source software for recording and editing sounds.</td>
+            <td><a href="http://www.audacityteam.org/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/268>SMS Tools</a></td>
+            <td>Audio Effects/Manipulation</td>
+            <td>SMS is a set of techniques and software implementations for the analysis, transformation and synthesis of musical sounds based on a sinusoidal plus residual model.</td>
+            <td><a href="http://www.mtg.upf.edu/technologies/sms">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/273>WaveSurfer</a></td>
+            <td>Audio Effects/Manipulation</td>
+            <td>WaveSurfer is an Open Source tool for sound visualization and manipulatio.</td>
+            <td><a href="http://www.speech.kth.se/wavesurfer/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/2703>Pure Data (PD)</a></td>
+            <td>GUI Environment </td>
+            <td>PD (aka Pure Data) is a real-time graphical programming environment for audio, video, and graphical processing.</td>
+            <td><a href="http://puredata.info/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1627>Music Ontology Specification)</a></td>
+            <td>Others</td>
+            <td>Provides main concepts and properties fo describing music (i.e. artists, albums, tracks, but also performances, arrangements, etc.) on the Semantic Web.</td>
+            <td><a href="http://musicontology.com/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1626>MusicXML</a></td>
+            <td>Others</td>
+            <td>Format to represent musical notation, mainly western.</td>
+            <td><a href="http://www.recordare.com/musicxml/community/software">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/234>C++ Library for Audio and Music</a></td>
+            <td>Programming Library</td>
+            <td>CLAM is a full-fledged software framework for research and application development in the Audio and Music Domain.</td>
+            <td><a href="http://clam-project.org/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1301>ChucK</a></td>
+            <td>Programming Library</td>
+            <td>audio programming language.</td>
+            <td><a href="http://chuck.cs.princeton.edu/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/1518>FAUST</a></td>
+            <td>Programming Library</td>
+            <td>FAUST is a free, open source, compiled language for real-time audio signal processing.</td>
+            <td><a href="http://faust.grame.fr/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=hhttp://smcnetwork.org/node/269>Max/MSP</a></td>
+            <td>Programming Library</td>
+            <td>Max/MSP is a graphical environment for music, audio, and multimedia.</td>
+            <td><a href="http://www.cycling74.com/products/maxmsp">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/275>STK</a></td>
+            <td>Programming Library</td>
+            <td>STK was designed to facilitate rapid development of music synthesis and audio processing software, with an emphasis on cross-platform functionality, realtime control, ease of use, and educational example code.</td>
+            <td><a href="http://ccrma.stanford.edu/software/stk/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/274>Ardour</a></td>
+            <td>Audio Sequencers</td>
+            <td>Ardour is a digital audio workstation. You can use it to record, edit and mix multi-track audio.</td>
+            <td><a href="http://ardour.org/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/276>CLM</a></td>
+            <td>Synthesis</td>
+            <td>Common Lisp Music is a music synthesis and signal processing package in the Music V family.</td>
+            <td><a href="http://ccrma.stanford.edu/software/clm/">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/262>Nyquist</a></td>
+            <td>Synthesis</td>
+            <td>Nyquist is a sound synthesis and composition language based on a Lisp syntax. Nyquist is an elegant and powerful system based on functional programming.</td>
+            <td><a href="http://www.cs.cmu.edu/~music/nyquist/index.html">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href=http://smcnetwork.org/node/962>SuperCollider</a></td>
+            <td>Synthesis</td>
+            <td>A real time audio synthesis programming language.</td>
+            <td><a href="http://supercollider.sourceforge.net/">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+
+  <script>
+      $(document).ready(function() {
+    // Custom
+    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+      var stickyHeight = sticky.outerHeight();
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop){
+        stickyWrapper.height(stickyHeight);
+        sticky.addClass("is-sticky");
+      }
+      else{
+        sticky.removeClass("is-sticky");
+        stickyWrapper.height('auto');
+      }
+    };
+
+    // Find all data-toggle="sticky-onscroll" elements
+    $('[data-toggle="sticky-onscroll"]').each(function() {
+      var sticky = $(this);
+      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+      sticky.before(stickyWrapper);
+      sticky.addClass('sticky');
+
+      // Scroll & resize events
+      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+        stickyToggle(sticky, stickyWrapper, $(this));
+      });
+
+      // On page load
+      stickyToggle(sticky, stickyWrapper, $(window));
+    });
+    });
+  </script>
+
+</body>
+</html>

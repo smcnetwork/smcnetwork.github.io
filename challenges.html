@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+    font: Lato, sans-serif;
+    color: #555;
+  }
+
+  .dropdown-menu {
+      text-align: center;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+
+  .panel-footer.panel-custom {
+    background: #006580;
+    color: white;
+    text-align: center;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container-fluid" style="padding: 0">
+
+      <a href="index.html" style="text-decoration: none;">
+        <div class="jumbotron">
+          <h1><b>Sound and Music Computing Network</b></h1>
+        </div>
+      </a>
+  </header>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-fill w-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="whatis.html">What is SMC</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="connected.html">Stay connected</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              SMC Summer School & Conference
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="host.html">How to host SMC</a>
+              <a class="dropdown-item" href="conf.html">Current and past editions</a>
+              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
+              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
+              <a class="dropdown-item" href="school.html">SMC Summer School</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Roadmap
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
+              <a class="dropdown-item" href="definition.html">Definition</a>
+              <a class="dropdown-item" href="context.html">Context</a>
+              <a class="dropdown-item" href="challenges.html">Challenges</a>
+              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="centers.html">Centers</a>
+              <a class="dropdown-item" href="associations.html">Associations</a>
+              <a class="dropdown-item" href="journals.html">Journals</a>
+              <a class="dropdown-item" href="conferences.html">Conferences</a>
+              <a class="dropdown-item" href="software.html">Software</a>
+              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <h1>
+        Challenges and Strategies
+      </h1>
+      <p>
+        We identify five broad challenges of relevance to SMC research. The first two are centred on the actual research issues, the third one addresses educational aspects, the fourth one focuses on knowledge transfer and the last one is centred on social concerns.
+        <ol>
+          <li><b>Design better sound objects and environments:</b> The growing abundance of electronically generated sounds in our environment, coupled with the rapid advances in information and sensor technology, present SMC with unprecedented research challenges, but also opportunities to contribute to improving our audible world.</li>
+          <li><b>Understand, model, and improve human interaction with sound and music:</b> The human relation with sound and music is not just a perceptual and cognitive phenomenon: it is also a personal, bodily, emotional, and social experience. The better understanding of this relation from all these perspectives will bring truly useful and rewarding machine-mediated sonic environments and services.</li>
+          <li><b>Train multidisciplinary researchers in a multicultural society:</b> SMC is a highly multidisciplinary domain that requires special expertise. But the way the established academic disciplines are being taught makes it difficult to acquire the proper knowledge. Thus there is a need for the establishment of appropriate educational programmes for training these specialists.</li>
+          <li><b>Improve knowledge transfer:</b> A large part of SMC research is devoted to applications that can be directly exploited in the arts, in industry and in society at large. Proper knowledge transfer should result into an impact much larger than the current one.</li>
+          <li><b>Address social concerns:</b> The role of the SMC field goes beyond that of a mere provider of technological or commercial solutions. SMC has the potential to contribute to maintaining and furthering the richness of human culture and preventing the global technological trends that make the world uniform. Also, SMC should empower users, putting the relevant choices and decisions back into the hands of the individual.</li>
+        </ol>
+      </p>
+      <h2>
+        Strategies for addressing the challenges
+      </h2>
+      <p>
+        To address the first two challenges we have to be able to promote research in our field, leading it towards the appropriate direction.
+        <br /><br />
+        <b>Promote new paradigms for sound synthesis and processing:</b> The traditional concept of musical instrument is not anymore valid for promoting innovation. Any object can be turned into a musical instrument as soon as someone starts exploiting its expressive capabilities and employing some kind of virtuosity. This had happened with many everyday objects in the past, and it is likely to occur in the future, in a world of sensorised and networked objects and spaces. Current research has to explore new paradigms for the design of musical instruments and for the creative use of the technological infrastructures that are being developed.Research is also needed to improve synthesis algorithms, both those based on Signal/Spectral Models and those based on Physical Modelling. At a more structural level, Computer–Assisted Composition should be included and seamlessly integrated with these algorithms. For natural human/sound interactions at an individual level, all advances in Personal Sound devices should be encouraged. They might range from 3D audio over headphones to Computer/Brain Interfaces; from prophylactic uses as in cochlear implants to general–use biofeedback techniques. We also have to go beyond imitation and towards capturing the communicative potentiality of sound. Sound is a powerful information carrier through which to convey rapid and continuous information about objects, events, processes, functions and relations. Research should isolate the physical, acoustic and perceptual features that contribute to the salience of such items, so that sounds can be moulded according to specific communication needs.
+        <br /><br />
+        <b>Promote research in fields involved in the shaping of natural and artificial acoustic ecosystems:</b> The SMC community should enlarge its scope to give itself the potential to affect fields concerned with designing “sensible spaces” for a better quality of life on various scales: product design, architecture, urban planning, landscape design and conservation. Sound is increasingly perceived as an important component at all levels, not only as a source of pollution, but also as a facilitator of interaction and as a component of the aesthetic experience of a place or its genius loci. We should promote studies aimed at reducing sound and music pollution in public and private ecosystems. Our sense of hearing is a precious resource whose capabilities should be exploited but whose effectiveness can be impaired by oppressive and hostile acoustic environments. The SMC community should encourage studies, technologies and campaigns promoting a sparing and intelligent use of sound in public and private contexts, and support the involvement of psychologists, sociologists and policy makers.
+        <br /><br />
+        <b>Promote computational modelling approaches in research on auditory perception and cognition:</b> The final goal of most SMC research is to produce tools which can interact meaningfully with the user via sound, possibly integrated with other modalities. To do so, these tools will have to incorporate knowledge about sound perception and multimodal communication. Since auditory perception and cognition is a broad and multidisciplinary field of research, the focus of SMC research should be on aspects that are directly relevant to the goal mentioned above. Computational Auditory Scene Analysis is one such aspect. It should be studied and improved with the aim of identifying and tracking the different sound sources present in a given soundscape or piece of music. Auditory Attention is another aspect. This is a fundamental cognitive capability of human listeners, and it requires more study to assist in the design of effective interactive systems. Aspects of Memory and Learning are related to attention, and are necessary for SMC to bridge the gaps between time–scales (listening to a single note, to a whole piece of music). Also Musical Structural Analysis by human experts should inform the musicological aspects of SMC. In order to focus its research and demonstrate the utility of its methods, SMC should target specific applications that benefit human users. An application on which to focus is the development of devices that enhance aspects of normal auditory perception and cognition. For instance, such devices could focus the attention of the user on some aspect of the auditory scene, to help her getting a clearer understanding of it, and/or to contribute to a deeper understanding of other channels, such as the visual and haptic ones. In the educational field, learning applications should be encouraged. The use of such augmentary devices has a strong social aspect as they could play a crucial role in the design of Auditory Prostheses of the future, which should allow music listening in addition to speech comprehension.
+        <br /><br />
+        <b>Intensify research in expressivity and communication, developing an embodied approach to perception and action:</b> An essential aspect of sound and music that must be understood, beyond the physical, perceptual and cognitive phenomena themselves, is expressivity in sound and music communication and its relation to emotion. A prime field in which this can be studied is music performance, where expressivity is often just as important as the ‘actual’ music–structure itself. In particular, performance research should transcend its current (narrow) focus on mostly classical music. This favours abstract music–score– centred models that neglect the human in the loop. Instead, it should put more systematic effort into studying the processes of expression transmission in musical environments, with a focus on all three components of the communication channel: the expressive sound (music) itself, the performer and the listener. There is a growing consensus in cognitive science that perception, be it natural or artificial, cannot be fully understood without reference to action. This awareness is especially important in SMC research, where action is intrinsically linked to sound interaction and music making. Research in perception–action topics should thus be encouraged. Ergonomics is the most applied level of research where perception and action meet. At a more fundamental level, sensory–motor theories and embodiment of cognitive abilities are defining and formalising the important aspects of the perception and action loop.
+        <br /><br />
+        <b>Intensify multimodal and multidisciplinary research on computational methods for bridging the semantic gap in music:</b> The Semantic Gap in SMC — the discrepancy between what can be recognised in music signals by current state–of–the–art methods and what human listeners associate with music — is the main obstacle on the way towards truly intelligent and useful musical companions. Current research efforts aim at the automatic recognition and modelling of higher–level musical patterns (e.g., rhythmic or harmonic structure), but they still essentially adhere to the traditional bottom–up pattern analysis scenario. The bridging of the semantic gap will require a radical re–orientation (1) towards the integration of top–down modelling of (incomplete) musical knowledge and expectations, and (2) towards a widening of the notion of musical understanding. This re-orientation can be achieved by embracing and exploiting other media (including the Web), and modalities (including for example semantic issues related to the allusion of movement and gesture in music). This research will have to be notably multidisciplinary, involving, among others, specialists in musicology, music perception, artificial intelligence, machine learning, and human movement understanding.
+        <br /><br />
+        <b>Intensify interaction between research and the arts:</b> Artists have an extremely refined understanding — albeit (perhaps) not in ‘scientific’ terms —of issues of perception and perceptibility and, more importantly, of the effect of sound, including its emotional and social ramifications. In order to understand the human experience of sound and music in its full breadth, SMC needs to exploit this resource. Artists may bring up new questions and ways of looking at human and social contexts related to sound. Joint art/research projects, even those which, at first sight, focus on ‘artistic’ and not overtly ‘scientific’ questions, should be promoted and adequately funded. In fact, the strict distinction between the ‘artistic’ and the ‘scientific’ must continually be challenged. The SMC community should also make efforts to strengthen this viewpoint in funding agencies and among decision makers.
+        <br /><br />
+        In relation to the third challenge the strategies relate to how to create and promote appropriate educational programs for training the future SMC researchers.
+        <br /><br />
+        <b>Design appropriate multidisciplinary curricula for SMC:</b> Higher Education in SMC must take into account the wide variety of student backgrounds as well as the different final goals of their education. Master and PhD students enter the SMC field from different disciplines, and target their studies to a wide span of objectives, ranging from fundamental and applied research to creative endeavours such as composition and sound design. Therefore, appropriate curricula which allow specialisation must be designed to provide a wide spectrum of knowledge. It is also important to promote broader integration of Arts and Sciences.In the past, composers and content creators were a driving force behind SMC innovation. Their interaction with scientists constituted a positive ecosystem for technological innovation. In return, science provided many methodologies and tools which were greatly inspiring for several art forms. However, the drive for innovation coming from art has progressively diminished due to the increasing specialisation of the domains involved. The arts can again play a creative role when curricula in SMC are better integrated. Composition and Sound Design is a typical example where this integration is possible. Another example concerns innovative multimodal techniques for emotional and expressive analysis in Performance Practice and Musicology. Specific pro–active initiatives must be implemented to allow composers, musicians, musicologists and content creators to complement their training in Europe and abroad. The curricula should also promote cross–cultural integration in education. The recent surge in non–European industries and global markets requires a reconsideration of how education faces up to globalisation, multiculturalism and cross–cultural integration. In particular, the growing population of students, who come to Europe from different non–European cultures and backgrounds, requires appropriate education and pedagogical approaches that reflect a concern for multiculturalism.
+        <br /><br />
+        <b>Promote coordination between the different educational programs and related initiatives:</b> SMC research has a successful track record thanks to the complementarity and coordination between research centres, however this type of collaborations should be exported to the Higher Education domain. This can be achieved through the integration of Masters’ curricula, PhD programmes, and postgraduate activities. In this context, student/teacher mobility must be encouraged through appropriate funding actions. Stable and enduring support for common activities such as the SMC Summer School, and target–oriented SMC ateliers and workshops must be granted in order to provide continuity in Higher Education. There is also a need for enhancing the education material to be used in these programs. A substantial effort must be made to provide SMC–dedicated high–quality textbooks and tutorials that tackle the multidisciplinarity of the field, and a set of interactive multimedia electronic learning objects which can be exchanged and used in SMC–related curricula. There is also a crucial need for increased access to SMC information in order to attract students and potential industrial partners. An enhancement of the SMC portal is in order. It should provide more up–to–date and expanded information on SMC and related fields. This information must concern curricula, courses, news of events, scholarships, available funding, open positions, and similar information.
+        <br /><br />
+        To face the lack of proper knowledge transfer, identified in the fourth challenge of the SMC roadmap, the strategies mainly relate to the improvement of dissemination and of quality of our research results.
+        <br /><br />
+        <b>Promote dissemination and exploitation of SMC research and objectives:</b> The visibility and identity of SMC research should be enhanced, and greater efforts should be made to disseminate it and its objectives in venues outside the standard academic ones. We should promote the presence of SMC at conferences and industrial fairs, in special issues of scientific journals, and on mainstream media channels. We should promote tutorial installations in science museums and at festivals to educate the general public and especially to arouse the interest of children in the SMC field. We should also promote the presence of SMC in cultural activities such as concerts, exhibitions, and installations in public spaces. Representatives of academia and industry should meet more often for open discussions and exchange of information. It is important that companies explain their needs to researchers, so that academia can become aware of new applications and research opportunities. Conversely, it is equally essential that researchers inform companies about advances in academic research, advances which may not be widely known in industry. For this latter to be fruitful, it is important to hold demonstrations directly showing the exploitation potential of a research project. Given that relatively few research results of the SMC community are taken up by industry, researchers and students must be made aware of the possibilities for profit in their research results through direct industrial exploitation, for example by creating start–ups.
+        <br /><br />
+        <b>Promote academic quality standards and the use of the various models of IP protection of research result:</b> There is a wide variety of journals and conferences in which SMC research is being published. We should promote publication in those journals and conferences which apply a proper peer review process to the evaluation and selection of papers. However, in some research areas within the SMC field, there are no clear academic criteria for the evaluation of publications and research results. Therefore, there is also a general need for promoting quality in all SMC research activities. However researchers should also protect and exploit their work in other ways. Researchers should be aware of the various possibilities for disseminating their work and protecting their IP, knowing the advantages of each choice. Support should be given to the filing of patents, the overcoming of legal obstacles, and to the promotion of alternative means of legal protection, such as
+        <a href="https://creativecommons.org">Creative Commons</a> or <a href="https://www.fsf.org">Free Software</a> licenses.
+        <br /><br />
+        The need to improve social awareness, as identified in challenge five of the SMC roadmap, is a goal for which the strategies aim at changing our traditional approaches to engineering research.
+        <br /><br />
+        <b>Expand existing SMC methodologies emphasising user–centred and group experience–centred research:</b> The current methodologies for understanding music are typically based on experimental methods which address the cognitive system of a single listener in a laboratory environment. In practice, however, music is most of the time a social activity in which musical engagement is influenced by the behaviour of other participants. Existing empirical and experimental methodologies should be expanded towards understanding aspects of social music cognition. These involve the study of the social context in which musicians and listeners influence each other during musical activities. Also the tools for collaboration, information and communication exchange are now developed in the context of e–science and e–learning and there are no collaborative tools that incorporate all the music specific information, such as audio files, scores, or extracted audio features. Such tools should take into account the profile and experience of users.
+        <br /><br />
+        <b>Expand the horizon of SMC by incorporating the research in human sciences and promoting multi–cultural approaches:</b> Apart from cognitive theories of music such as tonality and rhythm categorisation, the human sciences (e.g. musicology, anthropology and sociology) have had little impact on the development of SMC technologies. And yet there is a large amount of knowledge about the social functioning of music that is currently unexploited. Cross–fertilisation between the human and natural sciences, as it is currently being developed in embodied music cognition, may offer new concepts and perspectives for understanding the social functioning of music. Good examples include concepts such as synchronisation, corporeal attuning in response to music, empathy and the sharing of actions. These concepts may provide a useful framework for the development of artistic applications that take into account social interaction as a basic feature of artistic expression. Current SMC research is also dominated by a narrow focus on traditional Western tonal music. SMC should make a conscious effort to transcend this focus, which tends to exclude SMC researchers from other cultures, making it difficult for them to publish results on their ‘native’ music. The goal must be to establish a common awareness in the SMC community of the importance of multicultural research. The musical and cultural expertise of foreign students from non–European countries, who are increasingly coming to study at European universities, should be actively used as a valuable resource in this endeavour.
+      </p>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+
+  <script>
+      $(document).ready(function() {
+    // Custom
+    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+      var stickyHeight = sticky.outerHeight();
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop){
+        stickyWrapper.height(stickyHeight);
+        sticky.addClass("is-sticky");
+      }
+      else{
+        sticky.removeClass("is-sticky");
+        stickyWrapper.height('auto');
+      }
+    };
+
+    // Find all data-toggle="sticky-onscroll" elements
+    $('[data-toggle="sticky-onscroll"]').each(function() {
+      var sticky = $(this);
+      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+      sticky.before(stickyWrapper);
+      sticky.addClass('sticky');
+
+      // Scroll & resize events
+      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+        stickyToggle(sticky, stickyWrapper, $(this));
+      });
+
+      // On page load
+      stickyToggle(sticky, stickyWrapper, $(window));
+    });
+    });
+  </script>
+
+</body>
+</html>

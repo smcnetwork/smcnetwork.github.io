@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+    font: Lato, sans-serif;
+    color: #555;
+  }
+
+  .dropdown-menu {
+      text-align: center;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+
+  .panel-footer.panel-custom {
+    background: #006580;
+    color: white;
+    text-align: center;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container-fluid" style="padding: 0">
+
+      <a href="index.html" style="text-decoration: none;">
+        <div class="jumbotron">
+          <h1><b>Sound and Music Computing Network</b></h1>
+        </div>
+      </a>
+  </header>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-fill w-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="whatis.html">What is SMC</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="connected.html">Stay connected</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              SMC Summer School & Conference
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="host.html">How to host SMC</a>
+              <a class="dropdown-item" href="conf.html">Current and past editions</a>
+              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
+              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
+              <a class="dropdown-item" href="school.html">SMC Summer School</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Roadmap
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
+              <a class="dropdown-item" href="definition.html">Definition</a>
+              <a class="dropdown-item" href="context.html">Context</a>
+              <a class="dropdown-item" href="challenges.html">Challenges</a>
+              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="centers.html">Centers</a>
+              <a class="dropdown-item" href="associations.html">Associations</a>
+              <a class="dropdown-item" href="journals.html">Journals</a>
+              <a class="dropdown-item" href="conferences.html">Conferences</a>
+              <a class="dropdown-item" href="software.html">Software</a>
+              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 500px";>
+    <div class="col-sm-12">
+      <h1>
+        Research Centers
+      </h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.kfs.oeaw.ac.at/>Acoustics Research Institute, Austrian Academy of Sciences, Vienna</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.uni-graz.at/en/muwi99ww/>Center for Systematic Musicology, University of Graz</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.uni-graz.at/en/muwi99ww/>Center for Systematic Musicology, University of Graz</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.cp.jku.at/>Department of Computational Perception, Johannes Kepler University, Linz</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.ofai.at/research/impml/index.html>IMP/ML Group, Austrian Research Institute for AI, Vienna</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://iwk.mdw.ac.at/>Institut für Wiener Klangstil, Vienna</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://iem.at/>Institute of Electronic Music and Acoustics, Graz</a></td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href=http://www.ifs.tuwien.ac.at/mir/>MIR Group, Department of Software Technology and Interactive Systems, Vienna University of Technology</a></td>
+          </tr>
+          <tr>
+            <td>Belgium</td>
+            <td><a href=http://www.ipem.ugent.be/>Institute for Psychoacoustics and Electronic Music, University of Ghent</a></td>
+          </tr>
+          <tr>
+            <td>Belgium</td>
+            <td><a href=http://www.orpheusinstituut.be/en/research>ORCiM – Orpheus Research Centre in Music</a></td>
+          </tr>
+          <tr>
+            <td>Brazil</td>
+            <td><a href=http://gpa.lps.ufrj.br/>Audio Processing Group, Federal University of Rio de Janeiro</a></td>
+          </tr>
+          <tr>
+            <td>Brazil</td>
+            <td><a href=http://www6.ufrgs.br/musicaeletronica/>Centro de Música Eletrônica, Federal University of Rio Grande do Sul</a></td>
+          </tr>
+          <tr>
+            <td>Brazil</td>
+            <td><a href=http://www.inf.ufrgs.br/lcm/>Computer Music Lab, Federal University of Rio Grande do Sul</a></td>
+          </tr>
+          <tr>
+            <td>Canada</td>
+            <td><a href=http://armadilo.cs.uregina.ca/>aRMADILo: Rough Music and Audio digital Interaction Lab</a></td>
+          </tr>
+          <tr>
+            <td>Canada</td>
+            <td><a href=http://www.cirmmt.mcgill.ca/>Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)</a></td>
+          </tr>
+          <tr>
+            <td>Canada</td>
+            <td><a href=http://www.mistic.ece.uvic.ca/>MISTIC – Music Intelligence Sound Technology Interdisciplinary Collective</a></td>
+          </tr>
+          <tr>
+            <td>Denmark</td>
+            <td><a href=http://cogsys.imm.dtu.dk/>Section for Cognityive Systems, Department of Informatics and Mathematical Modelling, Technical University of Denmark</a></td>
+          </tr>
+          <tr>
+            <td>Denmark</td>
+            <td><a href=http://media.aau.dk/smc>Sound and Music Computing, Aalborg University, Copenhagen</a></td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td><a href=http://www.cs.tut.fi/sgn/arg/>Audio Research Group, Digital Media Institute, Tampere University of Technology</a></td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td><a href=http://spa.aalto.fi/en/research/research_groups/audio_signal_processing/>Audio Signal Processing Group, School of Electrical Engineering, Aalto University</a></td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td><a href=http://www.jyu.fi/hum/laitokset/musiikki/en/research/coe>Finnish Centre of Excellence in Interdisciplinary Music Research, Music Department, University of Jyväskylä</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www-acroe.imag.fr/>ACROE, Grenoble</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.algomus.fr/>Algorithmic musicology group, LIFL (Lille) and MIS (Amiens)</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=https://www.univ-st-etienne.fr/fr/index.html?RH=0611171454&RF=0611171454>CIEREC</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://olfac.univ-lyon1.fr/>Equipe “Cognition Auditive et Psychoacoustique”, Neurosciences et Systèmes Sensoriels, CNRS UMR5020, Université Claude Bernard</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.incm.cnrs-mrs.fr/equipel2m.php>Equipe “Langage, musique et motricité”, Institut de Neurosciences Cognitives de la Méditerranée</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://perso.wanadoo.fr/gmem/html/gmem.html>GMEM, Marseille</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.grame.fr/>GRAME, Lyon</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.inagrm.com/>GRM, INA, Paris</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.ircam.fr/>IRCAM, Paris</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.irisa.fr/metiss/>IRISA, Rennes</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.lam.jussieu.fr/>Laboratoire d”Acoustique Musicale, Université Paris 6, Paris</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.lma.cnrs-mrs.fr/>Laboratoire de Mecanique et Acoustique, CNRS, Marseille</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.labri.fr/>LaBRI, Bordeaux</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.csl.sony.fr/>Sony CSL, Paris</a></td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td><a href=http://www.tsi.telecom-paristech.fr/aao/en/>Télécom ParisTech, Audio Acoustics and Waves research group</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.nue.tu-berlin.de/menue/home/parameter/en/>Communication Systems Group, Technical University Berlin</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.iis.fraunhofer.de/amm/index.html>Fraunhofer IIS, Erlangen</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.idmt.fraunhofer.de/index_eng.html>Fraunhofer Institute for Digital Media Technology, Ilmenau</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.dfki.de/web/kompetenz/c4/index_html>German Research Center for AI</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.tu-ilmenau.de/mt/>Institute for Media Technology, Technical University Ilmenau</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.ika.ruhr-uni-bochum.de/index_en.html>Institute of Communication Acoustics, Ruhr-University Bochum</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.lnt.de/LMS>Multimedia Communications and Signal Processing, University Erlangen-Nuremberg</a></td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href=http://www.cbs.mpg.de/groups/misc/music>Neurocognition of Music Group, Max Planck Institute for Human Cognitive and Brain Science</a></td>
+          </tr>
+          <tr>
+            <td>Greece</td>
+            <td><a href=http://www.music.uoa.gr/>Centre for Music Acoustics and Technology, Department of Music Studies, University of Athens</a></td>
+          </tr>
+          <tr>
+            <td>Greece</td>
+            <td><a href=http://www.mus.auth.gr/index.html>Department of Music Studies, Aristotle University of Thessaloniki</a></td>
+          </tr>
+          <tr>
+            <td>Greece</td>
+            <td><a href=http://www.teicrete.gr/mta/>Department of Music technology & Acoustics, TEI of Crete</a></td>
+          </tr>
+          <tr>
+            <td>India</td>
+            <td><a href=http://www.ee.iitb.ac.in/uma/~daplab/>Digital Audio Processing Lab, IIT Bombay</a></td>
+          </tr>
+          <tr>
+            <td>Ireland</td>
+            <td><a href=http://www.ccmcm.ie/>Centre for Computational Musicology and Computer Music, University of Limerick</a></td>
+          </tr>
+          <tr>
+            <td>Ireland</td>
+            <td><a href=http://www.ccmcm.ie/>Music Technology Laboratory, National University of Ireland, Maynooth</a></td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href=http://www.fisica.unina.it/mfa/acust/>Acoustics and ELectronics Group, Federico II University of Naples, Italy</a></td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href=http://musart.dist.unige.it/>InfoMus Lab, University of Genoa Genoa</a></td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href=http://smc.dei.unipd.it/>SMC Group, Department of Information Engineering, University of Padova</a></td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href=http://www.fisica.unina.it/mfa/acust/>Acoustics and ELectronics Group, Federico II Univeristy of Naples, Italy</a></td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href=http://www.mnt-aq.it/english/>Music and New Technologies, Conservatory A. Casella</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://www.nici.kun.nl/index.shtml>Music, Mind, Machine Group, Nijmegen Institute for Cognition and Information, Radboud University, Nijmegen</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://cf.hum.uva.nl/mmm/>Music Cognition Group, University of Amsterdam</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://www.steim.org/steim/>STEIM, Amsterdam</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://www.hku.nl/>Utrecht School of the Arts (Hogeschool voor de Kunsten Utrecht)</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://www.cs.uu.nl/research/projects/music/>Department of Information and Computing Sciences, Utrecht University</a></td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td><a href=http://elab-oralculture.nl/>e-Laboratory Oral Culture, Meertens Institute</a></td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td><a href=http://www.hf.uio.no/imv/english/>Department of Musicology, University of Oslo</a></td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td><a href=http://www.iet.ntnu.no/groups/akustikk/indexe.html>Acoustics Group, Department of Electronics and Telecommunications, Norwegian University of Science and Technology, Trondheim</a></td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td><a href=http://www.notam02.no/>Norwegian network for Technology, Acoustics and Music, Oslo</a></td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td><a href=http://www.bek.no/>BEK – Bergen Center for Electronic Arts</a></td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td><a href=http://fourms.uio.no/>fourMs (Music, Mind, Motion, Machines), University of Oslo</a></td>
+          </tr>
+          <tr>
+            <td>Poland</td>
+            <td><a href=http://sound.eti.pg.gda.pl/index.html>Multimedia Systems Department, Gdansk University of Technology</a></td>
+          </tr>
+          <tr>
+            <td>Poland</td>
+            <td><a href=http://www.ire.pw.edu.pl/zea/>Division of Electroacoustics, Faculty of Electronics and Information Technology, Warsaw University of Technology</a></td>
+          </tr>
+          <tr>
+            <td>Portugal</td>
+            <td><a href=http://mir.dei.uc.pt/>MIR @ CISUC – Center for Informatics and Systems of the University of Coimbra</a></td>
+          </tr>
+          <tr>
+            <td>Portugal</td>
+            <td><a href=http://artes.ucp.pt/citar/>CITAR, Portuguese Catholic University, Porto</a></td>
+          </tr>
+          <tr>
+            <td>Portugal</td>
+            <td><a href=http://smc.inescporto.pt/>Sound and Music Computing Group, Telecommunications and Multimedia Unit, INESC Porto</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://grfia.dlsi.ua.es/>Pattern Recognition and Artificial Intelligence Group, University of Alicante</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://www.gaps.ssr.upm.es/>GAPS, Signal, Systems and Radiocommunications Department, Universidad Politécnica de Madrid</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://www.esmuc.cat/Departaments/Sonologia>Department of Sonology, Escola Superior de Musica de Catalunya, Barcelona</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://mtg.upf.edu/>Music Technology Group, Universitat Pompeu Fabra, Barcelona</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://www.iiia.csic.es/Projects/music/>Artificial Intelligence Research Institute (IIIA,CSIC)</a></td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href=http://www.atic.uma.es/>ATIC – Grupo de Aplicación de las Tecnologías de la Información y Comunicaciones, Universidad de Málaga</a></td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td><a href=http://www.kth.se/ees/omskolan/organisation/avdelningar/sip>S3-SIP Sound and Image Processing Laboratory, School of Electrical Engineering, KTH Kungliga Tekniska Högskolan, Stockholm</a></td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td><a href=http://www.psyk.uu.se/eng/>Department of Psychology, Uppsala University</a></td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td><a href=http://www.speech.kth.se/>TMH Department of Speech Music and Hearing , CSC School of Computer Science and Communication, KTH Royal Institute of Technology</a></td>
+          </tr>
+          <tr>
+            <td>Switzerland</td>
+            <td><a href=http://lcav.epfl.ch/home>LCAV – Audiovisual Communications Laboratory, EPFL, Lausanne</a></td>
+          </tr>
+          <tr>
+            <td>Taiwan</td>
+            <td><a href=http://mac.iis.sinica.edu.tw/>Music and Audio Computing Lab, Academia Sinica</a></td>
+          </tr>
+          <tr>
+            <td>Turkey</td>
+            <td><a href=http://comd.bilkent.edu.tr/>Bilkent University, Department of Communication and Design (COMD)</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.elec.york.ac.uk/research/audio.html>Audio Lab, University of York</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.londonmet.ac.uk/jcamd/research/groups/music-and-technology.cfm>Music Technology, London Metropolitain University</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.mti.dmu.ac.uk/>Music, Technology and Innovation Research Centre, De Montfort University, Leicester</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.leeds.ac.uk/icsrim/>Interdisciplinary Centre for Scientific Research in Music, University of Leeds</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.dcs.shef.ac.uk/~guy/mistres/>Music Information Systems and Technology Research, University of Sheffield</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.soi.city.ac.uk/organisation/doc/research/mi/>Music Informatics research group, City University, London</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.doc.gold.ac.uk/isms/>Intelligent Sound and Music Systems, Goldmiths College, London</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.mus.cam.ac.uk/CMS/>Center for Music and Science, University of Cambridge</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www-sigproc.eng.cam.ac.uk/>Signal Processing Group, Cambridge University Engineering Department</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.acoustics.salford.ac.uk/>Acoustics Research Centre, Salford University</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://cmr.soc.plymouth.ac.uk/>Interdisciplinary Center for Computer Music Research, University of Plymouth</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://cmt.gla.ac.uk/>Centre for Music Technology, University of Glasgow</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.music.ed.ac.uk/Research/>Faculty of Music, University of Edinburgh</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.york.ac.uk/inst/mustech/>Music Technology Group, York University</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.leeds.ac.uk/music/research/icsrim.shtml>Interdisciplinary Centre for Scientific Research in Music, Department of Music, Leeds University</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.qub.ac.uk/sarc/>Sonic Arts Research Centre, Queen’s University Belfast</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.novars.manchester.ac.uk/>NOVARS Research Centre, University of Machester</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.elec.qmul.ac.uk/digitalmusic/index.html>Centre for Digital Music, Queen Mary, University of London</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://crc.open.ac.uk/mc>Music Computing Lab, The Open University</a></td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href=http://www.bcu.ac.uk/pme/conservatoire/research/integra-lab>Integra Lab, Birmingham Conservatoire, United Kingdom</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://ccrma.stanford.edu/>Center for Computer Research in Music and Acoustics (CCRMA), Stanford University</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://cnmat.berkeley.edu/>Center for New Music and Audio Technologies (CNMAT), UC Berkeley</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://www.create.ucsb.edu/>Center for Research in Electronic Art Technology (CREATE), UC Santa Barbara</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://www-crca.ucsd.edu/>Center for Research in Computing and the Arts (CRCA), UC San Diego</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://www.gtcmt.gatech.edu/>Center for Music Technology, Georgia Tech</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://bregman.dartmouth.edu/>Bregman Music and Auditory Research Studio (BMARS) at Dartmouth</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://musicdynamicslab.uconn.edu/>Music Dynamics Laboratory, University of Connecticut</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://www.cs.cmu.edu/~music>Computer Music Project, Computer Science Department, Carnegie Mellon University</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://labrosa.ee.columbia.edu/>LabROSA, Columbia University</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://soundlab.cs.princeton.edu/people/>Soundlab, Princeton University</a></td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td><a href=http://steinhardt.nyu.edu/marl/>Music and Audio Research Laboratory (MARL), New York University</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+
+  <script>
+      $(document).ready(function() {
+    // Custom
+    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+      var stickyHeight = sticky.outerHeight();
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop){
+        stickyWrapper.height(stickyHeight);
+        sticky.addClass("is-sticky");
+      }
+      else{
+        sticky.removeClass("is-sticky");
+        stickyWrapper.height('auto');
+      }
+    };
+
+    // Find all data-toggle="sticky-onscroll" elements
+    $('[data-toggle="sticky-onscroll"]').each(function() {
+      var sticky = $(this);
+      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+      sticky.before(stickyWrapper);
+      sticky.addClass('sticky');
+
+      // Scroll & resize events
+      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+        stickyToggle(sticky, stickyWrapper, $(this));
+      });
+
+      // On page load
+      stickyToggle(sticky, stickyWrapper, $(window));
+    });
+    });
+  </script>
+
+</body>
+</html>

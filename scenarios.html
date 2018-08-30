@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+    font: Lato, sans-serif;
+    color: #555;
+  }
+
+  .dropdown-menu {
+      text-align: center;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+
+  .panel-footer.panel-custom {
+    background: #006580;
+    color: white;
+    text-align: center;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="container-fluid" style="padding: 0">
+
+      <a href="index.html" style="text-decoration: none;">
+        <div class="jumbotron">
+          <h1><b>Sound and Music Computing Network</b></h1>
+        </div>
+      </a>
+  </header>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-fill w-100">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="whatis.html">What is SMC</a>
+              <a class="dropdown-item" href="board.html">Board</a>
+              <a class="dropdown-item" href="connected.html">Stay connected</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              SMC Summer School & Conference
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="host.html">How to host SMC</a>
+              <a class="dropdown-item" href="conf.html">Current and past editions</a>
+              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
+              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
+              <a class="dropdown-item" href="school.html">SMC Summer School</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Roadmap
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
+              <a class="dropdown-item" href="definition.html">Definition</a>
+              <a class="dropdown-item" href="context.html">Context</a>
+              <a class="dropdown-item" href="challenges.html">Challenges</a>
+              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Resources
+            </a>
+            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="centers.html">Centers</a>
+              <a class="dropdown-item" href="associations.html">Associations</a>
+              <a class="dropdown-item" href="journals.html">Journals</a>
+              <a class="dropdown-item" href="conferences.html">Conferences</a>
+              <a class="dropdown-item" href="software.html">Software</a>
+              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="spy">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item"><a class="nav-link active" href="#scroll1">Future scenarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scroll2">Controllable sound environments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scroll3">Musical instruments for all</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scroll4">Personalized musical devices</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9 scrollspy-example" data-spy="scroll" data-target="#spy" style="height: 600px;">
+        <div id="scroll1">
+          <h1>Future scenarios</h1>
+          <p>
+            The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+            <br /><br />
+            The scenarios describe general environments and activities concerning our everyday life soundscapes, the professional perspective of musicians and general music appreciation. As such, there is no one-to-one correspondence between a particular scenario and any of the particular key issues identified later on in the Roadmap. Rather, they provide hints of how the world could be if and when Sound and Music Computing research achieves the multidisciplinarity and transversality proposed in this Roadmap.
+          </p>
+        </div>
+        <div id="scroll2">
+          <h2>Controllable sound environments</h2>
+          <p>
+            Sensors, actuators, microprocessors, and wireless connection facilities are increasingly being embedded into everyday objects. These can be augmented with sonic features that make the environment more enjoyable, social life more interesting, and personal life more relaxed and healthy.
+          </p>
+          <h4>Grandma and me</h4>
+          <p>
+            Hi, I’m a teenager – 15 years old – and I like to wake up late, at least on Sundays.But today I decided to spend a few hours with my grandmother, so I set my alarm clock bed for 9 a.m. First, the bed tries to wake me up gently, by vibrating and making purring noises. Even though I am not sleeping anymore, I like to wait until the bed gets more nervous, when it realises I am still lying on it, and starts making harsh rhythmic movements and squeaking. I love it!
+            <br /><br />
+            I get up and go into the living room. It’s a mess after last night’s party. You know, mum and dad are on vacation, so… Chairs are everywhere; chips and peanuts all over the floor. I play some of my favourite hip-hop music while I put things back in place and prepare for the day. Different MCs and DJs are embodied in different pieces of furniture. I know it sounds retro, but it is so cool to move DJ Grandmaster Flash while I am moving that old armchair around. While I move through the house, the music seamlessly follows me through the objects I pass. When I leave home, I put on my headset and keep riding the beat. The headset doesn’t cut me off from the environment,though. When I catch sight of a strange bird singing, I look at it and put my hand to my ear. This gesture activates acoustic zooming, and I can appreciate the bird song in isolation. But then I am distracted by the sight of a friend of mine chatting to a girl. Instinctively, I steer my acoustic zoom towards them, but I realize she is wearing one of those new active jackets that can create an acoustic shield around you. I wonder what they are talking about.
+            <br /><br />
+            I reach my grandma’s house. She became almost deaf about five years ago, but she is really brave and decided to get an implant of powerful bionic ears. In recent years, she has become more and more worried about the bad things that could happen to her. That’s why my dad bought her a new door. As we leave the house and she closes the door, she proudly explains that the complex sound of the lock tells her that the lights are switched off, the gas is turned off, the fish are fed, and the window in the living room has been left wide open. I’m sure she left it open on purpose, but we go back in and close it anyway.
+            <br /><br />
+            We are going to the Fred Astaire club today. Grandma is wearing brand new Mike shoes. She feels much more confident about herself in these shoes, because they give her bionic ears some sonic feedback about equilibrium so she’s not afraid of falling while she moves around. Before we go into the club she wants to check on her health, which is promptly sonified through her bionic ears. Everything sounds fine, so we go in just as the show’s starting. There are a dozen over-eighties there, wearing Mike shoes, tap dancing, and clearly having a good time. Their subtle, gentle movements trigger a massive and diverse set of rhythms. Who knows – it may even be cooler than hip hop!
+            <br /><br />
+            On the way back home, grandma tells me how different the town was when she was a child. There was even a working water mill. Fortunately, we can both enjoy its sound. Both my cheap headset and her bionic ear can induce selective silence and let the lost sounds of the town emerge from history. That makes her remember even more. It’s fun being with grandma.
+          </p>
+        </div>
+        <div id="scroll3">
+          <h2>Musical instruments for all</h2>
+          <p>
+            In 2020, many sound devices will have a general purpose computer in them and will include quite a number of real-time interaction capabilities, sensors and wireless communication. Basically, any sound-producing device will be able to behave like a personalised musical instrument. Music making will become pervasive and many new forms of communication with sound and music will become available. Music content will be inherently multimodal and music making available to everyone: music from all to all.
+          </p>
+          <h4>How I became a professional musician</h4>
+          <p>
+            A year ago I bought the new wearable mobile device from SMC Inc. With it I was able to listen to my favourite songs and interact with them in ways not possible with the previous generation of devices. Now I was able to change many aspects of the songs by gestural and vocal control. Some of my friends were really good at it, and I started to improve my skills by practising on my home multimedia system. This system includes Jeeves, a virtual musical assistant, which observes and analyses my body movement, my singing and my musical abilities in general. Jeeves teaches me how to express myself in the style of famous musicians, from The Beatles to cellist Yo-Yo Ma. After a period of training, I was ready to play and jam with other users over the Internet and get advice from more expert users or their virtual musical assistants. After a couple of months, I started to get a good reputation in the community. One day, a group of users asked me to join them in person at a discotheque. In that discotheque we were able to use our mobiles to plug into a music role in the overall show. People took all kinds of roles; some were projected as visual characters on the surrounding space and walls, some were projected into moving lighting, others, like me, were controlling the expressivity of the music being played. Since I was a beginner, I took a simple role as the controller of the timbral aspects of the drum. Another person took control of the drum sticks. We had to dance to coordinate the rhythm in this shared drum set with the other visual and musical roles. This experience felt much more physical and exciting than being at home with my multimedia system. In the discotheque I had the feeling of being part of a community and of real teamwork. The various haptic devices in my clothes heightened my aural and visual perception and interaction with friends.
+            <br /><br />
+            I met these new friends many times; I practised a lot in discotheques and at home. I developed my own style and developed good skills in controlling virtual instruments, with Jeeves evolving with me and my community. I could control expression and lead my friends in improvisations and jam sessions. One day Jeeves asked me: “Could I please change my name to Madonna?; I feel that my background knowledge has changed”. I realised that was true and changed her name. Today I am a professional musician: an MJ (Music Jockey). Madonna and I prepare the shows on the authoring system at home. I design the structure, framework, roles, and musical material to be used. In my shows, I sometimes improvise with acoustic instrument players. I collect data on my sound device by monitoring their movements and performance choices. I can also monitor and analyse all the events in the show and the behaviour of everyone involved in it, including the audience. My virtual musical assistant Madonna wants to change her name again. Now she would like to be called Karajan.
+          </p>
+        </div>
+        <div id="scroll4">
+          <h2>Personalized musical devices</h2>
+          <p>
+            Current portable mp3 players -despite their simplicity – have already radi- cally changed human music-listening behaviour. Now, the first web-based music information systems which provide contextual information about music simply by connecting already existing services (such as Wikipedia, CDDB, lastFM,etc.), without the utilisation of any musical expertise, are beginning to emerge. Based on current trends in SMC research, we predict that such systems are likely to further develop in the direction of multi-modal, interactive, open and adaptive systems that support both beginners and experts from different cultures in ac- cessing music and music-related information.
+          </p>
+          <h4>My new music friend</h4>
+          <p>
+            I take my expert music companion with me anywhere, anytime, because I love music. The companion doesn’t just play music. It gives me a lot of other information about the music – from `practical’ things such as transcriptions of instruments and harmonies, to animated visualisations of the structure of the music, contextual information such as style, historical and cultural relations, and the relationship of the piece to other, related pieces and styles.
+            <br /><br />
+            My device is easy to use. I can talk to it, or I can shake it to show it the kinds of rhythms I like. It is aware of the music being played on radio stations and available in music databases world-wide, and it finds new music that I like in a particular situation. I can point it at music being played by a street band, and it will tell me what it is. It understands my intentions and learns my musical preferences. Sometimes it will surprise me, teaching me something new about music and my taste. And by the way, having had nano-sized loudspeakers (painlessly) implanted in my ears, I listen to my music without bothering with bulky headphones and earplugs.
+            <br /><br />
+            My music companion also helps me out in social contexts. When I am desperately looking for a date, my companion alerts me there’s a dance party around the corner for people with a similar interest in Brazilian music. When I get to it, my companion contacts the DJ system and sends it some of my favourite pieces (rare Brazilian stuff). The girl in the corner just goes “Wow”.
+            <br /><br />
+            My music companion is no longer an isolating device that runs playlists; it’s a friend that enhances my musical abilities, reflects my personality and helps me to socialise.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="height: 50px";>  </div>
+
+  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+
+  <script>
+      $(document).ready(function() {
+    // Custom
+    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+      var stickyHeight = sticky.outerHeight();
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop){
+        stickyWrapper.height(stickyHeight);
+        sticky.addClass("is-sticky");
+      }
+      else{
+        sticky.removeClass("is-sticky");
+        stickyWrapper.height('auto');
+      }
+    };
+
+    // Find all data-toggle="sticky-onscroll" elements
+    $('[data-toggle="sticky-onscroll"]').each(function() {
+      var sticky = $(this);
+      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+      sticky.before(stickyWrapper);
+      sticky.addClass('sticky');
+
+      // Scroll & resize events
+      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+        stickyToggle(sticky, stickyWrapper, $(this));
+      });
+
+      // On page load
+      stickyToggle(sticky, stickyWrapper, $(window));
+    });
+    });
+  </script>
+
+</body>
+</html>
