@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <style>
 
   body {
     font: Lato, sans-serif;
     color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background-image: url("smc_circles.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin: 0;
+    border-radius: 0 !important;
+    max-height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 50px;
   }
 
   .dropdown-menu {
@@ -26,7 +43,7 @@
   }
 
   .panel-footer.panel-custom {
-    background: #006580;
+    background: #1B6884;
     color: white;
     text-align: center;
   }
@@ -37,18 +54,33 @@
     overflow: auto;
   }
 
-  .navbar {
+  .navbar-custom {
     font-family: Montserrat, sans-serif;
-    letter-spacing: 1px;
+    background-color: #1B6884;
+    letter-spacing: 2px;
   }
 
-  .jumbotron {
-    font-family: Montserrat, sans-serif;
-    background-image: url("smc_circles.png");
-    background-size: cover;
-    color: white;
-    margin: 0;
-    border-radius: 0 !important;
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+      color: white;
+  }
+
+  @media (min-width: 768px) {
+  .navbar-brand
+      {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+      }
   }
 
   .sticky.is-sticky {
@@ -64,81 +96,45 @@
 </head>
 <body>
   <header>
+
     <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing
+        </h3>
+      </div>
 
-      <a href="index.html" style="text-decoration: none;">
-        <div class="jumbotron">
-          <h1><b>Sound and Music Computing Network</b></h1>
-        </div>
+    <nav id="topNav" class="navbar navbar-toggleable-sm navbar-custom" data-toggle="sticky-onscroll">
+
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
       </a>
-  </header>
 
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-fill w-100">
+      <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav nav-fill w-100">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
-              About
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="whatis.html">What is SMC</a>
-              <a class="dropdown-item" href="board.html">Board</a>
-              <a class="dropdown-item" href="connected.html">Stay connected</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              SMC Summer School & Conference
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="host.html">How to host SMC</a>
-              <a class="dropdown-item" href="conf.html">Current and past editions</a>
-              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
-              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
-              <a class="dropdown-item" href="school.html">SMC Summer School</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Roadmap
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
-              <a class="dropdown-item" href="definition.html">Definition</a>
-              <a class="dropdown-item" href="context.html">Context</a>
-              <a class="dropdown-item" href="challenges.html">Challenges</a>
-              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Resources
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="events.html">Events</a>
-              <a class="dropdown-item" href="centers.html">Centers</a>
-              <a class="dropdown-item" href="associations.html">Associations</a>
-              <a class="dropdown-item" href="journals.html">Journals</a>
-              <a class="dropdown-item" href="conferences.html">Conferences</a>
-              <a class="dropdown-item" href="software.html">Software</a>
-              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
-            </div>
-          </li>
-        </ul>
+          </ul>
+          <ul class="nav navbar-nav ml-auto nav-fill w-100">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+          </ul>
       </div>
-
     </nav>
-  </div>
+  </header>
 
 
   <div class="container-fluid" style="height: 15px";>  </div>
@@ -204,7 +200,7 @@
   </div>
 
 
-  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
 
 
   <script>

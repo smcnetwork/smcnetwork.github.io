@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <style>
 
   body {
-    font: Lato, sans-serif;
+    position: relative;
+    font-family: Montserrat, sans-serif;;
     color: #555;
   }
 
-  .dropdown-menu {
-      text-align: center;
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
   }
 
-  .dropdown:hover > .dropdown-menu {
-      display: block;
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
   }
+
 
   .panel-footer.panel-custom {
-    background: #006580;
+    background: #1B6884;
     color: white;
     text-align: center;
   }
@@ -37,18 +45,29 @@
     overflow: auto;
   }
 
-  .navbar {
+  .navbar-custom {
     font-family: Montserrat, sans-serif;
-    letter-spacing: 1px;
+    background-color: #1B6884;
+    letter-spacing: 2px;
   }
 
-  .jumbotron {
-    font-family: Montserrat, sans-serif;
-    background-image: url("smc_circles.png");
-    background-size: cover;
-    color: white;
-    margin: 0;
-    border-radius: 0 !important;
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+      color: white;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1B6884 !important;
+    background-color: #fff !important;
   }
 
   .sticky.is-sticky {
@@ -59,146 +78,375 @@
     z-index: 1000;
     width: 100%;
   }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 </style>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-SMC" data-offset="50">
   <header>
-    <div class="container-fluid" style="padding: 0">
 
-      <a href="index.html" style="text-decoration: none;">
-        <div class="jumbotron">
-          <h1><b>Sound and Music Computing Network</b></h1>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top" >
+
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
       </a>
-  </header>
 
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-fill w-100">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
-              About
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="whatis.html">What is SMC</a>
-              <a class="dropdown-item" href="board.html">Board</a>
-              <a class="dropdown-item" href="connected.html">Stay connected</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              SMC Summer School & Conference
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="host.html">How to host SMC</a>
-              <a class="dropdown-item" href="conf.html">Current and past editions</a>
-              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
-              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
-              <a class="dropdown-item" href="school.html">SMC Summer School</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Roadmap
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
-              <a class="dropdown-item" href="definition.html">Definition</a>
-              <a class="dropdown-item" href="context.html">Context</a>
-              <a class="dropdown-item" href="challenges.html">Challenges</a>
-              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Resources
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="events.html">Events</a>
-              <a class="dropdown-item" href="centers.html">Centers</a>
-              <a class="dropdown-item" href="associations.html">Associations</a>
-              <a class="dropdown-item" href="journals.html">Journals</a>
-              <a class="dropdown-item" href="conferences.html">Conferences</a>
-              <a class="dropdown-item" href="software.html">Software</a>
-              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
-            </div>
-          </li>
-        </ul>
+      <div id="navbar-SMC" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav ml-auto nav-fill">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#smc">SMC Conference</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#roadmap">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#resources">Resources</a>
+              </li>
+          </ul>
       </div>
-
     </nav>
-  </div>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
 
 
   <div class="container" style="height: 15px";>  </div>
 
-  <div class="container";>
-    <div class="row">
-      <div class="col-sm-7">
-        <h1>
-          Sound and Music Computing
-        </h1>
-        <p>
-          Welcome to the portal of the Sound and Music Computing Community.
-          Here you will find information about the SMC conference and summer school,
-          SMC related research groups and publications and much more.
-        </p>
-
+  <div class="container-fluid">
+    <div class="card-deck mx-auto" style="max-width:1000px">
+      <div class="card" style="max-height:550px">
+        <img class="card-img-top" src="img_1.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Sound and Music Computing Network</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Welcome to the portal of the Sound and Music Computing Community. Here you will find information about the SMC conference and summer school, SMC related research groups and publications and much more.
+          </p>
+        </div>
       </div>
 
-      <div class="col-sm-5">
-        <a class="twitter-timeline" href="https://twitter.com/smcnetorg/lists/smc-network?ref_src=twsrc%5Etfw">A Twitter List by smcnetorg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="card" style="max-height:550px">
+        <a class="twitter-timeline" data-height="1000" data-theme="light" data-link-color="#006580" href="https://twitter.com/smcnetorg/lists/smc-network?ref_src=twsrc%5Etfw">A Twitter List by smcnetorg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+  </div>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div id="about" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 100px">
+      <h1 class="text-center" style="line-height: 100px">About SMC</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_2.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">What is Sound and Music Computing?</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The SMCNetwork.org portal is hosted by the <a href=https://www.upf.edu/web/mtg>Music Technology Group</a>  of the
+            <a href=http://www.upf.edu/>Universitat Pompeu Fabra</a> of Barcelona
+            as a service to the whole SMC community.
+            <br /><br />
+            This initiative was started as an outcome of the <a href=https://www.upf.edu/web/mtg/s2s2>S2S² EU project</a>
+            and it is now under the supervision of the SMC board.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_3.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Board</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The SMC <b>board</b> and <b>Steering Committee</b> includes members from several European countries.
+          </p>
+          <a href="board.html" class="btn" style="background: #1B6884; color: white">Full list</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_4.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Stay connected!</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            If you want to be updated on SMC activities, subscribe to the mailing list of SMCNETWORK through <a href="https://groups.google.com/a/llista.upf.edu/forum/#!forum/smcnetwork">this link</a> using your gmail address account.
+            <br /><br />
+            You can also subscribe to our <a href=https://www.facebook.com/smcnetorg>facebook page</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="container" style="height: 15px";>  </div>
+  </div>
+
+  <div id="smc" class="container-fluid" style="min-height: 100px";>
+    <div style="height: 100px">
+      <h1 class="text-center" style="line-height: 100PX">SMC Conference</h1>
     </div>
 
 
-  <div class="panel-footer panel-custom">Sound and Music Computing Network</div>
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_33.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">How to host SMC</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            If anyone is interested to organize a future edition of SMC, please browse the <a href="http://smcnetwork.org/system/files/SMC-GUIDE.pdf">guidelines</a> and contact the <a href="mailto:smc-committee@googlegroups.com">steering committee</a>.
+            <br /><br />
+            Deadline to submit proposal to organize SMC 2019 is October 30th, 2017.
+          </p>
+        </div>
+      </div>
 
-  <script>
-      $(document).ready(function() {
-    // Custom
-    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-      var stickyHeight = sticky.outerHeight();
-      var stickyTop = stickyWrapper.offset().top;
-      if (scrollElement.scrollTop() >= stickyTop){
-        stickyWrapper.height(stickyHeight);
-        sticky.addClass("is-sticky");
-      }
-      else{
-        sticky.removeClass("is-sticky");
-        stickyWrapper.height('auto');
-      }
-    };
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_31.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Current and past editions</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The SMC Conference is a double-blind peer-reviewed international scientific conference around the core interdisciplinary topics of Sound and Music Computing.
+            <br /><br />
+            The next SMC conference will take place in <a href="http://smc2019.uma.es">Malaga</a>.
+          </p>
+          <a href="conf.html" class="btn" style="background: #1B6884; color: white">List of past conferences</a>
+        </div>
+      </div>
 
-    // Find all data-toggle="sticky-onscroll" elements
-    $('[data-toggle="sticky-onscroll"]').each(function() {
-      var sticky = $(this);
-      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-      sticky.before(stickyWrapper);
-      sticky.addClass('sticky');
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_32.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Proceedings of the SMC Conferences</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            All the papers from the SMC conferences are available at <a href="https://zenodo.org/communities/smc">Zenodo</a>
+          </p>
+        </div>
+      </div>
 
-      // Scroll & resize events
-      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-        stickyToggle(sticky, stickyWrapper, $(this));
-      });
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_30.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Ethic Statements</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The publication of an article in the peer-reviewed and open access Proceedings of the Sound and Music Computing (SMC) Conference requires to agree upon standards of expected ethical behavior for all parties involved in the act of publishing: the author, the editor, the peer reviewer and the publisher.
+          </p>
+          <a href="ethic.html" class="btn" style="background: #1B6884; color: white">Full ethical statement</a>
+        </div>
+      </div>
 
-      // On page load
-      stickyToggle(sticky, stickyWrapper, $(window));
-    });
-    });
-  </script>
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_34.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">SMC summer school</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The Sound and Music Computing summer school promotes interdisciplinary education and research in the field of Sound and Music Computing. It is aimed at graduate students working on their Master or PhD thesis, but it is also open to any person carrying out research in this field.
+          </p>
+          <a href="school.html" class="btn" style="background: #1B6884; color: white">List of past summer schools</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div id="roadmap" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div style="height: 100px">
+      <h1 class="text-center" style="line-height: 100px">Roadmap</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_5.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Scenarios</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+          </p>
+          <a href="scenarios.html" class="btn" style="background: #1B6884; color: white">Full Scenarios</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_6.png" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Definition of the field</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Sound and Music Computing (SMC) research approaches the whole sound and music communication chain from a multidisciplinary point of view. By combining scientiﬁc, technological and artistic methodologies it aims at understanding, modelling and generating sound and music through computational approaches.
+          </p>
+          <a href="definition.html" class="btn" style="background: #1B6884; color: white">Full Definition</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_20.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Context</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            This part addresses the various contexts that determine how the research field of sound and music computing is embedded in a societal framework. Four of these may be identified, namely, the research context, the educational context, the industrial context and the socio-cultural context. The research context is about the state and trends of related scientific and technological developments and their influence on sound and music computing.
+          </p>
+          <a href="context.html" class="btn" style="background: #1B6884; color: white">Full Context</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_21.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Challenges and Strategies</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We identify five broad challenges of relevance to SMC research. The first two are centred on the actual research issues, the third one addresses educational aspects, the fourth one focuses on knowledge transfer and the last one is centred on social concerns.
+          </p>
+          <a href="challenges.html" class="btn" style="background: #1B6884; color: white">Full Challenges and Strategies</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_12.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Conclusions</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Sound and Music Computing is a highly multidisciplinary domain that is at the core of ICT-innovation in the cultural and creative industries. SMC has inherited the impressive artistic, scientific and technological history of Electroacoustic and Computer Music and expanded it into innovative realms such as artificial cognition, neurosciences and interactive design.
+          </p>
+          <a href="conclusions.html" class="btn" style="background: #1B6884; color: white">Full Conclusions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="height: 15px";>  </div>
+  </div>
+
+  <div id="resources" class="container-fluid" style="min-height: 100px";>
+    <div style="height: 100px">
+      <h1 class="text-center" style="line-height: 100px">Resources</h1>
+    </div>
+
+    <div class="card-columns mx-auto" style="max-width:1000px">
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_11.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Events</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            We just created a new <a href="http://smcnetwork.org/resources">resource</a> to list the upcoming conferences and calls for journals related to Sound and Music Computing: <a href="http://conferences.smcnetwork.org/">conferences</a>. Contributions can be made by anyone by forking the repository on github and submitting a pull request: <a href="https://github.com/mtg/conferences">GitHub</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_10.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Research Centers</h3>
+        </div>
+        <div class="card-body">
+          <a href="centers.html" class="btn" style="background: #1B6884; color: white">List of Research Centers</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_13.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Associations</h3>
+        </div>
+        <div class="card-body">
+          <a href="associations.html" class="btn" style="background: #1B6884; color: white">List of Associations</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_14.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Journals</h3>
+        </div>
+        <div class="card-body">
+          <a href="journals.html" class="btn" style="background: #1B6884; color: white">List of Journals</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_15.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Academic Conferences</h3>
+        </div>
+        <div class="card-body">
+          <a href="conferences.html" class="btn" style="background: #1B6884; color: white">List of Academic Conferences</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_16.jpg" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Software Tools</h3>
+        </div>
+        <div class="card-body">
+          <a href="software.html" class="btn" style="background: #1B6884; color: white">List of Software Tools</a>
+        </div>
+      </div>
+
+      <div class="card text-center" >
+        <img class="card-img-top" src="img_9.png" alt="Card image" style="width:100%; max-height: 300px">
+        <div class="card-header">
+          <h3 class="card-title">Nordic SMC</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The Nordic Sound and Music Computing Network (NordicSMC) brings together a group of internationally leading sound and music computing researchers from all five Nordic countries, from Aalborg University (AAU), Aalto University (AALTO), KTH Royal Institute of Technology (KTH), University of Iceland (UoI), and University of Oslo (UiO).
+            <br /><br />
+            The constellation is unique in that the network covers the field of sound and music from the “soft” to the “hard,” including the arts and humanities, the social and natural sciences, and with a high level of technological competency.
+          </p>
+          <a href="https://nordicsmc.create.aau.dk" class="btn" style="background: #1B6884; color: white">Go to Nordic SMC</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
 </body>
 </html>
