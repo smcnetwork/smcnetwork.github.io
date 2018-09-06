@@ -3,32 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   <style>
 
   body {
-    font: Lato, sans-serif;
+    position: relative;
+    font-family: Montserrat, sans-serif;;
     color: #555;
   }
 
-  .dropdown-menu {
-      text-align: center;
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
   }
 
-  .dropdown:hover > .dropdown-menu {
-      display: block;
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
   }
+
 
   .panel-footer.panel-custom {
-    background: #006580;
+    background: #1B6884;
     color: white;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .scrollspy-example {
@@ -37,18 +48,29 @@
     overflow: auto;
   }
 
-  .navbar {
+  .navbar-default {
     font-family: Montserrat, sans-serif;
-    letter-spacing: 1px;
+    background-color: #1B6884;
+    letter-spacing: 2px;
   }
 
-  .jumbotron {
-    font-family: Montserrat, sans-serif;
-    background-image: url("smc_circles.png");
-    background-size: cover;
-    color: white;
-    margin: 0;
-    border-radius: 0 !important;
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
   }
 
   .sticky.is-sticky {
@@ -59,87 +81,70 @@
     z-index: 1000;
     width: 100%;
   }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .nav-pills .nav-link {
+      color: #1B6884;
+  }
+
+  .nav-pills li a:hover, .nav-pills .nav-link.active {
+    color: white !important;
+    background-color: #1B6884 !important;
+  }
+
 </style>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
   <header>
-    <div class="container-fluid" style="padding: 0">
 
-      <a href="index.html" style="text-decoration: none;">
-        <div class="jumbotron">
-          <h1><b>Sound and Music Computing Network</b></h1>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
       </a>
-  </header>
 
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-toggle="sticky-onscroll">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-fill w-100">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbardrop" data-toggle="dropdown">
-              About
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="whatis.html">What is SMC</a>
-              <a class="dropdown-item" href="board.html">Board</a>
-              <a class="dropdown-item" href="connected.html">Stay connected</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              SMC Summer School & Conference
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="host.html">How to host SMC</a>
-              <a class="dropdown-item" href="conf.html">Current and past editions</a>
-              <a class="dropdown-item" href="proceedings.html">SMC proceedings</a>
-              <a class="dropdown-item" href="ethic.html">Ethic Statements</a>
-              <a class="dropdown-item" href="school.html">SMC Summer School</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Roadmap
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="scenarios.html">Scenarios</a>
-              <a class="dropdown-item" href="definition.html">Definition</a>
-              <a class="dropdown-item" href="context.html">Context</a>
-              <a class="dropdown-item" href="challenges.html">Challenges</a>
-              <a class="dropdown-item" href="conclusions.html">Conclusions</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Resources
-            </a>
-            <div style="width:100%;" class="dropdown-menu  dropdown-menu-center">
-              <a class="dropdown-item" href="events.html">Events</a>
-              <a class="dropdown-item" href="centers.html">Centers</a>
-              <a class="dropdown-item" href="associations.html">Associations</a>
-              <a class="dropdown-item" href="journals.html">Journals</a>
-              <a class="dropdown-item" href="conferences.html">Conferences</a>
-              <a class="dropdown-item" href="software.html">Software</a>
-              <a class="dropdown-item" href="NordicSMC.html">NordicSMC</a>
-            </div>
-          </li>
-        </ul>
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
       </div>
-
     </nav>
-  </div>
 
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
 
   <div class="container" style="height: 15px";>  </div>
 
@@ -704,41 +709,7 @@
 
   <div class="container" style="height: 50px";>  </div>
 
-  <div class="panel-footer panel-custom">All content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a> unless otherwise specified.</div>
-
-  <script>
-      $(document).ready(function() {
-    // Custom
-    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-      var stickyHeight = sticky.outerHeight();
-      var stickyTop = stickyWrapper.offset().top;
-      if (scrollElement.scrollTop() >= stickyTop){
-        stickyWrapper.height(stickyHeight);
-        sticky.addClass("is-sticky");
-      }
-      else{
-        sticky.removeClass("is-sticky");
-        stickyWrapper.height('auto');
-      }
-    };
-
-    // Find all data-toggle="sticky-onscroll" elements
-    $('[data-toggle="sticky-onscroll"]').each(function() {
-      var sticky = $(this);
-      var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-      sticky.before(stickyWrapper);
-      sticky.addClass('sticky');
-
-      // Scroll & resize events
-      $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-        stickyToggle(sticky, stickyWrapper, $(this));
-      });
-
-      // On page load
-      stickyToggle(sticky, stickyWrapper, $(window));
-    });
-    });
-  </script>
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
 
 </body>
 </html>
