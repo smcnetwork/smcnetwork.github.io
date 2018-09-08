@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <h2>
+  	Summer School in Sound and Music Computing 2008</h2>
+  <p>
+  	<a href="http://www.casapaganini.org/" target="_blank" title="Casa Paganini, Genova - Italy">Casa Paganini</a>-<a href="http://www.infomus.org/" target="_blank" title="InfoMus Lab - DIST - University of Genova - Italy">InfoMus Lab</a>, Genova, Italy, June 9-11, 2008</p>
+  <p>
+  	This Summer School is organized by Casa Paganini - InfoMus Lab in Genova, Italy, with the goal of promoting interdisciplinary education and research in the field of Sound and Music Computing (SMC). The School is aimed at graduate students working on their Master or PhD thesis, but it is open to any person carrying out research in this field.</p>
+  <p>
+  	This is the fourth SMC Summer School. The first two were organized by the European Project Coordination Action IST-FET S2S&sup2; (Sound to Sense &ndash; Sense to Sound) in Genova (2005) and Barcelona (2006). Last year the Summer School took place in Stockholm.</p>
+  <h3>
+  	Teachers / Scientific Committee</h3>
+  <ul>
+  	<li>
+  		Nicola Bernardini (Conservatory of Padova)</li>
+  	<li>
+  		Antonio Camurri (University of Genova)</li>
+  	<li>
+  		Roberto Doati (Conservatory of Genova)</li>
+  	<li>
+  		Federico Avanzini (University of Padova)</li>
+  	<li>
+  		Giovanni De Poli (University of Padova)</li>
+  	<li>
+  		Goffredo Haus (University of Milano)</li>
+  	<li>
+  		Alexander Jensenius (University of Oslo)</li>
+  	<li>
+  		Ben Knapp (Queens University of Belfast)</li>
+  	<li>
+  		Marc Leman (Ghent University)</li>
+  	<li>
+  		Barbara Mazzarino (University of Genoa)</li>
+  	<li>
+  		Augusto Sarti (Politecnico di Milano)</li>
+  	<li>
+  		Uwe Seifert (University of Koln)</li>
+  	<li>
+  		Stefania Serafin (Aalborg University Copenhagen)</li>
+  	<li>
+  		Xavier Serra (Universitat Pompeu Fabra, Barcelona)</li>
+  	<li>
+  		Gualtiero Volpe (University of Genova)</li>
+  </ul>
+  <h3>
+  	Academic Program</h3>
+  <ul>
+  	<li>
+  		6 hours of lectures by Xavier Serra on &quot;Current Technologies and Trends in Sound Synthesis and Description<a name="xserra" title="xserra"></a>&quot;.</li>
+  	<li>
+  		6 hours of seminars by Antonio Camurri, Gualtiero Volpe, Marc Leman and Stefania Serafin.</li>
+  	<li>
+  		3 hours of oral presentations by the participating students and discussions on their research work with the committee/teachers.</li>
+  	<li>
+  		Poster presentations by the participating students during coffee breaks (1 hour every day of the School).</li>
+  	<li>
+  		6 hours of hands-on activities by the participating students in collaboration with the committee/teachers of the School.</li>
+  </ul>
+  <p>
+  	This year the SMC Summer School is held in connection with the <a href="http://nime2008.casapaganini.org">NIME08 Intl. Conference</a>. The participating students will have free access to the NIME Workshops on June 4 and June 8, including oral presentations and discussions by experts from industries and by leaders of EU funded projects in the field of Sound and Music Computing. The participating students will also benefit of the reduced student fee for admission at the NIME08 Conference (June 4-7).</p>
+  <p>
+  	Lectures are designed to be of interest to any graduate student or researcher in the field of Sound and Music Computing. The topics chosen for this year are Gesture and Music - Embodied Music Cognition, Mobile Music Systems and Active Music Listening, relevant topics in our research fields, which have particular methodologies and research strategies. The lectures will present these particular methodologies and their application in music related problems.</p>
+  <p>
+  	All the participating students will give short presentations on their current research during a speed-talk of four minutes. The emphasis will be given on research questions and particularly on methodological issues related to their research project. Students will receive a written feedback from the teachers that should be useful for the continuation of their research.</p>
+  <p>
+  	All the participating students will present a poster about their PhD work. Posters will be on show for all the duration of the Summer School, with discussions during coffee breaks.</p>
+  <p>
+  	All students will work on mini-projects focusing on the themes of the Summer School. Results of the mini-projects will be presented on the final day of the School. Mini-projects will give the opportunity for hands-on activities such as testing software tools or planning of experiments. The organisers will prepare materials for small projects involving the EyesWeb XMI open software platform (<a href="http://www.eyesweb.org" title="www.eyesweb.org">www.eyesweb.org</a>) on the topics of the school.</p>
+  <h3>
+  	<a name="xserra" title="xserra"></a>Lectures by Xavier Serra</h3>
+  <p>
+  	On the first lecture we will briefly overview the research in Sound and Music Computing by reviewing some historical references and by identifying some current challenges. The second lecture will present some topics on sound synthesis and processing and the last lecture will go over the topic of sound and music description. The lectures will try to explain the technological and conceptual ties that exist between some of the current trends in sound generation for music applications and the techniques for content based sound retrieval. Quite a number of the techniques being worked on for sound retrieval come from the field of sound synthesis and at the same time the new developments in retrieval are being applied and are inspiring new directions in the development of sound generation systems. There will be a special emphasis on the ties between gesture and sound, the current trend towards embodied cognition approaches in sound analysis and synthesis and the current technological possibilities for developing active listening applications. To explain all this examples from the work carried out at the Music Technology Group will be used, such as the research on spectral based concatenative synthesis and on sound and music retrieval. Also the work on the <a href="http://www.freesound.org">freesound.org</a> sound community will be presented, showing the potential that this open and shared resource has for the research on sound retrieval and for experimenting with new sound generation systems.</p>
+  <ul>
+  	<li>
+  		Sound and Music Computing Research: Historical references [<a href="/files/1-SMC-Research-History.pdf">slides</a>, <a href="/files/SMC-research-historical-references.pdf">references</a>].</li>
+  	<li>
+  		Sound and Music Computing Research: Trends and challenges [<a href="/files/2-SMC-Research-Trends-Chalenges.pdf">slides</a>].</li>
+  	<li>
+  		Sound Synthesis and Processing [<a href="/files/3-Sound-Synthesis-Processing.pdf">slides</a>].</li>
+  	<li>
+  		Sound and Music Description [<a href="/files/4-Sound-Music-Description.pdf">slides</a>].</li>
+  </ul>
+  <h3>
+  	<a name="seminars" title="seminars"></a>Seminars</h3>
+  <p>
+  	The school program includes three seminars:</p>
+  <ul>
+  	<li>
+  		The first one, by Antonio Camurri and Gualtiero Volpe, is on <i>Expression and Emotion in Non-verbal Full-body Gesture</i>. It will discuss the role and the impact of emotional, expressive non-verbal gestural communication in active listening of sound and music content. The presentation will start from the early systems developed at InfoMus Lab in the &#39;90s up to the research challenges currently addressed in the EU-ICT Project <a href="http://www.sameproject.eu" target="_blank">SAME</a> (Sound and Music for Everyone, Everyday, Everywhere, Every way).</li>
+  	<li>
+  		The second one, by Marc Leman, focuses on <i>Embodied Music Cognition</i>. Modern digital media tend to handle music as encoded physical energy, while the human way of dealing with music is based on beliefs, intentions, interpretations, experiences, evaluations, and significations. How can this gap be closed? What kind of mediation is needed to bridge the gap? And how can engineers, psychologists, brain scientists, and musicologists contribute to this? What would be a good approach in handling these questions? This presentation will offer a framework for dealing with the above questions.</li>
+  	<li>
+  		The third one, by Stefania Serafin, will discuss <i>Sonic Interaction Design and Multimodal Perception</i>. The talk will illustrate several situations in which interactive auditory feedback affects our perception of tactile and visual cues, and describe how such interactions among the senses can be utilized when designing interactive products [<a href="ftp://ftp.infomus.org/Pub/SMCSS2008/SMCSS_Seminar_StefaniaSerafin_Genova2008.pdf">slides</a>].</li>
+  </ul>
+  <h3>
+  	<a name="students" title="students"></a>Students&#39; posters and speed talks</h3>
+  <ul>
+  	<li>
+  		Vinoo Alluri, University of Jyvaskyla, [<a href="/files/SMCSS_Poster_VinooAlluri_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_VinooAlluri_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Ilaria Boeddu, University of Genova, [<a href="/files/SMCSS_SpeedTalk_IlariaBoeddu_Genova2008.pps" target="_blank">slides</a>]</li>
+  	<li>
+  		Anne-Marie Burns, INRIA, [<a href="/files/SMCSS_Poster_Anne-MarieBurns+_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_Anne-MarieBurns_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Angelo Comino, [<a href="/files/SMCSS_Poster_AngeloComino_Genova2008.pdf" target="_blank">poster</a>] [<a href="ftp://ftp.infomus.org/Pub/SMCSS2008/SMCSS_SpeedTalk_AngeloComino_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Ryan Jordan, Goldsmiths University of London, [<a href="/files/SMCSS_Poster_RyanJordan_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_RyanJordan_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Chris Kiefer, University of Sussex, [<a href="/files/SMCSS_Poster_ChrisKiefer_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_ChrisKiefer_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Boye Riis jr., University of Oslo, [<a href="/files/SMCSS_Poster_BoyeRiis_Genova2008.pdf" target="_blank">poster</a>] [<a href="ftp://ftp.infomus.org/Pub/SMCSS2008/SMCSS_SpeedTalk_BoyeRiis_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Gerard Roma, Pompeu Fabra University, [<a href="/files/SMCSS_Poster_GerardRoma_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_GerardRoma_Genova2008.pdf" target="_blank">slides</a>]</li>
+  	<li>
+  		Anne-Marie Skriver Hansen, Aalborg University, [<a href="ftp://ftp.infomus.org/Pub/SMCSS2008/SMCSS_Poster_Anne-MarieHansen_Genova2008.pdf" target="_blank">poster</a>] [<a href="/files/SMCSS_SpeedTalk_Anne-MarieHansen_Genova2008.pdf" target="_blank">slides</a>]</li>
+  </ul>
+  <h3>
+  	Registration and Information</h3>
+  <p>
+  	Register <a href="/node/873">here</a>. Registration deadline: May 15, 2008.</p>
+  <p>
+  	Students are requested to submit their posters on or before the registration deadline. The regular registration fee is 200 &euro;. This fee also covers the costs for lunch and various evening social events. The registration fee for students is 150 &euro;. This fee also covers the costs for lunch and various evening social events. Payment will be cash at the registration desk.</p>
+  <p>
+  	For more information on the program and on how to apply, please contact: <a href="mailto:smc08@casapaganini.org?subject=SendMeInfo&amp;body=Please,send_me_info">smc08@casapaganini.org</a></p>
+    <div id="book-navigation-250" class="book-navigation">
+
+          <div class="page-links clear-block">
+                <a href="/summer_school/stockholm2007" class="page-previous" title="Go to previous page">‹ Stockholm 2007</a>
+                      <a href="/summer_school" class="page-up" title="Go to parent page">up</a>
+                      <a href="/summerschool/porto2009" class="page-next" title="Go to next page">Porto 2009 ›</a>
+            </div>
+
+    </div>
+  </div>
+      <div class="links">&raquo; <ul class="links inline"><li class="book_printer first"><a href="/book/export/html/872" title="Show a printer-friendly version of this book page and its sub-pages.">Printer-friendly version</a></li>
+  <li class="comment_forbidden last"><span><a href="/user/login?destination=comment%2Freply%2F872%23comment-form">Login</a> or <a href="/user/register?destination=comment%2Freply%2F872%23comment-form">register</a> to post comments</span></li>
+  </ul></div>  </div>
+                </div>
+      </td>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>

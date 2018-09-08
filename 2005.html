@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 700px";>
+    <div class="col-sm-12">
+      <h2>Summer School in Sound and Music Computing</h2>
+
+  <h3>July 25 - 29, 2005 <br />
+  InfoMus Lab - DIST - University of Genova <br />
+  Genova, Italy</h3><p>
+  Organized by the 6th Framework Programme IST FET Open Coordination Action S2S² Project </p>
+  <!-- break -->
+  <div id="centercontent">
+  <h3>Schedule</h3>
+  <p><b><i>Monday 25:</i></b></p>
+
+  <h4>Control Session</h4>
+  <p>
+  <b>9:00 - 9:15</b> - Welcome Address </p>
+
+  <p><b>09:15 - 10.45</b> - Presentations
+  </p><ul>
+  	<li>Gesture in interaction: expressive
+  	control strategies, G.Volpe (DIST) , R.Bresin (KTH)
+  	</li>
+  	<li>The interactive book,
+  	D.Rocchesso, A. De Gotzen (VIPS)
+  	</li>
+  </ul>
+  <p><b>10:45 - 11:00</b> - Coffee break</p>
+  <p><b>11:00 - 13:00</b>  - Invited speakers
+  </p><ul>
+  	<li>New trends in Dynamic Instrumental arts:
+  	Enactive design, A. Luciani (INPG, Grenoble, France)
+  	</li>
+  	<li>Tangible Acoustic Interfaces for
+  	Computer-Human Interaction, (the TAI-CHI Consortium) </li>
+  </ul>
+  <p><b>13:00 - 14:00</b> - Lunch</p>
+  <p><b>14:00 - 17:00</b> - Workshop: One to many or Many to one: Mapping strategies for the future</p>
+  <ul>
+  	<li>Presentation, R. Bresin (KTH)
+  	</li>
+  	<li>Demonstration: Home conducting, A. Friberg (KTH)
+  	</li>
+  	<li>Opponent, E. Bigand (LEAD)
+  	</li>
+  	<li>Discussion </li>
+  </ul>
+  <p><b><i>Tuesday 26:</i></b>
+  </p><h4>Music Session</h4>
+  <p><b>09.00 - 10.45</b> - Presentations
+  </p><ul>
+  	<li><span class="textit">Making Sense of Sound and Music: An
+  	artificial intelligence View</span>, G. Widmer (ÖFAI)
+  	</li>
+  	<li><span class="textit">Sound and Sense: historical and
+  	philosophical view point</span>, M. Leman (IPEM)
+  	</li>
+  	<li><span class="textit">Musical Creation and Technological
+  	Innovation</span>, N. Bernardini (MIU-FT)
+  	</li>
+  	<li><span class="textit">Musical Learning and new technologies</span>,
+  	E. Bigand (LEAD) </li>
+  </ul>
+  <p><b>10.45 - 11.00</b> - Coffee Break</p>
+  <p><b>11:00 - 13:00</b> - Invited speakers
+  </p><ul>
+  	<li><span class="textit">The Music Access Problem</span>, F.
+  	Pachet (Sony CSL)
+  	</li>
+  	<li><span class="textit">Music and research in the 21st century</span>,
+  	T. Myatt (University of York) </li>
+  </ul>
+
+  <p><b>13:00 - 14:00 - </b>Lunch</p>
+  <p><b>14:00 - 17:00 </b>- Workshop: Creativity and Innovative Technology
+  </p><ul>
+  	<li>Presentation, M. Leman (IPEM)</li>
+  	<li>Focus on Music similarity in:
+  	<ul>
+  		<li>Interactive Systems, F. Pachet (Sony CSL) </li>
+  		<li>Music Information Retrieval, G. Widmer (ÖFAI) </li>
+  		<li>Music Composition, T. Myatt (University of York) </li>
+  	</ul>
+  	</li>
+  	<li>Opponent, N. Bernardini</li>
+  	<li>Discussion</li>
+  </ul>
+  <p><b><i>Wednesday 27:</i></b></p>
+  <h4>Audio Session 1</h4>
+  <p><b>09.00 - 10.45 - </b>Presentations
+  </p><ul>
+  	<li><span class="textit">Content-based Audio Processing</span>,
+  	X. Serra (UPF) </li>
+  	<li><span class="textit">Physics-based Sound Synthesis</span>, C.
+  	Erkut (HUT) </li>
+  	<li><span class="textit">Sound Design and Auditory Displays</span>,
+  	P. Polotti (VIPS) </li>
+  	<li><span class="textit">Auditory Perception/Cognition: Cochlea
+  	to Cortex</span> - A. de Cheveigné (ENS) </li>
+  	<li><span class="textit">Interactive sound</span>, F. Avanzini
+  	(DEI) </li>
+  </ul>
+  <p><b>10.45 - 11.00</b> - Coffee Break</p>
+
+  <p><b>11:00 - 13:00 - </b>Invited speakers
+  </p><ul>
+  	<li>Perception and recognition of
+  	sounding objects, S. McAdams (McGill University)
+  	</li>
+  	<li><span class="textit">title</span> <span class="textit">Audio Engineering in Music Information Retrieval</span>, M. Sandler (Queen Mary, University of London) </li>
+  </ul>
+  <p><b>13:00 - 14:00</b> - Lunch</p>
+  <p><b>14:00 - 17:00</b>- Workshop:Application of auditory models in audio DSP
+  </p><ul>
+  	<li>Presentation, A. de Cheveigné (ENS) </li>
+  	<li>Demonstration: <span class="textit">Real-time auditory
+  	processing based on auditory models</span>, D. Pressnitzer, D. Gnansia
+  	(ENS) </li>
+  	<li>Opponent, G. De Poli (DEI) </li>
+  	<li>Discussion </li>
+  </ul>
+  <p><b><i>Thursday 28:</i></b></p>
+  <h4>Audio Session 2 and FET session</h4>
+  <p><b>09:00 - 12:00</b> - Workshop: Physics-based sound synthesis of plucked string instruments
+  </p><ul>
+  	<li>Presentation, V. Valimaki (TKK) </li>
+
+  	<li>Demonstration, H. Penttinen (TKK) </li>
+  	<li>Opponent, D. Rocchesso (VIPS) </li>
+  	<li>Discussion </li>
+  </ul>
+  <p><b>12:00 - 13:00</b> - General discussion/informal demos</p>
+  <p><b>13:00 - 14:00</b> - Lunch
+  </p><p> <b>14:00 - 17:00</b> - Future and Emerging Technology session (invited speakers)
+  </p><ul>
+  	<li><span class="textit"></span><span class="textit">Intentional attunement: neural mechanisms of intersubjectivity.</span>, V. Gallese (Universita di Parma)
+  	</li>
+  	<li><span class="textit">Architecture of Dissonance</span>, R.
+  	Pierantoni </li>
+  	<li><span class="textit">Vision-graphics convergence techniques
+  	for immersive videoconferencing</span>, E.Trucco (Heriot-Watt
+  	University) </li>
+  </ul>
+  <p><b><i>Friday 29:</i></b> </p>
+  <h4>Roadmap session</h4>
+
+  <p><b>09:00 - 12:00</b> - Toward a Research Roadmap
+  </p><ul>
+  	<li>Keynote speaker David Vernon (CAPTEC Ltd., EC Vision Network)
+  	</li>
+  	<li>S2S²: report on the first year activities, N.
+  	Bernardini, D. Cirotteau (MIU-FT)
+  	</li>
+  	<li>Merging and future collaborations
+  	</li>
+  	<li>Critical evaluation of the summer school (UPF) </li>
+  </ul>
+  <p>&nbsp;</p>
+  <h2> Steering Comittee</h2>
+  <ul>
+  	<li><u>Nicola    Bernardini</u>     and    <u>Damien    Cirotteau</u>,    <a href="http://www.miu-ft.org">    Media    Innovation   Unit,    Firenze
+  	Tecnologia,</a>,   Firenze,   Italy, Coordinator   of  the   S2S^2
+  	project </li>
+  	<li><u>Roberto     Bresin</u>    and    <u>Anders     Friberg</u>,    <a href="http://www.speech.kth.se/" target="New">KTH-Kungl     Tekniska
+  	Högskolan</a>, Stockholm, Sweden</li>
+  	<li>
+  	<u>Giovanni   De   Poli</u>    and   <u>   Federico   Avanzini</u>,   <a href="http://www.dei.unipd.it/ricerca/csc/index.html" target="New">CSC-DEI</a>, University of Padova, Padova, Italy
+  	</li>
+  	<li>
+  	<u>Davide     Rocchesso</u>     and     <u>Pietro    Polotti</u>,     <a href="http://www.di.univr.it/dol/main?lab=en" target="New"> DI-VIPS,</a>
+  	University of Verona, Verona, Italy
+  	</li>
+  	<li>
+  	<u>Antonio    Camurri</u>    and    <u>    Gualtiero    Volpe</u>,    <a href="http://www.infomus.dist.unige.it" target="New">DIST-InfoMus
+  	Lab</a>, Università degli Studi di Genova, Genova, Italy
+  	</li>
+  	<li>
+  	<u>Vesa Valimaki</u> and <u> Cumhur Erkut</u>, <a href="http://www.acoustics.hut.fi/" target="New">
+  	Helsinki University of Technology -
+  	<span class="standard-large">Laboratory of Acoustics and Audio Signal
+  	Processing</span></a>, Espoo,
+  	Finland
+  	</li>
+  	<li>
+  	<u>Alain   de   Cheveigné</u>,   <a href="http://www.cognition.ens.fr" target="New">PECA-DEC</a>,    Ecole     Normale    Supérieure,    Paris,
+  	France
+  	</li>
+  	<li>
+  	<u>Marc       Leman</u>,       <a href="http://www.ipem.rug.ac.be" target="New">IPEM</a>, Ghent University, Ghent, Belgium
+  	</li>
+  	<li>
+  	<u>Emmanuel Bigand</u>, <a href="http://www2.u-bourgogne.fr/LEAD/" target="New">LEAD</a>, Université de Dijon, Dijon, France
+  	</li>
+  	<li>
+  	<u>Xavier     Serra</u>      and     <u>     Xavier     Amatriain</u>,<a href="http://www.iua.upf.es/mtg/eng/" target="New">  Universitat Pompeu
+  	Fabra - Music Technology Group</a>, Barcelona, Spain
+  	</li>
+  	<li>
+  	<u>Gerhard Widmer,</u> <a href="http://www.oefai.at/" target="New">
+  	ÖFAI</a>, Austrian Research Institute for Artificial
+  	Intelligence,
+  	Vienna, Austria
+  	</li>
+  </ul>
+  <h3>Local Organizing  Committe</h3>
+  <ul>
+  	<li> Antonio Camurri
+  	</li>
+  	<li>Ginevra Castellano
+  	</li>
+  	<li>Roberto Chiarvetto
+  	</li>
+  	<li>Barbara Mazzarino
+  	</li>
+  	<li>Francesca Sivori
+  	</li>
+  	<li>Ilaria Vallone
+  	</li>
+  	<li>Gualtiero Volpe
+  	</li>
+  </ul>
+  <h2> Registration</h2>
+  <p align="justify">
+  People interested in attending the 1st S2S<sup>2</sup> Summer School are required to register by sending an e-mail to <a href="mailto:info-summerschool@s2s2.org">info-summerschool@s2s2.org</a>
+  </p>
+  <p align="justify">
+  The e-mail should include the following information:
+  </p>
+  <p align="justify">
+  Title<br />
+  First names<br />
+  Family name <br />
+  Organisation/Department<br />
+  Street/PO Box<br />
+  Postal Code<br />
+  City<br />
+  Country<br />
+  <br />
+  Other contact information (fax, telephone), if available.<br />
+  Web page, if available
+  </p>
+  <p align="justify">
+  The email should also include a short curriculum highlighting research interests and the reasons for participation. The steering committee will select participants depending on such information.
+  </p>
+  <p align="justify">
+  Note that participants are asked to actively contribute to the preparation of the school, for example by sharing material using the Internet infrastructure of S2S<sup>2</sup>.
+  </p>
+  <p align="justify">
+  Registration must be performed on or before May 1st, 2005. The Steering Committee decisions on confirmation of registration will be made on or before May 15th, 2005.
+  </p>
+  <h2>Registration Fees</h2>
+  <br />
+  <br />
+  <div align="center">
+  <table id="Table1" border="1" height="89" width="568">
+  	<tbody>
+  		<tr>
+  			<td align="left" width="1133">
+  			<p align="left">
+  			<span style="font-family: Arial"> Participants from the S2S<sup>2</sup> partners and from other participating EU project (EU IST TAI-CHI, ENACTIVE, HUMAINE and ConGAS)</span>
+  			</p>
+  			</td>
+  			<td align="right" width="165"><span style="font-family: Arial"> <b>Free</b></span></td>
+  		</tr>
+  		<tr>
+  			<td align="left" width="1133"><span style="font-family: Arial">External participants</span></td>
+  			<td align="right" width="165"><span style="font-family: Arial"> <b>200 Euro</b></span></td>
+  		</tr>
+  	</tbody>
+  </table>
+  </div>
+  <p align="center">&nbsp;</p>
+  <h2>Dates</h2>
+  <p align="center">
+  <table align="center" border="1" cellpadding="1" cellspacing="1" width="80%">
+  	<tbody>
+  		<tr>
+  			<td><span style="font-size: medium"> Registration </span></td>
+  			<td><span style="font-size: medium"> June 25, 2005 </span></td>
+  		</tr>
+  		<tr>
+  			<td><span style="font-size: medium"> First Confirmation of registration</span></td>
+  			<td><span style="font-size: medium"> June 15, 2005 </span></td>
+  		</tr>
+  		<tr>
+  			<td><span style="font-size: medium"> Second Confirmation of registration</span></td>
+  			<td><span style="font-size: medium"> June 30, 2005 </span></td>
+  		</tr>
+  		<tr>
+  			<td><span style="font-size: medium"> S2S<sup>2</sup> Summer School</span></td>
+  			<td><span style="font-size: medium"> July 25-29, 2005 </span></td>
+  		</tr>
+  	</tbody>
+  </table>
+  </p>
+  </div>
+    </div>
+  </div>
+
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>

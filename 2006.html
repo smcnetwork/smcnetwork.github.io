@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <h2>Summer School in Sound and Music Computing</h2>
+  <h3> Universitat Pompeu Fabra<br />
+  Barcelona, Spain<br />
+  July 24-28, 2006 </h3>
+  <p>
+  This Summer School is organized by the S2S²
+  project and the <a href="http://mtg.upf.edu">Music Technology Group</a>
+  of the <a href="http://www.upf.edu/">Universitat Pompeu Fabra</a> in Barcelona,
+  with the goal to promote interdisciplinary education and research in the
+  field of Sound and Music Computing. The School is aimed at graduate students
+  working on their Master or PhD thesis, but it is open to any person carrying
+  out research in this field.
+  </p>
+  <p>
+  This is the second Summer School organized by S2S², last year it took place
+  in Genova.
+  </p>
+  <table border="1" width="100%">
+  	<tbody>
+  		<tr bgcolor="#ffffff">
+  			<td width="6%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#teachers">Teachers</a></span>
+  			</p>
+  			</td>
+  			<td width="13%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#experts">Invited
+  			experts</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#program">Program</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#application">Application</a></span>
+  			</p>
+  			</td>
+  			<td width="10%">
+  			<p>
+  			<a href="#registration"><span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">Registration
+  			fee</span></a>
+  			</p>
+  			</td>
+  			<td width="16%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#travelling">Travelling</a></span>
+  			</p>
+  			</td>
+  			<td width="13%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#social">Social
+  			events</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#venue">Venue</a></span>
+  			</p>
+  			</td>
+  			<td width="6%">
+  			<p>
+  			<a href="http://www.s2s2.org/content/view/111/107/"><span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">Report</span></a>
+  			</p>
+  			</td>
+  		</tr>
+  	</tbody>
+  </table>
+  <h3><a id="teachers" name="teachers" title="teachers"></a>Teachers</h3>
+  <ul>
+  	<li>Roberto Bresin ( Royal Institute of Technology, Stockholm) </li>
+  	<li>Nicola Bernardini (Conservatory of Padova)</li>
+  	<li>Antonio Camurri (University of Genova) </li>
+  	<li>Alain De Cheveigné (Ecole Normale Supérieure, Paris)</li>
+  	<li>Henkjan Honing (University of Amsterdam)</li>
+  	<li>Marc Leman (University of Ghent)</li>
+  	<li>Xavier Serra (Pompeu Fabra University, Barcelona)</li>
+  	<li>Giovanni De Poli (University of Padova)</li>
+  	<li>Davide Rocchesso (University of Verona)</li>
+  	<li>Vesa Valimaki (Helsinki University of Technology) </li>
+  	<li>Bill Verplank (Stanford University)</li>
+  	<li>Gerhard Widmer (Johannes Kepler University Linz)</li>
+  </ul>
+  <h3><a id="experts" name="experts" title="experts"></a>Invited Experts</h3>
+  <ul>
+  	<li>
+  	<p>
+  	<a href="http://research.nokia.com/people/jyri_huopaniemi/index.html">Jyri
+  	Huopaniemi</a> (Nokia Research Center, Helsinki)
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	<a href="http://www.mti.dmu.ac.uk/%7Ellandy/">Leigh Landy</a> (Music, Technology
+  	and Innovation Research Centre, De Montfort University, Leicester)
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	<a href="http://www.fabienlevy.net">Fabien Levy</a> (Columbia University,
+  	New York)
+  	</p>
+  	</li>
+  	<li>Pierre Louis Xech (Microsoft Research, Cambridge)</li>
+  </ul>
+  <h3><a id="program" name="program" title="program"></a>Academic Program</h3>
+  <ul>
+  	<li> 6 hours of lectures by Bill Verplank on Interface Design and 6 hours
+  	of lectures by Henkjan Honing on Music Cognition.</li>
+  	<li> 9 hours of presentations by the participating students and discussions
+  	on their research work.</li>
+  	<li> 20 hours of presentations and discussions related to the S2S² Sound
+  	and Music Computing Roadmap.</li>
+  </ul>
+  <p>
+  The lectures are designed to be of interest to any graduate student or
+  researcher in the field of Sound and Music Computing. The topics chosen
+  for this year are Interface Design and Music Cognition; relevant topics
+  in our research fields which have particular methodologies and research
+  strategies. The lectures will present these particular methodologies and
+  their application in Music related problems.
+  </p>
+  <p>
+  All the participating students will give short presentations on their
+  current research. The emphasis will be given to methodological and context
+  issues. Thus each presentation should emphasize the methodological approach
+  chosen and the scientific, technological and industrial context of the research.
+  The discussions will give feed back to the students that should be useful
+  for the continuation of their research.
+  </p>
+  <p>
+  The main topic of the summer school will be the <a href="http://www.s2s2.org/roadmap">Roadmap</a>
+  on Sound and Music Computing that is being written as part of the S2S² project.
+  There will be special lectures by invited experts and discussions on two
+  major parts of the Roadmap, the industrial and the cultural contexts of
+  the field. In particular the focus will be given to the academic research
+  and both its relationship with the industrial exploitation and its use in
+  contemporary music production. The resulting discussions will contribute
+  to the roadmap.
+  </p>
+  <p>
+  <b>Program schedule: </b>
+  </p>
+  <table border="1" width="100%">
+  	<tbody>
+  		<tr bgcolor="#cccccc">
+  			<td height="24" width="5%">&nbsp;</td>
+  			<td width="17%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Monday 24th</span></b>
+  			</div>
+  			</td>
+  			<td colspan="2" width="16%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Tuesday
+  			25th</span></b>
+  			</div>
+  			</td>
+  			<td width="16%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Wednesday 26th
+  			</span></b>
+  			</div>
+  			</td>
+  			<td width="22%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Thursday 27th</span></b>
+  			</div>
+  			</td>
+  			<td width="24%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Friday 28th</span></b>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">9:00</span></td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b>Music Cognition</b></i><br />
+  			Henkjan Honing<br />
+  			</span>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="http://ccrma.stanford.edu/%7Everplank/S2S/">Interface
+  			Design</a></b></i><br />
+  			Bill Verplank</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td bgcolor="#ffffff">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b>Music
+  			Cognition</b></i><br />
+  			Henkjan Honing<br />
+  			</span>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">Workshop: <i><br />
+  			<b><a href="#workshopsocial">Social and cultural context for Sound
+  			and Music Computing</a></b></i><br />
+  			Moderator: Marc Leman<br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">Workshop: <i><br />
+  			<b><a href="#workshopindustrial">Industrial context for Sound and
+  			Music Computing</a></b></i><br />
+  			Moderator: Xavier Serra</span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">11:00<br />
+  			</span></td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Coffee
+  			break </span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">11:15</span>
+  			<p>&nbsp;</p>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #333333"><i><b><a href="http://ccrma.stanford.edu/%7Everplank/S2S/">Interface
+  			Design</a></b></i><br />
+  			Bill Verplank<br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #333333"><i><b>Music
+  			Cognition</b></i><br />
+  			Henkjan Honing<br />
+  			</span>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #333333"><i><b><a href="http://ccrma.stanford.edu/%7Everplank/S2S/">Interface
+  			Design</a></b></i><br />
+  			Bill Verplank</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">(+) Workshop: <i><br />
+  			</i></span><span style="font-size: x-small; color: #000000"><i><b><a href="#workshopsocial">Social
+  			and cultural context for Sound and Music Computing</a></b></i></span><span style="font-size: x-small; color: #333333"><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">(+) Workshop: <i><br />
+  			<b><a href="#workshopindustrial">Industrial context for Sound and
+  			Music Computing</a></b></i><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">13:00<br />
+  			</span></td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Lunch</span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">14:00</span></td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b>Scientific
+  			context of research</b></i><br />
+  			Moderator: Alain de Cheveigné</span>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><a href="#students">Presentation by students</a></i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b>Social
+  			context of research</b></i><br />
+  			Moderator: Nicola Bernardini</span>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><a href="#students">Presentation by students</a></i></span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b>Industrial
+  			context of research</b></i></span> <br />
+  			<span style="font-size: x-small; color: #000000">Moderator: Vesa Valimaki</span>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><a href="#students">Presentation by students</a></i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">(+) Workshop: <i><br />
+  			</i><i><b><a href="#workshopsocial">Social and cultural context
+  			for Sound and Music Computing</a></b></i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><b>Critical evaluation
+  			and discussion <br />
+  			about the summer school<br />
+  			</b>Moderator: Roberto Bresin<br />
+  			</span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">15:45<br />
+  			</span></td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Coffee
+  			break </span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">16:00 </span>
+  			<p>&nbsp;</p>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i>
+  			<br />
+  			Discussion<br />
+  			</i> </span>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i>
+  			<br />
+  			Discussion</i><br />
+  			</span>
+  			</div>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i>
+  			<br />
+  			Discussion</i><br />
+  			</span>
+  			</div>
+  			<div align="center">
+  			<p>
+  			<a href="http://www.iua.upf.es/%7Eegomez/thesis"><span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">
+  			</span></a>
+  			</p>
+  			</div>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif; color: #000000">Workshop:
+  			<i> <b>Towards a shared and modular curriculum on SMC</b></i><br />
+  			Moderator: Giovanni de Poli</span>
+  			</div>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; color: #000000">Visit to the <a href="/smc/www.mtg.upf.edu">Music
+  			Technology Group</a>, Universitat Pompeu Fabra</span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc" height="30"><span style="font-size: x-small">17:00 </span> </td>
+  			<td colspan="2">
+  			<p align="center">
+  			<a href="http://www.iua.upf.es/%7Eegomez/thesis"><span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">PhD
+  			defense</span></a>
+  			</p>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">21:00<br />
+  			</span></td>
+  			<td bgcolor="#cccccc">&nbsp;</td>
+  			<td bgcolor="#cccccc">
+  			<p align="center">
+  			<span style="font-size: x-small"><a href="#social">Banquet</a>
+  			</span>
+  			</p>
+  			</td>
+  			<td bgcolor="#cccccc">
+  			<p align="center">
+  			<span style="font-size: x-small"><a href="#social">Concert</a></span>
+  			</p>
+  			</td>
+  			<td bgcolor="#cccccc">
+  			<p align="center">
+  			<span style="font-size: x-small"><a href="#social">Concert</a></span>
+  			</p>
+  			</td>
+  			<td bgcolor="#cccccc">
+  			<p align="center">
+  			<span style="font-size: x-small"><a href="#social">Concert</a></span>
+  			</p>
+  			</td>
+  			<td bgcolor="#cccccc">&nbsp;</td>
+  		</tr>
+  	</tbody>
+  </table>
+  <p>
+  <b><a id="students" name="students" title="students"></a>Student presentations (15 minutes
+  each): </b>
+  </p>
+  <p>
+  Scientific context: Monday 24th of July
+  </p>
+  <ul>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Evolving populations of computational models
+  	and applications to expressive music performance</b>&quot; - <span style="color: #ff0000">Amaury
+  	Hazan<br />
+  	<i><span style="color: #000000">In the context of expressive performance modeling,
+  	we aim to induce expressive performance models using a performance database
+  	which was extracted from a set of acoustical recordings. We propose a new
+  	approach called Evolutionary Population of Generative Models (EPGM) based
+  	on Evolutionary Computation (EC). We present a first instantiation of EPGM
+  	based on Strongly Typed Genetic Programming (STGP), in which the evolved
+  	programs are constrained to have the structure of Regression Trees. We show
+  	this approach is more flexible than well-established machine learning approaches
+  	because (i) it evolves a population of models which may produce different
+  	predictions, (ii) it enables the use of custom data types at different levels
+  	(primitives inputs and outputs, prediction type), (iii) it enables the use
+  	of elaborate and possibly domain-specific accuracy measurements. We illustrate
+  	this latter point by presenting a fitness function based on melodic similarity
+  	which was fit to human judgement based on a listening experiment. We finally
+  	show this approach can be applied to high level transformations (e.g. mood)
+  	and present some future EPGM extensions. </span></i></span>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b><a href="/smc/Delphine_presentationsssmc2006.pdf">Depth
+  	perception</a></b>&quot; - <span style="color: #ff0000">Delphine Devallez</span><br />
+  	<i>The present research work deals with depth perception, and how to render
+  	sound sources spatially separated in distance and give a sense of perspective.
+  	Over the past decades, the majority of research on spatial sound reproduction
+  	has concentrated on directional localization, resulting in increasingly
+  	sophisticated virtual audio display systems capable of providing very accurate
+  	information about the direction of a virtual sound source. However it is
+  	clear that full 3-dimensional rendering also requires an understanding of
+  	how to reproduce sound source distance. Since a few years a couple of researchers
+  	in psychology, neuroscience and computer engineering have shown interest
+  	for this third dimension, that could further enlarge the bandwidth of interaction
+  	in multimodal display and provide newly designed interfaces. Moreover since
+  	display technology is already able to produce visual depth, it seems natural
+  	to enrich the sounds of objects and events with information about their
+  	relative distance to the user. From a technological point of view, the auditory-visual
+  	interactions resulting from this multimodal presentation of information
+  	should then be taken into account and further scientifically investigated
+  	, since they are still poorly understood in particular with regard to depth
+  	perception.</i>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Gesture based instrument synthesis</b>&quot;
+  	- <span style="color: #ff0000">Alfonso Pérez</span><br />
+  	<i>Synthesis of traditional music instruments has been an active research
+  	area and there exist successful implementations of instruments with low
+  	degree of control like non-sustained excitation instruments. But for instruments
+  	with sustained excitation, such as bowed strings or wind instruments, where
+  	the interaction between instrument and performer is continuous, the quality
+  	of existing models is far from realistic. In general, musical instrument
+  	synthesis techniques try to model the instrument but forget about the interaction
+  	between performer and instrument, that is musically much more relevant than
+  	the instrument itself. This interaction covers expressivity, the intentional
+  	nuances and gestures that make the performer, but also what we call naturalness,
+  	that is, non intentional gestures made by the performer due to the physical
+  	constraints of the instrument, the playing technique, etc. These non-intentional
+  	gestures give a specific flavor to the sound of the performance, that make
+  	it sound natural and realistic. </i><i>We can roughly classify the existing
+  	synthesis techniques into two categories: Physical models that focus on
+  	physical phenomena of sound production, and spectral models that focus on
+  	sound perception. With physical models naturalness and expressivity can
+  	hardly be reached without the need of controlling a huge amount of parameters,
+  	that require the instrument itself, as well as a mastery comparable with
+  	the traditional performer and spectral models lack of performer interaction
+  	and articulation, that is, gestures. The aim of this work is to try to improve
+  	the quality in instrument sound synthesis, specifically for the violin family.
+  	We propose a hybrid model between spectral and physical models to take advantage
+  	of the characteristics of both approaches, focusing on the gestures of the
+  	performer with the objective to provide naturalness in the synthesis.</i>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Expressive gesture and music: analysis
+  	of emotional behavior in music performances</b>&quot; - <span style="color: #ff0000">Ginevra
+  	Castellano</span><br />
+  	<i>I present some examples of analysis of music performances aiming at
+  	investigating the role of expressive gesture in music, with a special focus
+  	on recognition of emotions. I performed an experiment in which two musicians,
+  	a pianist and a cello player, played an excerpt from the Sonate no 4 op
+  	102/1 for piano and cello from L. van Beethoven in different emotional conditions.
+  	I show how to extract expressive movement features from music performance
+  	and preliminary results from the analysis of such data. The experiment has
+  	been carried out in collaboration with GERG. Feature extraction is performed
+  	in real-time by the new EyesWeb 4 open platform (available at <a href="http://www.eyesweb.org" title="www.eyesweb.org">www.eyesweb.org</a>).</i>
+  	</div>
+  	</li>
+  	<li>&quot;<b>Mapping from perception to sound generation</b>&quot;
+  	- <span style="color: #ff0000">Sylvain Legroux</span></li>
+  	<li>&quot;<b>The role of audiofeedback to improve motor performance of
+  	subjects</b>&quot; - <span style="color: #ff0000">Giovanna Varni</span></li>
+  </ul>
+  <p>
+  Social &amp; Cultural context: Tuesday 25th of July
+  </p>
+  <ul>
+  	<li>
+  	<div align="justify">
+  	&quot;<a href="/smc/mcdermott.pdf"><b>Musical interfaces
+  	accessible to novices</b></a>&quot; - <span style="color: #ff0000">James Mc
+  	Dermott<br />
+  	</span><i>Our research focusses on one sub-task of musical composition,
+  	that of setting synthesizer parameters. We use interactive Evolutionary
+  	Computation (iEC) to aid inexperienced users in controlling synthesizers:
+  	it allows an iterative design process in which the user's main task is judging
+  	results, rather than constructing solutions. We discuss potential advances
+  	in iEC, including a new interface component and a method of supplementing
+  	it with non-interactive EC. We also present results on non-interactive EC
+  	performance. We discuss the possibilities of applying the same approach
+  	to other sub-tasks of composition; and finally we imagine the implications
+  	of using the iEC approach to remove the constraints of skill and prior knowledge
+  	from the composition process, so that it becomes purely a matter of taste.
+  	</i>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Voice analysis for singing education</b>&quot;
+  	- <span style="color: #ff0000">Oscar Mayor</span><br />
+  	<i>The current research in tools for singing education consists mainly
+  	in real-time tools with visual feedback giving information about tuning
+  	and tempo of the singing performance and voice quality characteristics,
+  	referring to timbre and formants of the singer’s voice. These tools
+  	mainly use real-time visualization of pitch curve against time and short-term
+  	spectrum or spectrogram giving instantaneous visual feedback to the performer.
+  	In this talk a system for evaluating singing performances is presented where
+  	the singing performance is analyzed using a MIDI score as reference and
+  	a visual expressive transcription of the performance is given as a result.
+  	The expression transcription consist on the notes in the MIDI score aligned
+  	to the user performance and each note segmented into sub-regions (attack,
+  	sustain, release, transition, vibrato). Each region is labeled with the
+  	kind of expression detected by the system following a set of heuristic rules
+  	based on analysis descriptors. The expression labels assigned to each sub-region
+  	are based in a previous expression categorization done manually from a large
+  	set of singing performance executions in order to distinguish between common
+  	resources used by singers in pop-rock music. Some analysis descriptors can
+  	be also visualized simultaneously by the performer to have a rich visual
+  	feedback of the performance. </i>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Visual feedback in learning to perform
+  	music</b>&quot; - <span style="color: #ff0000">Alex Brandmeyer<br />
+  	<i><span style="color: #000000">The use of visual feedback to aid musicians in
+  	improving their performances has recently been researched using different
+  	visual representations and analysis techniques. We recently conducted experiment
+  	in which percussion students imitated different patterns recorded by a teacher
+  	with and without the use of visual feedback. In the experiment we used a
+  	real drum kit with contact microphones attached to record data about the
+  	timing and dynamics of the performances. We provided 2 different forms of
+  	visual feedback as well as a control condition with no visual feedback to
+  	test the effects of visual feedback and the type of visual representation
+  	on performance accuracy. The first form of feedback, analytic, utilized
+  	a scrolling display similar to a musical score, while the second, holistic,
+  	presented a changing shape drawn using probabilities generated by a real
+  	time statistical analysis of the incoming notes. Qualitative feedback from
+  	the subjects indicated that the visual feedback was found to be useful.
+  	We are currently doing further analysis of the data collected to see if
+  	the visual feedback improved performance, and if so, in what ways</span></i>.
+  	</span>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b><a href="/smc/sssmc-eguaus.pdf">The rigid boundaries
+  	of musical genres</a></b>&quot; -<span style="color: #ff0000"> Enric Guaus<br />
+  	</span><i>One of the most active areas in Music Information Retrieval is
+  	that of building automatic genre classification systems. Most of their systems
+  	can achieve good results (80% of correct decisions) when the number of genres
+  	to be classified is small (i.e. less than 10). They usually rely on timbre
+  	and rhythmic features that do not cover the whole range ofmusical facets,
+  	nor the whole range of conceptual abstractness that seem to be used when
+  	humans perform this task. The aim of our work is to improve our knowledge
+  	about the importance of different musical facets and features on genre decisions.
+  	We present a series of listening experiments where audio has been altered
+  	in order to preserve some properties of music (rhythm, timbre, harmonics…)
+  	but at the same time degrading other ones. The pilot experiment we report
+  	here used 42 excerpts of modified audio (representing 9 musical genres).
+  	Listeners, who had different musical background, had to identify the genre
+  	of each one of the excerpts.</i>
+  	</div>
+  	</li>
+  	<li>&quot;<b>Programming for the Masses - Computer Music Systems as Visual
+  	Programming Languages</b>&quot; - <span style="color: #ff0000">Guenter Geiger</span></li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Intonation and expression: a study and
+  	model of choral intonation practices</b>&quot; - <span style="color: #ff0000">Johanna
+  	Devaney</span><br />
+  	<i>The modeling of choral intonation practices, much like those of non-fretted
+  	string ensembles, presents a unique challenge because at any given point
+  	in a piece a choir’s tuning cannot be consistently related to a single
+  	reference point; rather a combination of horizontal and vertical musical
+  	factors form the reference point for the tuning. The proposed methodology
+  	addresses the conflict through a combination of theoretical and technological
+  	approaches. In the theoretical approach, the vertical tendencies are addressed
+  	in relation to the harmonic series and theories of sensory consonance, while
+  	the horizontal tendencies are examined in terms of recent theories of tonal
+  	tension and attraction. The technological, or computational, approach uses
+  	statistical machine learning techniques to build a model of choral intonation
+  	practices from the microtonal pitch variations between recorded choral performances.
+  	The observed horizontal intonation practices may then be examined as expressive
+  	phenomena by taking the horizontal tendencies inferred from the tension
+  	models as a norm, and then viewing musically appropriate deviations from
+  	this norm as expressive phenomena. Thus horizontal intonation practices
+  	may be related to not only to musical expectation but also musical meaning
+  	or emotion, as it relates to performance. </i>
+  	</div>
+  	</li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Object Design for Tangible Musical Interfaces</b>&quot;-
+  	<span style="color: #ff0000">Martin Kaltenbrunner</span><br />
+  	<i>This research focuses on the design of passive tactile features for
+  	tangible user interface components and their relation to arbitrarily assigned
+  	acoustic descriptions. Tactile dimensions such as surface structure, temperature,
+  	weight, the global shape and size allow the classification of passive tangibles
+  	into generic object classes and specific object instances. Within the context
+  	of the reacTable, a modular electro-acoustic synthesizer with a tangible
+  	user interface, these tactile features can be used to encode the various
+  	synthesizer components in the haptic domain allowing the easy object identification
+  	with a simple grasp or hand enclosure. The acoustic properties of the synthesizer
+  	components will be defined with adjectives describing the perceptive quality
+  	of the resulting sound. The current design of the reacTable tangibles defines
+  	a series of acrylic objects in different geometric shapes with attached
+  	colour or symbol codes, which proved to be problematic in a dark concert
+  	environment as well as for sight-disabled users. A user study shall clarify
+  	if the assigned object descriptions and the chosen hypothetical mappings
+  	between the tactile perception and sonic behaviour of a chosen synthesis
+  	component are valid and should eventually lead to an improved design of
+  	the tangibles for the instrument.</i>
+  	</div>
+  	</li>
+  </ul>
+  <p>
+  Industrial context: Wednesday 26th of July
+  </p>
+  <ul>
+  	<li> &quot;<b><a href="/smc/pau_AudioPatterns.pdf">Free software and music computing</a></b>&quot;
+  	- <span style="color: #ff0000">Pau Arumí</span></li>
+  	<li> &quot;<b>Toys and video games</b>&quot; - <span style="color: #ff0000">John
+  	Arroyo</span></li>
+  	<li> &quot;<b>Scratching and DJs</b>&quot; - <span style="color: #ff0000">Kjetil
+  	Falkenberg Hansen</span></li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b><a href="/smc/Janer2006.pdf">Leisure and voice
+  	control</a></b>&quot; - <span style="color: #ff0000">Jordi Janer<br />
+  	<span style="color: #000000"><i>The role of Sound and Music Computing in the industry
+  	has evolved over the last decades in the three typical targets: studio equipment,
+  	musical instruments and home entertainment. While studio equipment and musical
+  	instruments have already massively incorporated SMC technologies, home entertainment
+  	systems will be presumably our main target for the next years. Is in this
+  	context that we can use the term &quot;leisure&quot;, which can be applied
+  	to a convergence of home media centers and game consoles. </i></span></span><i><br />
+  	This presentation addresses voice control as a way to transmit musical information
+  	to a musical system. The main application of voice control is instrument
+  	synthesizers, useful for instance in karaoke devices. Nevertheless, the
+  	research outcome can be also applied to control conducting or visualization
+  	systems. This research consists of two parts: voice gesture description
+  	and definition of adequate mapping strategies. Studying instrument imitation,
+  	we can define a voice gesture as a sequence of consonant-vowel phonemes.
+  	Phonetic segmentation and classification in broad phonetic classes are being
+  	developed. In addition, slow-varying perceptual envelopes are added to the
+  	voice gesture. Summarizing, a voice gesture is described by context descriptors
+  	and continuous envelopes. Mapping these voice gestures to the instrument
+  	control will depend on the instrument and the technique employed. Here,
+  	instead of constraining voice description to MIDI messages, we propose to
+  	do a more adequate mapping for signal-driven synthesis that can be either
+  	knowledge-based or based on machine learning. The talk will conclude looking
+  	at current commercial systems and potential use-cases of voice control in
+  	a leisure context. </i>
+  	</div>
+  	</li>
+  	<li> &quot;<b>Music recommendation systems</b>&quot; - <span style="color: #ff0000">Marco
+  	Tiemann &amp; Oscar Celma</span></li>
+  	<li> &quot;<b>Audio melody extraction: the importance of high level features
+  	in music information retrieval applications</b>&quot; - <span style="color: #ff0000">Karin
+  	Dressler</span></li>
+  </ul>
+  <h5><span style="font-size: x-small"><a id="workshopsocial" name="workshopsocial" title="workshopsocial"></a><span style="color: #000000">
+  Workshop: <b>Social and cultural context for Sound
+  and Music Computing</b></span></span></h5>
+  <ul>
+  	<li><b>Morning: </b>
+  	<ul>
+  		<li><b>S2S2 presentation</b>- <span style="color: #ff0000">Nicola Bernardini
+  		</span></li>
+  		<li><b>&quot;Social context for Sound and Music Computing&quot;</b>-
+  		<span style="color: #ff0000">Marc Leman</span></li>
+  		<li>
+  		<div align="justify">
+  		&quot;<b>Is a Science without Conscience a support
+  		for music?</b>&quot; - <span style="color: #ff0000">Fabien Levy<br />
+  		<i><span style="color: #000000">I will first show how both composition and
+  		science are related with the more general problem of their representations,
+  		the first playing with signs to build new music-worlds (cf. the couple
+  		graphemology/grammatology in semiotic), and the latter being deeply
+  		united with its representations (cf. Derrida). Without a high conscience
+  		of the episteme implied by those representations, composing and doing
+  		musical sciences are &quot;but the ruin of the soul&quot;, to parody
+  		Rabelais. To exemplify my position, I will then try to &quot;deconstruct&quot;
+  		different scientific models working on the controversial notion of &quot;musical
+  		consonance&quot; (historical musicology, acoustics and psychoacoustics).
+  		</span></i></span>
+  		</div>
+  		</li>
+  		<li>&quot;<b>Investigating a Sound-based Paradigm and its Social Implications</b>&quot;
+  		- <span style="color: #ff0000">Leigh Landy</span></li>
+  	</ul>
+  	</li>
+  	<li><span style="color: #ff0000"><b><span style="color: #000000">Afternoon: </span></b></span>
+  	<ul>
+  		<li><span style="color: #ff0000"><span style="color: #000000">Panel: <b>Social and
+  		Cultural Context for Sound and Music Computing: Does technology drive
+  		music or viceversa?</b></span><br />
+  		Nicola Bernardini, Marc Leman, Fabien Levy, Leigh Landy, Davide Rocchesso,
+  		Roberto Bresin<br />
+  		</span></li>
+  	</ul>
+  	</li>
+  </ul>
+  <h5><span style="font-size: x-small"><a id="workshopindustrial" name="workshopindustrial" title="workshopindustrial"></a><span style="color: #000000">
+  Workshop: <b>Industrial context for Sound and Music
+  Computing</b></span></span></h5>
+  <ul>
+  	<li>&quot;<b>Initial
+  	ideas for the Industrial Context of the S2S2 roadmap</b>&quot; -
+  	<span style="color: #ff0000">Xavier Serra</span></li>
+  	<li>
+  	<div align="justify">
+  	&quot;<b>Sound, Music and Mobility - Key Challenges
+  	for Future Research</b>&quot; - <span style="color: #ff0000">Dr. Jyri Huopaniemi</span>,
+  	Head of Strategic Research, Nokia Research Center<br />
+  	<i>In this presentation, I will give an overview of relevant research challenges
+  	for sound and music in future mobile devices. The background and history
+  	of mobile computing will be explained, and the presentation is augmented
+  	by current research examples. Key issues in technology, user experience
+  	and business outlook will be covered. Finally, recommendations for concentration
+  	areas in future research of sound and music will be given. </i>
+  	</div>
+  	</li>
+  	<li><span style="color: #ff0000"><span style="color: #000000">Panel: <b>Industrial Context
+  	for Sound and Music Computing: Is technology transfer working?</b></span><br />
+  	Xavier Serra, Pierre-Louis Xech, Jyri Huopaniemi, Vesa Valimaki, Antonio Camurri,
+  	Alain de Cheveigné<br />
+  	</span></li>
+  </ul>
+  <h3><a id="application" name="application" title="application"></a>Application</h3>
+  <p>
+  A maximum of <b>20 students</b> will be admitted to the school. The candidates
+  will be evaluated by the teachers and the application should include the
+  following documents in pdf format:
+  </p>
+  <ul>
+  	<li>Curriculum vitae (max. 1 page)</li>
+  	<li>Certified copy of academic degree</li>
+  	<li>Summary of the research proposal (max. 2 pages)</li>
+  </ul>
+  <p>
+  Students have to send their applications to <a href="http://www.iua.upf.edu/mtg/pages/contact/single?id=105">Xavier
+  Serra</a> before <b>May 1st</b>. Notification of acceptance will
+  be given no later than May 15th.
+  </p>
+  <p>
+  For people not wishing to make research presentations during the school,
+  a brief curriculum vitae is sufficient and the deadline for application
+  is <b>June 30th</b>.
+  </p>
+  <p>
+  These people should also send their applications to <a href="http://www.iua.upf.edu/mtg/pages/contact/single?id=105">Xavier
+  Serra</a> or <a href="http://www.iua.upf.edu/mtg/pages/contact/single?id=38">Emilia
+  Gómez</a>.
+  </p>
+  <h3><a id="registration" name="registration" title="registration"></a>Registration Fee</h3>
+  <p>
+  The regular registration fee is 300 €. This fee also covers the
+  costs for lunch and various evening social events.
+  </p>
+  <p>
+  The registration fee for students is 200 €. This fee also covers
+  the costs for lunch and various evening social events.
+  </p>
+  <p>
+  There will be a few student scholarships that will cover the registration
+  fee.
+  </p>
+  <p>
+  The deadline for registration is <b>June 30th.</b>
+  </p>
+  <h3><a id="travelling" name="travelling" title="travelling"></a>Traveling and Accommodation</h3>
+  <p>
+  Participants will have to arrange their own travel and accommodation.
+  <a href="http://www.resa.es">University dorms</a> are available at a special
+  rate. For additional information contact <a href="http://www.iua.upf.edu/mtg/pages/contact/single?id=37">Cristina
+  Garrido</a>.
+  </p>
+  <h3><a id="social" name="social" title="social"></a>Social events</h3>
+  <ul>
+  	<li>
+  	<p>
+  	Banquet, Tuesday 25th: <a href="http://www.escriba.es/">El Chiringuito
+  	de Escribá</a>
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	Concerts at<a href="http://www.metronom-bcn.org/"> Metronom: </a>
+  	</p>
+  	<ul>
+  		<li>
+  		<p>
+  		25th of July at 21:00 &quot;<i><b>Deriva del Cristal Sonoro</b></i>&quot;
+  		(IUA-Phonos grant): by Carmen Platero and Cristián Sotomayor<br />
+  		Installation - Performance
+  		</p>
+  		</li>
+  		<li>
+  		<p>
+  		26th of July at 21:00 <i><a href="http://www.iua.upf.es/mtg/reacTable/">ReacTable</a></i>
+  		and <i><a href="http://www.iua.upf.es/%7Ehsolis/EnsAmbleCrumble/">Ensamble
+  		Crumble</a></i>
+  		</p>
+  		</li>
+  		<li>
+  		<p>
+  		27th of July at 21:00 Concert around <a href="http://www.harrysparnaay.com/">Harry
+  		Sparnaay</a>, supervisor: Harry Sparnaay and performed by Harry
+  		Sparnaay students at <a href="http://www.esmuc.net/">ESMUC</a>:<br />
+  		Irene Ferrer Feliu, flute<br />
+  		Alejandro Castillo Vega, clarinet<br />
+  		Victor de la Rosa, Daniel Arias Romeo, Gerard Sibila Roma, bass
+  		clarinet
+  		</p>
+  		</li>
+  	</ul>
+  	</li>
+  	<li>
+  	<p>
+  	<a href="http://www.bcn.es/english/ihome.htm">Search for other events</a>
+  	in Barcelona during the summer school
+  	</p>
+  	</li>
+  </ul>
+  <h3><a id="venue" name="venue" title="venue"></a>Venue</h3>
+  <ul>
+  	<li>
+  	<p>
+  	<b>School</b>: the school sessions will take place in the
+  	<a href="http://www.upf.edu/campus/english/index.htm?opcio=6">França
+  	Building</a> of Pompeu Fabra University (at the Auditorium), as well
+  	as coffee breaks. <br />
+  	Passeig de Circumval·lació, 8. 08003 Barcelona (<a href="http://www.bcn.es/cgi-guia/guiamap4/cgi-guia/?actives=&amp;plant=capes4a&amp;idioma=2&amp;calle=passeig%2Bcircumval%B7lacio&amp;numero=8&amp;calle2=">map</a>)
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	<b>Lunches</b>: Navia
+  	restaurant, in front of the França building. <br />
+  	Comerç 33. 08003 Barcelona (<a href="http://www.bcn.es/cgi-guia/guiamap4/cgi-guia/?actives=&amp;plant=capes4a&amp;idioma=2&amp;calle=Comer%E7&amp;numero=33&amp;calle2=">map</a>)
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	<b>Banquet</b>: El Chiringuito
+  	de Escribá. <br />
+  	Bogatell beach. (<a href="http://www.bcn.es/cgi-guia/guiamap4/cgi-guia/?actives=&amp;plant=capes4a&amp;idioma=2&amp;calle=litoral&amp;numero=42&amp;calle2=">map</a>)
+  	</p>
+  	</li>
+  	<li>
+  	<p>
+  	<b>Concerts</b>: Metronom.<br />
+  	C. Fusina 9 - 08003 Barcelona (<a href="http://www.bcn.es/cgi-guia/guiamap4/cgi-guia/?actives=&amp;plant=capes4a&amp;idioma=2&amp;calle=fusina&amp;numero=9&amp;calle2=">map</a>)
+  	</p>
+  	</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>

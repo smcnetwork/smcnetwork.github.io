@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <h1 class="title">Padova 2011</h1>
+          <div class="tabs"></div>
+                            <div class="node">
+              <span class="submitted">Submitted by favanzini on Mon, 08/08/2011 - 19:49</span>
+      <div class="taxonomy"></div>
+      <div class="content">  <div id="content"><!-- InstanceBeginEditable name="contentRegion" -->
+        <h1>
+  		<span style="font-size: smaller;">Summer School:</span><br /><br />
+        Embodied Sound and Music
+        </h1>
+
+        <p><a href="#program">Academic Program</a> / <a href="#courses">Courses</a> / <a href="#teachers">Teachers</a> / <a href="#registration">Application & Registration</a></p>
+
+
+        The goal of the SMC Summer School is to give an opportunity to young researchers interested in the field to learn about some of the core interdisciplinary topics of SMC, and to share their own experiences with other young researchers. This year the focus is on the embodied links between sound, music, and movement. Lectures and hands-on projects will explore this theme from several viewpoints, including novel sound synthesis techniques, multimodal interaction, music cognition, movement analysis and characterization.<br />
+  All the materials (slides, code, pictures, teachers, students, ...) are available at the Summer School wordpress page: <a href="http://smc2011summerschool.sampl-lab.org" target="_new">http://smc2011summerschool.sampl-lab.org</a>
+
+
+
+        <a name="program"></a>
+  		<h2>Academic Program</h2>
+  		<table border="1">
+  		    <tbody>
+  		        <tr bgcolor="silver">
+  		            <th>Time</th>
+  		            <th>Sat, 2nd.</th>
+  		            <th>Sun, 3rd.</th>
+
+  		            <th>Mon, 4th.</th>
+  		            <th>Tue, 5th.</th>
+  		        </tr>
+  		        <tr>
+  		            <td>9:00 - 10:45</td>
+
+  		            <td> </td>
+  		            <td>Lectures</td>
+
+  		            <td>Lectures</td>
+  		            <td>Lectures</td>
+  		        </tr>
+  		        <tr bgcolor="silver">
+
+  		            <td>10:45 - 11:15</td>
+  		            <td> </td>
+  		            <td>Coffee break</td>
+
+  		            <td>Coffee break</td>
+  		            <td>Coffee break</td>
+  		        </tr>
+  		        <tr>
+  		            <td>11:15 - 13:00</td>
+  		            <td rowspan="2" bgcolor="#E8E8E8"><strong>Start 12:30</strong> -
+  		            	Summer School & <br />Students Presentation </td>
+
+  		            <td>Lectures</td>
+  		            <td>Lectures</td>
+  		            <td>Lectures</td>
+  		        </tr>
+  		       <tr bgcolor="silver">
+  		            <td>13:00 - 14:30</td>
+  		            <td>Lunch</td>
+
+  		            <td>Lunch</td>
+  		            <td>Lunch</td>
+  		       </tr>
+  		       <tr>
+  		            <td>14:30 - 16:15</td>
+  		            <td>Presentation/Introduction Course 1</td>
+  						<td>Projects</td>
+
+  		            <td>Projects</td>
+  		            <td>Projects</td>
+  		       </tr>
+  		       <tr>
+  		            <td>16:15 - 18:00</td>
+  		            <td>Presentation/Introduction Course 2</td>
+  						<td>Projects</td>
+
+  		            <td>Projects</td>
+  		            <td>Projects</td>
+  		        </tr>
+  		    </tbody>
+  		</table>
+
+  		<a name="courses"></a>
+  		<h2>Courses</h2>
+
+  		<p><a href="#track1">Music and Movement</a> / <a href="#track2">Interactive SMC: The Challenges of Continuous Interaction</a></p>
+
+  		<p>
+  			<a name="track1"></a>
+  			<h3>Course 1 - Music and Movement<br />
+  				<em><span style="font-size: smaller;">
+  				<a href="#LeonvanNoorden">Leon van Noorden</a> (University of Ghent, Belgium)
+  				</span></em>
+
+  			</h3>
+
+  			<strong>Main Lectures</strong>
+  			<ul>
+  				<li>
+  					<dt><strong>Ch1: The Embodied Link between Music and Movement</strong></dt>
+  					<dd>Recent developments in Systematic Musicology put more emphasis on the link between action and perception in the experience of music. This is in line with the general trend in cognitive and neural sciences. The focus is on Embodied Music Cognition. Important are also the psychological and social aspects.</dd>
+  				</li>
+
+  				<li>
+  					<dt><strong>Ch2: Characterisation of Movement and Music and their Relation</strong></dt>
+  					<dd>Although we argue in the previous chapter that music and movement are intimately linked, we take them now apart to study the features of each of them and to study how we can describe the linkages between them.The following topic will be Introduced: resonant and smooth motion, basic gestures, synchronisation and entrainment, the use of space and time, pulse and metrical structure.</dd>
+  				</li>
+  				<li>
+  					<dt><strong>Ch3: The Measurement and Registration of Music and Movement</strong></dt>
+  					<dd>A presentation is made of the various possibilities to measure movement in and outside the lab. Accelerometers, Mocap systems, video and GPS and their raw presentation as data or avatar models will be discussed.</dd>
+
+  				</li>
+  				<li>
+  					<dt><strong>Ch4: Mathematical Tools for Movement Analysis</strong></dt>
+  					<dd>In order to reduce the gigabytes of data obtained with the technologies described in the previous chapter to understandable models it is important to have good mathematical description and analysis tools. An important aspect is that the movements to music are very often quasi repetitive movements. Relevant recent methodologies such as Periodicity Transform and Empirical Mode Decomposition will be introduced.</dd>
+  				</li>
+  				<li>
+  					<dt><strong>Ch5: Some State of the Art Music and Movement Studies</strong></dt>
+
+  					<dd>Walking to Music, Dancing the Samba, Resonance and Synchronisation in tapping to music by young children and movements made by musicians are relevant examples of the research on Embodied Music Cognition from the IPEM.</dd>
+  				</li>
+  				<li>
+  					<dt><strong>Ch6: Applications</strong></dt>
+  					<dd>Many people, today, have small but sophisticated equipment in their pocket that can present music and measure movement. This opens the floor for many 'apps' that can apply our knowledge on Music and Movement. We suggest to have a brainstorm on innovative applications.</dd>
+  				</li>
+  			</ul>
+
+  			</p><p>
+
+  			<strong>Hands on</strong><br />
+  			<em><a href="#DenisAmelynck">Denis Amelynck</a> (University of Ghent, Belgium)</em><br />
+  			<em><a href="#FrankDesmet">Frank Desmet</a> (University of Ghent, Belgium)</em><br />
+  			</p>
+
+  			<strong>Projects</strong><br />
+
+  			In the two hands on projects the participants will measure movements related to music listening or music making, analyse it with one of the mathematical models and present a model rendition of the movement in order to get hands on experience with the contents of the more theoretical lectures. The students will be able to propose experiments in which they are interested or choose one of the ideas we present.
+
+  		<br /><br />
+  		<p>
+  			<a name="track2"></a>
+  			<h3>Course 2 - Interactive SMC: The Challenges of Continuous Interaction<br />
+  			<em><span style="font-size: smaller;">
+  			<a href="#FedericoFontana">Federico Fontana</a> (University of Udine, Italy)
+  			</span></em>
+
+  			</h3>
+
+  			<strong>Main Lectures</strong> <br />
+  			Digital sound synthesis relies on a number of techniques that accumulated during the last decades. Together with methods for audio and musical analysis and classification, they form a corpus that answers almost every sound researcher's and music practitioner's question. Unless, tight interaction constraints come into play. Once no more than 15-20 ms are allowed to transform interactive inputs such as human control into accurate auditory feedback, much of that corpus melts and instead leaves the stage to ad-hoc solutions, subsuming hardware dependency, application constraints, and various trade-offs that inevitably limit the quality and scalability of the solution. Far from providing a systematic approach to SMC in conditions of continuous interaction, the lectures will survey the diverse questions that need to be answered during a sonic interaction design project, both inside and outside the music field:
+  			<ol>
+  				<li>Instantaneous Sonic Feedback: interactive musical and everyday sounds; </li>
+  				<li>Critical Design and Technological Issues; </li>
+  				<li>Case Studies in Musical Sound Synthesis; </li>
+
+  				<li>Case Studies in Everyday Sound Synthesis.</li>
+  			</ol>
+
+  			</p><p>
+  			<strong>Hands on</strong><br />
+  			<em><a href="#MaurizioGoina">Maurizio Goina</a> (Conservatorio Tartini Trieste, Italy)</em><br />
+  			<em><a href="#StefanoPapetti">Stefano Papetti</a> (University of Verona, Italy)</em><br />
+
+  			</p>
+
+  			<strong>Projects</strong><br />
+  			<ul>
+  				<li><strong>Natural sonic walking </strong>
+  					<em>(Maurizio Goina - Conservatorio Tartini Trieste, Italy)</em><br />
+  					The purpose of this workshop is the realization of an interactive installation in which the main idea is the exploration of the expressive potential of ecological sounds for gait sonification. The aim of such work is to stimulate the user’s sensitivity to ecological sounds through their embodiment, and, reciprocally, to enhance her/his proprioception through a continuous and interactive sonic feedback.
+  					The EGGS system <a href="http://www.visualsonic.eu/eggs.html">Elementary Gestalts for Gesture Sonification</a> will be used for the sonification of the walk, this by recognizing elementary kinematic units. The system is implemented as a Max/MSP application and a Processing applet.
+  					There will be three phases; theoretical and conceptual work, sketching, prototyping and realization.
+  					On the first day students will be introduced to the conceptual background of the EGGS system, will go trough a brainstorming session and produce concepts and vocal sketches.
+  					On the second day students will focus on sound design needed for the sonification of the walking, and will realize sketches in order to simulate the installation, by means of the EGGS system, graphics tablets and accelerometers.
+  					On the third day students will work on a full scale installation, applying and calibrating sensors to their legs, video documenting the system at work and discussing the results.
+  					An example of this type of installation is <a href="http://www.visualsonic.eu/sw.html">Sonic Walking</a>.
+  				</li>
+
+  				<li><strong>Effects of sound and vibration in augmented walking tasks </strong>
+  					<em>(Stefano Papetti - University of Verona, Italy)</em><br />
+  					In everyday life, auditory and tactile cues coming from the feet provide significant information about the environment. Recent trends in HCI, performing arts and gaming, consider the use of foot-based multimodal interfaces, whose applications include augmented reality, rehabilitation, critical labor environments, navigation aids and entertainment.
+  					The purpose of this workshop is to let students investigate and experience the importance of auditory and tactile feedback in walking and other foot-related tasks.
+  					One or more pair of instrumented shoes will be made available (<a href="http://www.youtube.com/watch?v=S3P2lKVDMXk">here's a previous prototype</a>). Such shoes are provided with force sensors and audio-tactile exciters.
+  					Moreover, we will make use of a sensing floor enabled by contact microphones, which can track a person while walking.
+  					By interfacing such hardware devices with an <a href="http://www.soundobject.org/SDT">open-source software for sound synthesis</a>, students will be able to experience both auditory and underfoot tactile feedback simulating different grounds (from creaking floors to snow and mud).
+  					After exploring this setup, we will start a couple of pilot experiments to investigate the cross-modal effects of sound and vibration in walking scenarios.
+  				</li>
+  			</ul>
+
+
+  		<a name="teachers"></a>
+
+  		<h2>Teachers</h2>
+  		<p>
+  <a name="LeonvanNoorden"></a>
+  		<strong><a href="http://www.ipem.ugent.be/user/8">Leon van Noorden</a> (University of Ghent, Belgium)</strong><br />
+  		<em>Education:</em> PhD: Temporal Coherence in the Perception of Tone Sequences, TU Eindhoven, 1975; Technical Physics, TU Eindhoven, 1963-1970<br />
+  		<em>Current activities:</em> Research on music and movement; synchronisation in children, auditory scene analysis, walking of patients with Parkinson's Disease, rhythm perception and production.
+  		<em>Functions:</em> Associate professor, Université Libre de Bruxelles, Unité de recherche en Neurosciences Cognitives,  2009-present, Visiting professor, IPEM, University Ghent, 2005-present; European Commission, 1989-2004; Dutch PTT, 1981-1989; Dutch Association for the Blind, 1977-1981; Post Doctoral Fellow, Bell Laboratories, Murray Hill, USA 1975-1976, ZWO 1970-1975.<br />
+
+  		<em>Artistic:</em>  Construction of and performing with computer controlled musical instruments. Member of  Maciunas Ensemble: 1972-present.
+  		</p>
+  		<p>
+  <a name="DenisAmelynck"></a>
+  		<a href="http://www.ipem.ugent.be/user/37">Denis Amelynck</a> (University of Ghent, Belgium)<br />
+  			Denis Amelynk received a master degree in engineering at the University of Ghent in 1985. He worked
+  			as system and training engineer for several international companies like Alcatel, Honeywell and W.R. Grace.
+  			Machine Learning is one of his principal interests. Currently as PHD-researcher he makes his expertise available to the Institute for Psycho-acoustics and Electronic Music (IPEM)
+  			of the University Ghent. His most recent research concerns Bayesian Modeling of  musical gestures providing musicologists with new insights
+  			in the embodied music recognition paradigm.
+  		</p>
+  <a name="FrankDesmet"></a>
+
+  		<a href="http://www.ipem.ugent.be/user/11">Frank Desmet</a> (University of Ghent, Belgium)<br />
+  			Frank Desmet (Ph.D. Researcher, IPEM Ugent) is involved in the MEFEMCO project at IPEM on empirical methodologies for the analysis of listeners/musicians movements in response to music, using specific multivariate statistical paths. A broad spectrum of traditional statistical techniques, such as Time-Series Analysis, Multivariate Non-Parametric Analysis, Multivariate Analysis of Variance (GLM) and Multiple Regression Analysis, Principal Components Analysis, Procrustes Analysis and Multidimensional Scaling. Furthermore, advanced statistical methods, such as Dynamic Time Warping, Chaos Analysis, Cladogram Analysis and Analysis of Entropy are used to analyze complex data.
+  			Another tasks is to coach and train researchers at IPEM in Experimental Design, setup of datasets and provide guides to establish valid statistical pathways for the validation of experimental data.		<p>
+  <a name="FedericoFontana"></a>
+  		<strong><a href="http://www.dimi.uniud.it/Members/federico.fontana">Federico Fontana</a> (University of Udine, Italy)</strong><br />
+  		Federico Fontana is assistant professor at the Dipartimento di Matematica e Informatica of the University of Udine, teaching sound processing. In 2001 he has been visiting scholar at the Laboratory of Acoustics and Audio Signal Processing, Helsinki University of Technology (now Aalto University) in Espoo, Finland. In 2003 he received the PhD in computer science from the Dipartimento di Informatica of the University of Verona, where he has been working until 2009, and where he currently teaches non visual interaction as a guest professor. He coordinates the EU FET-Open Project 222107 NIW - Natural Interactive Walking and the industrial project E-PHASE - Electronic Piano with Haptic And Spatial Enhancements. He has been guest editor of two special issues in international journals focusing on SMC. He has been scientific program chair of HAID 2010, in Copenhagen. In 2000-2003 he has been consulting for the R&D divisions of some companies and public institutions. His current interests are in the design and interactive synthesis of sounds, the evaluation of non visual interfaces, and in real time nonlinear signal processing.
+  		</p>
+
+  		<p>
+  <a name="MaurizioGoina"></a>
+  		<a href="http://www.goina.it/index.html">Maurizio Goina</a> (Conservatorio Tartini Trieste, Italy)<br />
+  		Maurizio Goina is a viola player and an audio-visual composer. He received a Master Degree in Music and New Technologies from the Conservatory of Trieste – Italy. He plays viola in the orchestra of the Trieste opera theatre. His audiovisual works were performed in many festivals in Italy, Europe and the Americas. Since 2008 he has been developing, together with Pietro Polotti, the EGGS system for gesture sonification. Currently, he is working as a researcher on a Gesture Sonification research project at the School of Music and New Technologies of the Conservatory of Trieste.<br />
+  		</p>
+  		<p>
+  <a name="StefanoPapetti"></a>
+  		<a href="http://www.di.univr.it/?ent=persona&id=3813&lang=en">Stefano Papetti</a> (University of Verona, Italy)<br />
+
+  		Stefano Papetti received a MSc in Computer Engineering from the
+  		University of Padova, and a Ph.D. in Computer Science from the
+  		University of Verona, where he currently works as research
+  		associate on the EU-funded project <a href="http://www.niwproject.eu">NIW</a>.
+  		His research focuses on sound synthesis, physical models of
+  		acoustic phenomena, ecological sounds, interactive sonification
+  		and sonic interaction design. <br />
+  		</p>
+
+  		<a name="registration"></a>
+  		<h2>Application and Registration</h2>
+  		Applications must include the following documents in pdf format:
+  		<ul>
+  		<li>Curriculum vitae (max. 1 page);</li>
+
+  		<li>Proof of university enrolment;</li>
+  		<li>Short description of the student research interest and motivation to participate (max. 2 pages).</li>
+  		</ul>
+  		The three pdf files must be included in a name_surname.zip file. The application must be sent by e-mail to <a href="mailto:smc2011@dei.unipd.it">smc2011@dei.unipd.it</a>.
+
+
+      <!-- InstanceEndEditable --></div>
+
+    <div id="book-navigation-250" class="book-navigation">
+
+          <div class="page-links clear-block">
+                <a href="/summer_school/barcelona2010" class="page-previous" title="Go to previous page">‹ Barcelona 2010</a>
+                      <a href="/summer_school" class="page-up" title="Go to parent page">up</a>
+                  </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>

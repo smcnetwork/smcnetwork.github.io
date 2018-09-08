@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 175px;
+  }
+
+  .card-footer {
+    background: #1B6884;
+    color: white;
+    height: 50px;
+  }
+
+  .card-footer-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="#scenarios">Future scenarios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#definition">Definition of the field</a></li>
+            <li class="nav-item"><a class="nav-link" href="#context">Context</a></li>
+            <li class="nav-item"><a class="nav-link" href="#challenges">Challenges and Strategies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conclusions">Conclusions</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div id="scenarios" class="container-fluid">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Future scenarios</h1>
+    </div>
+
+    <p>
+      The three scenarios presented here represent visions of life after a few attainable (though not necessarily easy) scientific/technological targets have been hit through the removal of roadblocks, the filling-in of gaps and the meeting of certain challenges as outlined in another section of the Roadmap.
+      <br /><br />
+      The scenarios describe general environments and activities concerning our everyday life soundscapes, the professional perspective of musicians and general music appreciation. As such, there is no one-to-one correspondence between a particular scenario and any of the particular key issues identified later on in the Roadmap. Rather, they provide hints of how the world could be if and when Sound and Music Computing research achieves the multidisciplinarity and transversality proposed in this Roadmap.
+    </p>
+
+    <h2>Controllable sound environments</h2>
+    <p>
+      Sensors, actuators, microprocessors, and wireless connection facilities are increasingly being embedded into everyday objects. These can be augmented with sonic features that make the environment more enjoyable, social life more interesting, and personal life more relaxed and healthy.
+    </p>
+    <h4>Grandma and me</h4>
+    <p>
+      Hi, I’m a teenager – 15 years old – and I like to wake up late, at least on Sundays.But today I decided to spend a few hours with my grandmother, so I set my alarm clock bed for 9 a.m. First, the bed tries to wake me up gently, by vibrating and making purring noises. Even though I am not sleeping anymore, I like to wait until the bed gets more nervous, when it realises I am still lying on it, and starts making harsh rhythmic movements and squeaking. I love it!
+      <br /><br />
+      I get up and go into the living room. It’s a mess after last night’s party. You know, mum and dad are on vacation, so… Chairs are everywhere; chips and peanuts all over the floor. I play some of my favourite hip-hop music while I put things back in place and prepare for the day. Different MCs and DJs are embodied in different pieces of furniture. I know it sounds retro, but it is so cool to move DJ Grandmaster Flash while I am moving that old armchair around. While I move through the house, the music seamlessly follows me through the objects I pass. When I leave home, I put on my headset and keep riding the beat. The headset doesn’t cut me off from the environment,though. When I catch sight of a strange bird singing, I look at it and put my hand to my ear. This gesture activates acoustic zooming, and I can appreciate the bird song in isolation. But then I am distracted by the sight of a friend of mine chatting to a girl. Instinctively, I steer my acoustic zoom towards them, but I realize she is wearing one of those new active jackets that can create an acoustic shield around you. I wonder what they are talking about.
+      <br /><br />
+      I reach my grandma’s house. She became almost deaf about five years ago, but she is really brave and decided to get an implant of powerful bionic ears. In recent years, she has become more and more worried about the bad things that could happen to her. That’s why my dad bought her a new door. As we leave the house and she closes the door, she proudly explains that the complex sound of the lock tells her that the lights are switched off, the gas is turned off, the fish are fed, and the window in the living room has been left wide open. I’m sure she left it open on purpose, but we go back in and close it anyway.
+      <br /><br />
+      We are going to the Fred Astaire club today. Grandma is wearing brand new Mike shoes. She feels much more confident about herself in these shoes, because they give her bionic ears some sonic feedback about equilibrium so she’s not afraid of falling while she moves around. Before we go into the club she wants to check on her health, which is promptly sonified through her bionic ears. Everything sounds fine, so we go in just as the show’s starting. There are a dozen over-eighties there, wearing Mike shoes, tap dancing, and clearly having a good time. Their subtle, gentle movements trigger a massive and diverse set of rhythms. Who knows – it may even be cooler than hip hop!
+      <br /><br />
+      On the way back home, grandma tells me how different the town was when she was a child. There was even a working water mill. Fortunately, we can both enjoy its sound. Both my cheap headset and her bionic ear can induce selective silence and let the lost sounds of the town emerge from history. That makes her remember even more. It’s fun being with grandma.
+    </p>
+
+    <h2>Musical instruments for all</h2>
+    <p>
+      In 2020, many sound devices will have a general purpose computer in them and will include quite a number of real-time interaction capabilities, sensors and wireless communication. Basically, any sound-producing device will be able to behave like a personalised musical instrument. Music making will become pervasive and many new forms of communication with sound and music will become available. Music content will be inherently multimodal and music making available to everyone: music from all to all.
+    </p>
+    <h4>How I became a professional musician</h4>
+    <p>
+      A year ago I bought the new wearable mobile device from SMC Inc. With it I was able to listen to my favourite songs and interact with them in ways not possible with the previous generation of devices. Now I was able to change many aspects of the songs by gestural and vocal control. Some of my friends were really good at it, and I started to improve my skills by practising on my home multimedia system. This system includes Jeeves, a virtual musical assistant, which observes and analyses my body movement, my singing and my musical abilities in general. Jeeves teaches me how to express myself in the style of famous musicians, from The Beatles to cellist Yo-Yo Ma. After a period of training, I was ready to play and jam with other users over the Internet and get advice from more expert users or their virtual musical assistants. After a couple of months, I started to get a good reputation in the community. One day, a group of users asked me to join them in person at a discotheque. In that discotheque we were able to use our mobiles to plug into a music role in the overall show. People took all kinds of roles; some were projected as visual characters on the surrounding space and walls, some were projected into moving lighting, others, like me, were controlling the expressivity of the music being played. Since I was a beginner, I took a simple role as the controller of the timbral aspects of the drum. Another person took control of the drum sticks. We had to dance to coordinate the rhythm in this shared drum set with the other visual and musical roles. This experience felt much more physical and exciting than being at home with my multimedia system. In the discotheque I had the feeling of being part of a community and of real teamwork. The various haptic devices in my clothes heightened my aural and visual perception and interaction with friends.
+      <br /><br />
+      I met these new friends many times; I practised a lot in discotheques and at home. I developed my own style and developed good skills in controlling virtual instruments, with Jeeves evolving with me and my community. I could control expression and lead my friends in improvisations and jam sessions. One day Jeeves asked me: “Could I please change my name to Madonna?; I feel that my background knowledge has changed”. I realised that was true and changed her name. Today I am a professional musician: an MJ (Music Jockey). Madonna and I prepare the shows on the authoring system at home. I design the structure, framework, roles, and musical material to be used. In my shows, I sometimes improvise with acoustic instrument players. I collect data on my sound device by monitoring their movements and performance choices. I can also monitor and analyse all the events in the show and the behaviour of everyone involved in it, including the audience. My virtual musical assistant Madonna wants to change her name again. Now she would like to be called Karajan.
+    </p>
+
+    <h2>Personalized musical devices</h2>
+    <p>
+      Current portable mp3 players -despite their simplicity – have already radi- cally changed human music-listening behaviour. Now, the first web-based music information systems which provide contextual information about music simply by connecting already existing services (such as Wikipedia, CDDB, lastFM,etc.), without the utilisation of any musical expertise, are beginning to emerge. Based on current trends in SMC research, we predict that such systems are likely to further develop in the direction of multi-modal, interactive, open and adaptive systems that support both beginners and experts from different cultures in ac- cessing music and music-related information.
+    </p>
+    <h4>My new music friend</h4>
+    <p>
+      I take my expert music companion with me anywhere, anytime, because I love music. The companion doesn’t just play music. It gives me a lot of other information about the music – from `practical’ things such as transcriptions of instruments and harmonies, to animated visualisations of the structure of the music, contextual information such as style, historical and cultural relations, and the relationship of the piece to other, related pieces and styles.
+      <br /><br />
+      My device is easy to use. I can talk to it, or I can shake it to show it the kinds of rhythms I like. It is aware of the music being played on radio stations and available in music databases world-wide, and it finds new music that I like in a particular situation. I can point it at music being played by a street band, and it will tell me what it is. It understands my intentions and learns my musical preferences. Sometimes it will surprise me, teaching me something new about music and my taste. And by the way, having had nano-sized loudspeakers (painlessly) implanted in my ears, I listen to my music without bothering with bulky headphones and earplugs.
+      <br /><br />
+      My music companion also helps me out in social contexts. When I am desperately looking for a date, my companion alerts me there’s a dance party around the corner for people with a similar interest in Brazilian music. When I get to it, my companion contacts the DJ system and sends it some of my favourite pieces (rare Brazilian stuff). The girl in the corner just goes “Wow”.
+      <br /><br />
+      My music companion is no longer an isolating device that runs playlists; it’s a friend that enhances my musical abilities, reflects my personality and helps me to socialise.
+    </p>
+  </div>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div id="definition" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Definition of the field</h1>
+    </div>
+
+    <p>
+      We propose the following deﬁnition for SMC:
+      <br /><br />
+      <i><b>
+        Sound and Music Computing (SMC) research approaches the whole sound and music communication chain from a multidisciplinary point of view. By combining scientiﬁc, technological and artistic methodologies it aims at understanding, modelling and generating sound and music through computational approaches.
+      </b></i>
+      <br /><br />
+      The central focus of the research ﬁeld is sound and music. Sound is the resonance of objects and materials that we can listen to. Music is the intended organisation of sounds for particular uses in social and cultural contexts. The sound and music communication chain covers all aspects of the relationship between sonic energy and meaningful information, both from sound to sense (as in musical content extraction or perception), and from sense to sound (as in music composition or sound synthesis). This definition is generally considered to include all types of sounds and human communication processes except speech. Speech research has its own aims and methodologies and is outside the SMC field.
+      <br /><br />
+      The other elements contained in the definition statement above can be briefly explained as follows:
+      <br /><br />
+      The <i>multidisciplinary point of view</i> relates to the use of various research methodologies and disciplines from the natural and human sciences. SMC also includes various research goals and approaches that deal with cross-modality, such as the relationship between perception and action and the integration of different senses involved in human-machine interaction (hearing, vision, movement, haptics, etc.), both in individual and social contexts.
+      <br /><br />
+      <i>Scientific and technological methodologies</i> refer to empirically-based and modelling-based approaches that draw upon advanced tools for measuring and processing information. <i>Artistic methodologies</i> refer to approaches that explore human experience and expression.
+      <br /><br />
+      <i>Understanding</i> refers to our knowledge of the mechanisms that underlie how people deal with sound and music in terms of its content and experience.
+      <br /><br />
+      <i>Modelling</i> refers to the representation of knowledge through algorithms and tools.The resulting models are used both in applications that aim at scientific understanding (e.g. simulation of perceptual processes) and also in applications that aim at practical understanding (e.g. in sound-aware objects, music information retrieval systems, music production companions).
+      <br /><br />
+      <i>Production</i> refers to the creative use of algorithms and tools to develop new content in which sound and music are communicated, as in sound environments, interactive artistic works and sonic design.
+      <br /><br />
+      <i>Computational approaches</i> refer to the core processing which allows the development of tools linking sonic energy with subjective experience. Computing is the shared practice that connects scientific understanding, the development of technological equipment and content-based creation.
+    </p>
+    <h2>Disciplines involved</h2>
+    <p>
+      The disciplines involved in SMC cover both human and natural sciences. Its core academic subjects relate to music (composition, performance, musicology), science and technology (physics, mathematics, engineering) and psychology (including psychoacoustics, experimental psychology and neurosciences).
+    </p>
+    <h4>
+      Music
+    </h4>
+    <p>
+      As the name itself indicates, Music provides the core investigation area for SMC. It supplies both an endless material (both in scope and depth) for analytical investigation (Musicology) and the requirements to extend expressive means of creation (Music Composition), while Music Performance yields interest on both sides (analytical and expressive).
+      <br /><br />
+      <i><b>Music Composition:</b></i> This concerns all research that has a focus on musical content creation and sound design. It includes creating music as a score, as an interactive artistic event, as a sound installation, as a soundtrack, and as any form of organised sound event which communicates information.
+      <br /><br />
+      <i><b>Music Performance: </b></i>Music performance is a complex activity involving physical, acoustic, physiological, psychological, social and artistic issues. At the same time, it is also a deeply human activity, relating to emotional as well as cognitive and artistic categories. The research in this ﬁeld can be seen as ranging from studies aimed at understanding expressive performance to attempts at modelling aspects of performance in a formal, quantitative and predictive way.
+      <br /><br />
+      <i><b>Musicology: </b></i>All research that deals with musical meaning formation, musical content description, and associated mediation technologies in particular sociocultural contexts. It comprises the study of how musical content can be described and how the subjective and sociocultural background of users plays a role in the production, distribution and consumption of music.
+      <br /><br />
+    </p>
+    <h4>
+      Science and Technology
+    </h4>
+    <p>
+      Due to the interdisciplinary and problem oriented character of SMC, many disciplines in the scientiﬁc and technological ﬁeld are needed. Physics and mathematics deal with the physical vs. abstract side of SMC, while engineering disciplines face the technological needs to build systems and develop applications.
+      <br /><br />
+      <i><b>Physics: </b></i>Acoustics is the science concerned with the production, control, transmission, reception and effects of sound as a physical phenomenon. The branch of acoustics of special interest to the SMC community is music acoustics. It includes the acoustics of musical signals (such as in expressive music performance), musical instruments and singing voices.
+      <br /><br />
+      <i><b>Mathematics: </b></i>This area is concerned with the mathematical approaches to musical structures and processes, including mathematical investigations into music–theoretic or compositional issues as well as mathematically motivated analyses of musical works or performances.
+      <br /><br />
+      <i><b>Engineering: </b></i>This includes all the research in computer science and engineering, signal processing and electronics that deals with sound and music information representation, processing and communication. It comprises multimedia information systems, artificial intelligence, audio signal processing, robotics, sensors and interface technology.
+      <br /><br />
+      <i><b>Psychology: </b></i>This includes all research into music–related behaviour and brain processes, including the roles of perception, cognition, emotion and motor activities. Psychology is here understood to cover the whole domain from psychoacoustics to experimental psychology to neurosciences.
+      <br /><br />
+    </p>
+    <h2>
+      Areas of Application
+    </h2>
+    <p>
+      SMC research can also be ﬁnalised towards applications that can acquire an important role in the deﬁnition of the ﬁeld. Current areas of application include digital music instruments, music production, music information retrieval, digital music libraries, interactive multimedia systems, auditory interfaces and augmented action and perception (e.g. games, interactive artifacts, and appliances).
+      <br /><br />
+      <i><b>Digital music instruments: </b></i>This application focuses on musical sound generation and processing devices. It encompasses simulation of traditional instruments, transformation of sound in recording studios or at live performances and musical interfaces for augmented or collaborative instruments.
+      <br /><br />
+      <i><b>Music production: </b></i>This application domain focuses on technologies and tools for music composition. Applications range from music modelling and generation to tools for music post–production and audio editing.
+      <br /><br />
+      <i><b>Music information retrieval: </b></i>This application domain focuses on retrieval technologies for music (both audio and symbolic data). Applications range from music audio–identiﬁcation and broadcast monitoring to higher–level semantic descriptions and all associated tools for search and retrieval.
+      <br /><br />
+      <i><b>Digital music libraries: </b></i>This application places particular emphasis on preservation, conservation and archiving and the integration of musical audio content and meta–data descriptions, with a focus on ﬂexible access. Applications range from large distributed libraries to mobile access platforms.
+      <br /><br />
+      <i><b>Interactive multimedia systems: </b></i>These are for use in everyday appliances and in artistic and entertainment applications. They aim to facilitate music–related human–machine interaction involving various modalities of action and perception (e.g. auditory, visual, olfactory, tactile, haptic, and all kinds of body movements) which can be captured through the use of audio/visual, kinematic and bioparametric (skin conduction, temperature) devices.
+      <br /><br />
+      <i><b>Auditory interfaces: </b></i>These include all applications where non–verbal sound is employed in the communication channel between the user and the computing device. Auditory displays are used in applications and objects that require monitoring of some type of information. Soniﬁcation is used as a method for data display in a wide range of application domains where auditory inspection, analysis and summarisation can be more efficient than traditional visual display.
+      <br /><br />
+      <i><b>Augmented action and perception: </b></i>This refers to tools that increase the normal action and perception capabilities of humans. The system adds virtual information to a user’s sensory perception by merging real images, sounds, and haptic sensation with virtual ones. This has the effect of augmenting the user’s sense of presence, and of making possible a symbiosis between her view of the world and the computer interface. Possible applications are in the medical domain, manufacturing and repair, entertainment, annotation and visualisation, and robot teleoperation.
+    </p>
+    <h2>References</h2>
+    <p>
+      [Camurri et al., 1995] Camurri, A., De Poli, G., and Rocchesso, D. (1995). A taxonomy for Sound and Music Computing. Computer Music Journal, 19(2):4–5.
+      <br /><br />
+      [Coulter (ed.), 1998] Coulter (ed.), N. (1998). ACM computing classification system (1998). <a href="http://www.acm.org/class/1998">http://www.acm.org/class/1998</a>.
+    </p>
+  </div>
+
+  <div id="context" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Context</h1>
+    </div>
+
+    <p>
+      This part addresses the various contexts that determine how the research
+      field of sound and music computing is embedded in a societal framework.
+      Four of these may be identified, namely, the research context, the educational
+      context, the industrial context and the socio-cultural context. The research
+      context is about the state and trends of related scientific and technological
+      developments and their influence on sound and music computing. The higher
+      education context is about the education of future researchers in the field.
+      The industrial context is about the impact on the industries and about the
+      relevant trends in the information and communication technology (ICT) sector.
+      Finally, the socio-cultural context is about the link to culture and the relevant
+      social implications. These four contexts thus provide the background in which
+      the state-of-the-art and challenges of sound and music research are situated.
+    </p>
+
+    <h2>Education</h2>
+    <p>
+      The context of education of sound and music computing is quite complex,
+      mainly due to its multidisciplinary nature and the consequent difficulty
+      of fitting it into the traditional, discipline-oriented focus of most
+      university level studies. There are almost no specific undergraduate
+      degrees in sound and music computing and the possibilities for a
+      specialisation in this field are centred at the graduate level, where
+      multidisciplinarity is more common.
+      <br /><br />
+      In Europe, the major developments in education are due to the so-called
+      Bologna Declaration, which aims at creating a common space for higher
+      education in Europe. Below, we identify the trends that are most relevant
+      to sound and music computing. This will be done at each of the three
+      university education levels, namely, Bachelor, Master’s and PhD.
+    </p>
+    <h4>Educational Trend 1: The new European higher education area</h4>
+    <p>
+      The EU drive towards the creation of an open European higher education
+      area (EHEA) is both a reaction to and a reinforcement of the profound
+      changes which have occurred in recent years: universities are educating
+      larger numbers of students, from a wider range of backgrounds and with
+      a wider range of skills, on entry; students are more mobile, spending
+      parts of their education in other countries. This drive, initiated with
+      the Bologna Process (European Commission – The Bologna Process, 2007),
+      is creating a framework that enables closer cooperation between higher
+      education institutions in Europe, facilitates student and staff mobility
+      and increases the attractiveness of European higher education in the world.
+      In the following paragraphs, we discuss these trends and their significance
+      for the design of new curricula in the field of sound and music computing.
+      <br /><br />
+      Improving quality in the curricula is seen as one of the keys to greater
+      recognition of qualifications across Europe, and this viewpoint is being
+      taken by many universities as an opportunity to update and add more flexibility
+      into their programmes (Reichert and Tauch, 2005). These changes will definitely
+      be beneficial for multidisciplinary fields like sound and music computing; in
+      fact many institutions explicitly praise the new freedom to design multidisciplinary
+      Master’s programmes, as well as programmes in emerging areas of science and knowledge.
+      The wave of reform in European higher education seems to be going even further and
+      deeper than the Bologna reforms themselves.
+      <br /><br />
+      A second key ingredient in curricular reform is the link between higher
+      education and employment. The Bologna Declaration particularly calls for
+      undergraduate degrees to be relevant to the labour market. There is in
+      general a growing push towards shorter study cycles, and many EU countries
+      have already adopted the two-cycle qualification structure based on the
+      Bachelor’s and Master’s distinction (Tauch, 2004). Employability is also
+      seen as an important criterion in the design of new degrees in sound and
+      music computing. The music/multimedia industry at large is in the middle
+      of important changes and is trying to adapt to the new markets and exploring
+      the potential of sound and music computing technologies (see the Industrial
+      Context section). New curricula in sound and music computing have the opportunity
+      to address these emerging labour markets.
+      <br /><br />
+      A major recent change in higher education has been the increase in student
+      mobility. A considerable part of overall mobility is supported through the
+      EC’s Erasmus/Socrates programme (European Commission – Socrates/Erasmus, 2007),
+      established in 1987, which seeks to reinforce the European dimension of higher
+      education by encouraging transnational cooperation between universities and boosting
+      European mobility. The figures for mobility reflect a steady improvement, but remain
+      below what the Commission considers necessary (European Commission – Education and
+      Training 2010, 2007). Moreover, the EU still attracts less talent than its competitors
+      (European Commission – Lisbon, 2007). Sound and music computing research in Europe
+      has a successful track record involving excellence spread over several centres which
+      have gained world leadership through complementarity and coordination supported by EC
+      funding. This excellence has to be exported to the higher education domain, in order
+      to attract students, scholars and researchers from other world regions.
+      <br /><br />
+      <i>
+        Statement 1: The creation of a common space of higher education in Europe
+        give more possibilities for designing curricula in sound and music computing.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Educational Trend 2: Discipline oriented bachelor education
+    </h4>
+    <p>
+      The tradition of bachelor (undergraduate) education is very much discipline oriented.
+      A student has to choose a curriculum aimed at developing a number of specific
+      competences in a particular discipline plus a few general academic and professional
+      competences. However there are curricula in Europe that are more multidisciplinary
+      or that allow a student a wider choice of itineraries, thus permitting the design of
+      ‘custom made’ curricula. With respect to research, the involvement of bachelor students
+      in such activities as a normal part of their curriculum is still very exceptional. Given
+      that there are many academic disciplines integral to sound and music computing research,
+      the education given in all the bachelor degrees supporting these disciplines is of interest
+      to any future sound and music computing researcher. Thus a student wanting to become a sound
+      and music computing researcher might choose a bachelor degree related to musicology, physics,
+      computer science, electrical engineering, psychology, music composition, etc… Within most of
+      the undergraduate programmes that support these disciplines, there are specific courses that
+      might be of very great relevance. But in most cases it really depends on the professor
+      responsible for the course and the special focus given to it. Figure 1 and 2 provide some
+      indicative data about content areas in courses and curricula. These data were gathered in
+      a survey by the S2S2-consortium and will be updated and expanded in the future. The content
+      areas for education in sound and music computing include systematic musicology, auditory and
+      music perception-action, auditory and music cognition, music acoustics, audio signal processing,
+      hardware and software, sound modelling, sound analysis and coding, music information
+      processing, music performance, multimodal interfaces, sound design and auditory display,
+      and application areas.
+      <br /><br />
+      <i>
+        Statement 2: Numerous paths, embedded in different well-established
+        undergraduate degrees, can be designed to approach a multidisciplinary
+        field such as sound and music computing.
+      </i>
+      <br /><br />
+      In the context of sound and music computing, the music conservatories
+      are a special case of higher education institutions. Traditionally, they
+      have a strong professional orientation and thus might not provide the
+      necessary background for a musician wanting to follow a research career.
+      This situation has been slowly changing, due both to the transformations
+      taking place in the music profession and also, in Europe, to the inclusion
+      of the conservatories into EHEA (European Association of Conservatoires, 2005).
+      Slowly, the conservatories are converging with the university system. It is
+      now becoming quite common for a conservatory to offer a degree with a strong
+      technological component. There are, for example, conservatory degrees in sound
+      recording, tonmeister, sonology, music technology, electro-acoustic music,
+      etc… Most of these degrees remain professionally oriented but very much related
+      to sound and music computing. Conservatories are also slowly incorporating
+      the idea of research as one of their institutional aims and are designing
+      curricula which are closer to the university model.
+      <br /><br />
+      <i>
+        Statement 3: New conservatory degrees are a model for professionally
+        oriented undergraduate curricula in sound and music computing.
+      </i>
+      <br /><br />
+      Apart from the traditional university degrees and the case of the music conservatories, there are quite a number of multidisciplinary undergraduate programmes related to sound and music computing, especially in the US and Great Britain. In the Anglo-Saxon system, it is much easier for universities to establish multidisciplinary programmes or even to allow student-centred curricula with individual academic pathways. However, there is an ongoing discussion among academics and researchers about the type of undergraduate education that is best suited to the preparation for a research career in a multidisciplinary field like sound and music computing. Should it be a strongly discipline oriented undergraduate degree or a multidisciplinary programme?
+      <br /><br />
+      The adoption of a common system of credits, such as the ECTS system, plus the existence of funding programs like Erasmus to support mobility have had a big impact on undergraduate education too. They have led students to become familiar with other approaches to a given field and have given them the opportunity to take courses not offered in their home university. The Erasmus programme has also facilitated the creation of networks of universities with complementary undergraduate degrees in a given discipline, so that experiences among faculty members can be shared and the curricula opportunities for students are widened. Due to the variety of disciplines and methodological approaches involved in the sound and music computing field, it is not easy to find educational institutions with an extensive coverage of all of them. It is thus very useful for a bachelor student wanting to get a wider view of the field to take courses in different centres.
+      <br /><br />
+      <i>
+        Statement 4: Bachelor (undergraduate) degrees with multidisciplinary contents encourage student mobility.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Educational Trend 3: Multidisciplinary studies at Master level
+    </h4>
+    <p>
+      The objective of a Master programme is academic or professional. The academic Master serves as the bridge between undergraduate programmes, which are mainly based on courses, and PhD studies, which are mainly based on research. These Master degrees are generally developed by universities that take advantage of existing research strengths. Therefore, the Master programmes tend to reflect the research focus of university departments and faculty. Universities have a large degree of autonomy in setting up and modifying their Master programmes, much more so than at undergraduate level. These programmes can therefore be more easily adapted to universities’ educational and research strategies. Research Masters used to be common in Great Britain but rare in continental Europe. But as part of the Bologna process, most European universities are now integrating PhD courses into Master’s programmes and creating new Master degrees (Reichert and Tauch, 2005). Many programmes continue the traditional discipline oriented focus, thus offering a clear continuity from undergraduate studies, but they tend to have a greater degree of flexibility. The students have a greater choice of optional courses and, since the research thesis is a major part of the programme, they are able to work independently under the supervision of a tutor.
+      <br /><br />
+      <i>
+        Statement 5: It is becoming easier for university faculties and research groups to introduce a student enrolled in a Master programme into any given research field.
+      </i>
+      <br /><br />
+      In the last few years there has been a proliferation of multidisciplinary Master programmes. Many of the key current research issues require multidisciplinary approaches and researchers need to be trained appropriately. Multidisciplinary education requires collaboration between institutions and thus there is a clear trend toward promoting it. Collaborations between departments of the same university, between universities of the same country and between universities of different countries are becoming commonplace.
+      <br /><br />
+      At the European level, the Erasmus Mundus (European Commission – Erasmus Mundus, 2007) is a co-operation and mobility programme which supports European top-quality Master courses and enhances the visibility and attractiveness of European higher education in third countries. It also provides EU-funded scholarships for third country nationals participating in these Master Courses, as well as scholarships for EU-nationals studying at partner universities throughout the world.
+      <br /><br />
+      It is a challenge for music institutions to offer musicians, in addition to instrumental training and practice, a reflective environment that nourishes innovation and creativity paired with the extension of knowledge and artistic understanding (European Association of Conservatoires, 2005). It becomes equally interesting when attempts are made to bridge the gap between theoretical research and musical practice. A great effort is being made by the European conservatories to develop Master programmes and PhD studies and thus to incorporate research into their educational and institutional aims. It might take some time before this happens.
+      <br /><br />
+      <i>
+        Statement 6: The multidisciplinary nature of sound and music computing research can find the right educational framework at the Master level.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Educational Trend 4: The professionalisation of PhD studies
+    </h4>
+    <p>
+      Doctoral studies have traditionally been based on independent research undertaken by the doctoral candidate who draws upon the advice and guidance of a supervisor, supposedly on the model of a Master/apprentice relationship. This type of arrangement has long been the norm. For non-traditional fields like sound and music computing, it has had the advantage that a student is able to do a PhD just by finding an appropriate faculty member with sufficient knowledge of the chosen topic and a willingness to guide and support the student through the programme.
+      <br /><br />
+      However, as a result of the changing context, PhD studies have recently come under scrutiny. Among the new challenges faced by universities in relation to doctoral education, it is worth mentioning the following desiderata (Sadlak, 2004):
+      <br /><br />
+    </p>
+    <ul>
+      <li>to review the structure of training for researchers and integrate doctoral programmes into the Bologna Process;</li>
+      <li>to deal with increased competition, from outside and within Europe;</li>
+      <li>to increase and strengthen co-operation with businesses and to contribute more effectively to technological innovation;</li>
+      <li>to find a new balance between basic and applied research;</li>
+      <li>to enhance the employability of researchers by including in their training both core skills and wider employment-related skills.</li>
+    </ul>
+    <p>
+      PhD students doing multidisciplinary research are more diverse than their disciplinary counterparts. They may have any one of a wide range of subject backgrounds and may sometimes have followed more than one educational pathway. The background of students doing research in sound and music computing ranges from music to mathematics, from psychology to electrical engineering. What they have in common is the aim of bridging disciplines to develop new and multidisciplinary knowledge. There is general agreement (Metzger and Zare, 1999) that this type of multidisciplinary research should conform to the following:
+    </p>
+    <ul>
+      <li>Consistency with established knowledge in multiple separate disciplinary antecedents: how the work stands vis-à-vis what researchers know and find tenable in the disciplines involved.</li>
+      <li>Balance in weaving together perspectives: the extent to which the work hangs together as a generative and coherent whole.</li>
+      <li>Effectiveness in advancing understanding: the extent to which the integration of disciplinary perspectives advances the goals that have been set and the methods used.</li>
+    </ul>
+    <p>
+      <i>
+        Statement 7: The traditional model of a Master/apprentice relationship in PhD studies is evolving in a much more complex education environment, especially for multidisciplinary fields like sound and music computing.
+      </i>
+      <br /><br />
+      The need for more structured PhD studies in Europe and the relevance of such studies to the Bologna Process have been highlighted repeatedly in recent years. In particular, joint PhD programmes can be amongst the most attractive features of the EHEA. But for the time being, interested students are still confronted with a variety of national and institutional structures that are not easily comparable.
+      <br /><br />
+      <i>
+        Statement 8: Joint sound and music computing PhD programmes at the EU level can be built by exploiting excellence spread over several centres with complementary competencies.
+      </i>
+      <br /><br />
+      There is a clearly growing trend towards the professionalisation of PhD studies, involving the inclusion of coursework and training in transferable skills aimed at facilitating the flow of doctoral students into the wider job market. Students are becoming employed researchers within well-structured research groups and funded within well-focused research projects. This increases the pressure to have money for PhD programs. Within this context, PhD students represent major academic and financial investments and contribute to much of the original research in universities. The role of supervisors seems key to the success or failure of multidisciplinary PhD projects (Fry et al., 2004). There is clear evidence that the disciplinary background, interest and motivation of the supervisor have much influence on research outcomes, both in terms of its quality and also whether PhD studies are completed on time (or at all).
+      <br /><br />
+      However the added-value of a PhD for employment outside the areas of research in universities, research institutes and R&D functions in industry remains somewhat limited. Central and East European countries especially, as well as South European countries, experience a continuing lack of interest on the part of employers outside the academy in hiring PhDs. The situation is almost reversed in the US, where a significant and ever growing number of PhDs are attracted to private sector employment in which remuneration is higher than in the academy (Sadlak, 2004).
+      <br /><br />
+      <i>
+        Statement 9: multidisciplinary PhD programmes avoid a focus which is too narrow and provide a broad spectrum of knowledge that also qualifies their graduates for careers outside the academy.
+      </i>
+      <br /><br />
+      To sum up, the above trend analysis shows that the European educational system is in full development at all levels from Bachelor to Master and PhD. Furthermore, there is a willingness to further integrate educational systems from art and science. These developments will have a huge impact on the sound and music research field.
+    </p>
+    <h4>
+      References
+    </h4>
+    <p>
+      European Association of Conservatoires (AEC) (2005). The Bologna declaration and music. <a href="http://www.bologna-and-music.org/">http://www.bologna-and-music.org/</a>.
+      <br /><br />
+      European Commission – Education and training 2010 (2007). Diverse systems, shared goals. <a href="http://europa.eu.int/comm/education/policies/2010/et_2010_en.html">http://europa.eu.int/comm/education/policies/2010/et_2010_en.html</a>.
+      <br /><br />
+      European Commission – Erasmus Mundus (2007). <a href="http://ec.europa.eu/education/programmes/mundus/index_en.html">http://ec.europa.eu/education/programmes/mundus/index_en.html</a>.
+      <br /><br />
+      European Commission – Lisbon (2007). Progress towards the Lisbon objectives in education and training, 2005. <a href="http://europa.eu.int/comm/education/policies/2010/doc/progressreport05.pdf">http://europa.eu.int/comm/education/policies/2010/doc/progressreport05.pdf</a>.
+      <br /><br />
+      European Commission – Socrates/Erasmus (2007). The European Community programme in the field of higher education. <a href="http://ec.europa.eu/education/programmes/socrates/erasmus/erasmus_en.html">http://ec.europa.eu/education/programmes/socrates/erasmus/erasmus_en.html</a>.
+      <br /><br />
+      European Commission – The Bologna Process (2007). Towards the European higher education Area. <a href="http://ec.europa.eu/education/policies/educ/bologna/bologna_en.html">http://ec.europa.eu/education/policies/educ/bologna/bologna_en.html</a>.
+      <br /><br />
+      Fry, G.,Tress, B. and G. Tress (2004). PhD students and integrative research. In Proc. Frontis workshop from landscape research to landscape planning: Aspects of integration, education and application, Wageningen, The Netherlands, June 2004.
+      <br /><br />
+      Metzger, N. and R. Zare (1999). Science policy: Interdisciplinary research: From belief to reality. Science, 283: 642-643.
+      <br /><br />
+      Reichert, S. and Tauch, C. (2005). Trends IV: European universities implementing Bologna. <a href="http://www.eua.be/eua/jsp/en/upload/TrendsIV_FINAL.1117012084971.pdf">http://www.eua.be/eua/jsp/en/upload/TrendsIV_FINAL.1117012084971.pdf</a>.
+      <br /><br />
+      Sadlak, J. (2004). Doctoral studies and qualifications in Europe and the United States: Status and prospects. Technical report, UNESCO-CEPES.
+      <br /><br />
+      Tauch, C. (2004). Almost half-time in the Bologna Process. Where do we stand? European Journal of Education, 39(3): 275-288.
+      <br /><br />
+    </p>
+
+    <h2>Industrial</h2>
+    <p>
+      Sound and music computing has always been an applied research field quite close to the music industry, thus close to the industries that create, perform, promote and preserve music. These industries involve: composers; performers and ensembles; publishers, record producers, manufacturers, labels and distributors; managers and agents; instrument makers; and some others. But right now sound and music computing technologies have a much broader impact and are present in most of the industries that sit at the nexus of cultural, entertainment, leisure and fast moving consumer goods.
+      <br /><br />
+      A recent study of the economic impact of the cultural and creative sector in Europe (KEA European Affairs [KEA], 2006) revealed that the annual turnover of the sector (€654 billion in 2003) is larger than that of the motor industry or even ICT Manufacturers. This sector, of which music industry forms a major part, contributed 2.6% of EU GDP in 2003, slightly more than the contribution of the chemicals, rubber and plastic products industries combined. The sector’s growth in 1999-2003 was 12.3% higher than that of the general economy and in 2004, about 5.8 million people worked in it, equating to 3.1% of the total employed population in the EU25. In view of the European Council’s Lisbon agreement of March 2000, that the EU by 2010 should become “the most competitive and dynamic knowledge-based economy in the world, capable of sustainable economic growth with more and better jobs and greater social cohesion”, reinforced coordination of activities and policies impacting on the cultural and creative sector within the EU should be given a high priority.
+      <br /><br />
+      Given this context, it is clear that the industries that relate to sound and music computing are in the middle of important changes and most are trying to adapt to the new markets and exploring the potential of these technologies. From the writings and presentations of industry experts, we can identify seven major trends.
+    </p>
+    <h4>
+      Industrial Trend 1: Towards a knowledge-based economy
+    </h4>
+    <p>
+      Modern economies are increasingly based on the production, distribution and use of knowledge and information. Knowledge is now recognised as the driver of productivity and economic growth. From the OECD report (OECD, 2005) it is clear that this long-term trend towards a knowledge-based economy is continuing. Science, technology and innovation have become key contributors to economic growth in both advanced and developing economies. Investment in knowledge (comprising expenditure on R&D, software and higher education) in the OECD area reached around 5.2% of GDP in 2001, compared to around 6.9% for investment in machinery and equipment. The share of knowledge-based market services is continuing to rise and now accounts for over 20% of OECD value added. The share of high and medium-high technology manufacturing fell to about 7.5% of total OECD value added in 2002, compared to about 8.5% in 2000.
+      <br /><br />
+      <i>
+        Statement 1: Music related activities are part of the new knowledge economy and they should take advantage of the continuing growth of this sector.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 2: A global economy
+    </h4>
+    <p>
+      Economies have expanded beyond national borders. Production in particular has been expanded by multinational corporations to many countries around the world. The global economy includes the globalisation of production, markets, finance, communications and the labour force.
+      <br /><br />
+      From the OECD report (OECD, 2005) we learn that this is not a new phenomenon per se, but that it has become more pervasive and driven mainly by the use of information and communication technologies (ICT). In the knowledge economy, information circulates at the international level through trade in goods and services, direct investment and technology flows and the movement of people. According to the American National Science Board (2006) the globalisation of R&D, S&T, and S&E labour markets is continuing. Countries are seeking competitive advantage by building indigenous S&T infrastructures, attracting foreign investments and importing foreign talent. The location of S&E employment is becoming more internationally diverse and those who are employed in S&E have become more internationally mobile.
+      <br /><br />
+      <i>
+        Statement 2: Both the production and consumption of music related goods is now globalised and international cooperation is more important than ever.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 3: The development of the ICT sector
+    </h4>
+    <p>
+      In the final decade of the twentieth century, the almost simultaneous arrival of mobile phones and the Internet not only changed the face of communications but also gave impetus to dramatic economic growth. We now speak of the Information and Communication Technologies (ICT) sector to refer to the agglomeration of the communications sector, including telecommunications providers and the information technology sector, which ranges from small software development firms to multinational hardware and software producers.
+      <br /><br />
+      According to the i2010 report (i2010 – European Information Society, 2007), ICT accounts for a quarter of EU GDP growth and 40% of productivity growth. The digital convergence of the information society and media services, networks and devices is finally becoming an everyday reality: ICT will become smarter, smaller, safer, faster, always connected and easier to use, with content moving to three-dimensional multimedia formats. It has been pointed out (Saracco, 2002) that any economic indicator ties together progress and communications infrastructure, and that the dissemination and progress of culture go hand in hand with the possibility of interacting and sharing ideas, thus putting telecommunications at centre stage.
+      <br /><br />
+      The American National Science Board (2006) reports that the number of industrial researchers has grown along with rapidly increasing industrial R&D expenditures. Across OECD member nations, employment of researchers by industry has grown at about twice the rate of total industrial employment. For the OECD as a whole, the full-time equivalent number of researchers more than doubled in the two decades from 1981 to 2001, from just below 1 million to almost 2.3 million. Over the same period, the number of researchers in the United States rose from 0.5 million to nearly 1.1 million.
+      <br /><br />
+      According to the KEA report (KEA, 2006) the ICT sector is central to European growth and competitiveness and has been identified as a pillar of the European Lisbon Strategy. It accounts for 5.3% of EU GDP and 3.4% of total employment in Europe. In the period 2002-2003 it was responsible for more than a quarter both of productivity growth and of the total European R&D effort. Darlin (2006) predicts that flat-screen televisions will get bigger and that MP3 players and cell phones will get smaller. And almost everything will get cheaper. But the biggest trend expected is that these machines will communicate with one another.
+      <br /><br />
+      According to the OECD (OECD – Digital Music, 2005), digital music and other digital content are also drivers of global technology markets, both to consumer electronics manufacturers and PC vendors. The increase in revenues from hardware in the PC and consumer electronics branch resulting from the availability of online music, authorised or not, is potentially greater than the revenues currently generated by paid music streaming or downloads.
+      <br /><br />
+      <i>
+        Statement 3: The growth of the ICT sector and the innovations coming out of it will be the main driving forces for the music related industries.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 4: The interdependence of the cultural & creative sector and ICT
+    </h4>
+    <p>
+      The cultural and creative sector generates significant economic performance in other non-cultural sectors, thereby indirectly contributing to economic activity and development, and in particular in the ICT sector. Culture contributes directly to the economy by providing products for consumption, namely the cultural goods and services embodied in books, films, music sound recordings, concerts, etc. But the recent growth of the creative media, according to KEA (2006), is due to the growing diffusion and importance of the Internet. The impact of this development on media consumption has been huge in recent years and will be the major factor for this sector in the future. At the same time, creative content is a key driver of ICT uptake. The consultancy firm PriceWaterhouseCoopers estimates that spending on ICT- related content will account for 12% of the total increase in global entertainment and media spending until the year 2009 (see KEA, 2006). Accordingly, the development of new technology depends to a large extent on the attractiveness of content and the new networks are no exception. The development of mobile telephony and networks is based on the availability of attractive value-added services that will incorporate creative content, to which the sound and music computing may contribute.
+      <br /><br />
+      However, the KEA report also predicts that the roll out of broadband and the digitisation of production processes will require significant investment for the creative industries to adapt, as well as changes in its management practices. Some industries (notably music) have to go through aggressive cost restructuring programmes and are experiencing consolidation through mergers. Without a strong music, film, video, TV and game industry in Europe, the ICT sector will be the hostage of content providers established in Asia or North America.
+      <br /><br />
+      <i>
+        Statement 4: Content is a major driver of ICT development.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 5: New models of exploitation of content
+    </h4>
+    <p>
+      The new ICT technologies have opened up new possibilities for the exploitation of music. Traditionally there have been two distribution channels for media content, namely, physical distribution and analogue broadcasting (radio, TV). Now we also have IP/Internet, Mobile communications (UMTS), Digital TV and Radio.
+      <br /><br />
+      The OECD report on digital music (OECD – Digital Music, 2005) identifies that network convergence and widespread diffusion of high-speed broadband have shifted attention towards broadband content and applications that promise new business opportunities, growth and employment. Digital content and digital delivery of content and information are becoming increasingly ubiquitous, driven by the increasing technological capabilities and performance of delivery platforms, the rapid uptake of broadband technologies – with 2004 identified as a breakthrough year for broadband penetration in OECD countries – innovative creation and use of content and improved performance of hardware and software.
+      <br /><br />
+      Through a combination of new technologies, new business relationships and innovative service offers to consumers, the market is developing rapidly in order to realise the potential of online music. Saracco (2002) predicts that in ten years’ time nearly all communications (over 90% of it) will be using fixed networks, while most people will be under the impression they are using mobile networks. He observes that in the coming years we are going to see a tremendous increase in communicating entities, be they applications or objects. The amount of communication directly involving humans will keep growing but at a slower pace, fuelled mostly by the dissemination of telecommunications in developing countries.
+      <br /><br />
+      According to OECD – Digital Economy (2006), users are becoming increasingly active, in such a way we are entering a participatory culture not of consumers but of users. Users are increasingly active and want to express themselves. This is highly relevant to a field such as sound and music computing, which is closely linked to creation and expression.
+      <br /><br />
+      <i>
+        Statement 5: Interactive broadband networks are revolutionising the way music is distributed and consumed.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 6: New forms of Intellectual Property protection
+    </h4>
+    <p>
+      Concerning intellectual property protection, there are traditionally two extreme positions to be defended, namely, absolute control of a creation or complete release of the rights to it. However, until recently, there was no easy way to make explicit the rights that an author gives in relation to a creation. Creative Commons (<a href="http://creativecommons.org/">http://creativecommons.org/</a>) is the first example of a system that offers flexible protection of intellectual rights.
+      <br /><br />
+      Kusek and Leonhard (2005) claim that the issue of protecting intellectual property goes far beyond music and audio technologies. Nevertheless, the crisis started in the music industry. Already, music recording industry revenues are down sharply, despite an overall increase in the distribution of music. The financial crisis has caused music labels to become cautious and conservative, investing in proven artists, with less support available for new and experimental musicians. Kusek and Leonhard note that the breakdown of copyright protection is even starting to impact on musical instruments. Synthesisers, samplers, mixers and audio processors can all be emulated in software. For example they estimate that at least 90% of the copies of Reason, one of the emulation software leaders, are pirated.
+      <br /><br />
+      Commenting on OECD – Digital Economy (2006) they note the existence of sharp disagreement as to whether intellectual property rights (IPR) currently strike the right balance. There are three points of view: some believe that interest- group pressure has led to excessive protection; some adopt an intermediate position, believing that recent court cases such as Grokster have clarified secondary liability and that this has been sufficient to clarify the IPR situation; a third group maintain that levels of protection and enforcement are still insufficient and should be strengthened. That same OECD report proposes a tentative work agenda that might address the following needs: first, putting intellectual property in its proper place, that is, balancing private incentive versus the public good; second, achieving new digital rights definitions which integrate old rights (e.g. fair and legitimate use) and new rights (e.g. access to orphaned and out-of- print works); finally, accommodating new models of production and distribution (Open Source, Open Format, Open Access).
+      <br /><br />
+      According to KEA (2006), the main beneficiaries in Europe of the digital revolution have been the telecom operators acting as Internet service providers. Broadband access spending has risen very rapidly. This growth is largely due to the availability of free content. Indeed, 95% of music downloads today, for example, are unpaid for.
+      <br /><br />
+      <i>
+        Statement 6: New models of the control and use of intellectual property rights are impacting on the music industry and opening up new possibilities for the protection and dissemination of music content.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Industrial Trend 7: Revolution in the music business
+    </h4>
+    <p>
+      The whole music business is going through a major revolution, the main cause of which is the development and expansion of the ICT sector. According to OECD – Digital Music (2005) the rise of online music has resulted in product and process innovation, the entry of new players and new opportunities for music consumption and revenues, involving different forms of disintermediation, and the continued strong role of some traditional market participants (especially the record labels). In the new digital model, artists, majors and publishers have so far retained their creative roles related to the development of sound recordings.
+      <br /><br />
+      Direct sales from artist to consumer or the building of an artist’s career purely through the online medium are still rare. Nevertheless, the Internet allows for new forms of advertising and possibilities that lower the entry barriers for artistic creation and music distribution. According to Kusek and Leonhard (2005), ever since the invention of electricity, music and technology have worked hand-in-hand, and technology continues to catapult music to unprecedented heights. Today, the Internet and other digital networks, despite all the legal wrangling, have made music bigger than ever before. Within ten to fifteen years, Kusek and Leonhard claim, the “Music Like Water” business model will make the industry two or three times larger than it is today. They imagine a world where music flows all around us, like water or electricity, and where access to music becomes a kind of “utility”. Not for free per se, but certainly for what feels like free. Along the same line, Kurzweil (2003) claims music technology is about to be radically transformed. Communication bandwidths, the shrinking size of technology, our knowledge of the human brain and human knowledge in general are all accelerating. Music will remain the communication of human emotion and insight through sound from musicians to their audience, but the concepts and process of music will be transformed once again.
+      <br /><br />
+      <i>
+        Statement 7: The possibilities of the ICT technologies are completely reshaping the music business.
+      </i>
+      <br /><br />
+      To sum up, the identified trends show a rapid development towards a knowledge-based and global economy, with a major role of the ICT sector. Reports indicate a growing interest in the mutual dependency of the cultural and creative sector and ICT, which leads to new roles of content exploitation and dealing with intellectual property issues. All these developments accompany the revolution that is currently taking place in the music business. The sound and music computing field is expected to play a crucial role in these developments.
+    </p>
+    <h4>
+      References
+    </h4>
+    <p>
+      OECD. OECD Science, Technology and Industry Scoreboard – Towards a knowledge-based economy. Organisation for Economic Co-operation and Development. <a href="http://hermia.sourceoecd.org/vl=849972/cl=36/nw=1/rpsv/scoreboard/">http://hermia.sourceoecd.org/vl=849972/cl=36/nw=1/rpsv/scoreboard/</a>, 2005.
+      <br /><br />
+      Information Society and Media DG. i2010 – A European Information Society for growth and employment. <a href="http://europa.eu.int/information_society/eeurope/i2010/index_en.htm">http://europa.eu.int/information_society/eeurope/i2010/index_en.htm</a>.
+      <br /><br />
+      R. Saracco. Is there a future for Telecommunications? <a href="http://www.singaren.net.sg/library/presentations/21nov02_1.pdf">http://www.singaren.net.sg/library/presentations/21nov02_1.pdf</a>, 2002.
+      <br /><br />
+      National Science Board. Science and Engineering Indicators 2006. Technical report, National Science Foundation, 2006. <a href="http://www.nsf.gov/statistics/seind06/">http://www.nsf.gov/statistics/seind06/</a>.
+      <br /><br />
+      D. Kusek and G. Leonhard. The Future of Music: Manifesto for the Digital Music Revolution. Omnibus Press, 2005. <a href="http://www.futureofmusicbook.com/">http://www.futureofmusicbook.com/</a>.
+      <br /><br />
+      Ray Kurzweil. The Future of Music in the Age of Spiritual Machines. Lecture to the AES 2003. <a href="http://www.kurzweilai.net/meme/frame.html?main=/articles/art0597.html">http://www.kurzweilai.net/meme/frame.html?main=/articles/art0597.html</a>.
+      <br /><br />
+      D. Darlin. Data, music, video: Raising a curtain on future gadgetry. New York Times, January 2006. <a href="http://tinyurl.com/njg3f">http://tinyurl.com/njg3f</a>.
+      <br /><br />
+      OECD. OECD Report on Digital Music: Opportunities and Challenges. Technical report, 2005.
+      <br /><br />
+      OECD. The Future Digital Economy: Digital Content Creation, Distribution and Access. Technical report, 2006. <a href="http://www.oecd.org/dataoecd/54/35/36854745.pdf">http://www.oecd.org/dataoecd/54/35/36854745.pdf</a>.
+      <br /><br />
+      KEA European Affairs. The Economy of Culture in Europe. Technical report. <a href="http://www.keanet.eu/Ecoculture/ecoculturepage.htm">http://www.keanet.eu/Ecoculture/ecoculturepage.htm</a>.
+      <br /><br />
+      Creative Commons. <a href="http://creativecommons.org/">http://creativecommons.org/</a>.
+    </p>
+
+    <h2>Research</h2>
+    <p>
+      This section aims to identify the major research trends within which sound and music computing is to be situated. The focus is on trends in ICT, the cognitive sciences and the humanities. Given the broad scope of sound and music computing, this section devotes special attention to the rise and importance of a multidisciplinary research space that is the motor for innovation in society. References to this general research space can be found in several reports from the European Commission and the National Science Foundation of the US (European Commission – New Instruments, 2004, European Commisison – Research Area, 2007, National Science Foundation, 2004). Below, we aim at identifying the specific research trends that are deemed to be relevant to sound and music computing. Each trend will be summarized by a short statement that aims at identifying the core issue that is relevant to future challenges of the sound and music computing research field.
+    </p>
+    <h4>
+      Research Trend 1: Rapid progress in ICT
+    </h4>
+    <p>
+      In recent decades, progress in sound and music computing has been driven by revolutionary developments in information technology. The transitions from analogue to digital data processing and from wired to wireless mobile data-communication have been key components in this development. The relentless rate of annual to biennial doubling of storage capacity, bandwidth and data-crunching computing power has been unprecedented in history, leading to fundamental transformation of all aspects of the production-processing-distribution-consumption chain of sound and music content. In no other field has an entire processing chain been digitalised and made available on broadband networks and mobile devices on such a massive scale. In this development, technological progress has had a direct empowering influence both on scientific knowledge and on end applications, which in turn have impacted on the development of new technologies. In the context of this development, a number of consequences for research can be identified (Hengeveld, 2000, ITRS Consortium, 2007, NEM Consortium, 2007, Microsoft Research Cambridge, 2006).
+      <br /><br />
+      <i>
+        Statement 1: The rate of increase in storage capacity, bandwidth and data-crunching computing power is leading to fundamental transformations in all aspects of the music economical chain.
+      </i>
+      <br /><br />
+      First, the increasing capacity of data storage and transfer supports the accumulation of, and easy access to, ever-larger volumes of data. A resulting benefit is better access to knowledge, such as online access to vintage publications, supplementary data, new publication formats and so on. This accessibility is empowering to the scientist. At the same time, like the invention of printing, it has an effect on the embodiment of knowledge itself, shifting the centre of gravity of knowledge from brain, to book and onward to database.
+      <br /><br />
+      A second effect is the shift towards data intensive methodologies that involve gathering or compilation of large volumes of data. This allows a focus on data intensive phenomena, phenomena that are either intrinsically complex, or else accessible only as patterns within multiple or complex observations. In the field of music studies, an enquiry might call for the processing of a large library of musical scores or a large database of audio data. A few years ago such a quest might have remained untouched for lack of access to the data, or no room to store it in the computer, or no time to wait for the computer to give an answer. By the same token, a topic once respectable for its technical difficulty might suddenly become trivial. In ways such as these, information technology affects the focus of science.
+      <br /><br />
+      A third consequence is the shift away from analytical and theoretical approaches towards a reliance on computer models and simulations. This approach, which can be observed in fields as diverse as pure mathematics (computational proofs), statistics (Montecarlo methods, bootstrap), biology (DNA sequence alignment), linguistics and speech engineering (data-driven methods), has engendered a degree of unease and debate (Seiden, 2001). Does a proof that only a computer can follow really contribute to our understanding? Similar unease met the invention of algorithms, infinity, or proof by induction. In similar vein, one can ask whether a drum machine can be qualified as a musician? Or whether ‘jazz improvisation’ by a computer is really a genuine improvisation?
+      <br /><br />
+      A fourth consequence is the development of machine-embedded knowledge such as that gathered by machine-learning techniques. Arguably these techniques come closer to delivering the promises of intelligence than has the so-called Artificial Intelligence (AI) research itself. With them, intelligence is attained more by the clever use of tricks and devices in machines than by the artifice of man. At the confluence of statistical estimation techniques and neural network theory, machine learning harnesses the computer to compile and extract regularities from massive quantities of data. The knowledge thus obtained, usually impossible to describe to a human brain and useless without a computer, is nonetheless empowering for web search, spam filtering, or musical content indexing and retrieval. As models of brain processing, machine-learning techniques may eventually provide a bridge between information technology and neurosciences. Particularly relevant to music technology are new techniques of signal processing related to machine learning.
+      <br /><br />
+      In summary, progress in information science and technology is fuelling a drive towards data- and computation-intensive approaches to knowledge acquisition and problem solving, particularly in domains relevant to sound and music computing. These have deep implications for the nature of scientific and technological knowledge and how it is brought to bear on our needs.
+      <br /><br />
+      <i>
+        Statement 2: Information technology is profoundly reshaping the methodologies and scope of scientific inquiry and technological development.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Research Trend 2: Cognitive science: from musical mind to brain
+    </h4>
+    <p>
+      Cognitive sciences (Wilson and Keil, 1999) focus on how humans interact with their environment, mostly from the viewpoint of perception and action. Developments in this research domain have had a huge impact on sound and music computing. In fact, studies on musical memory, learning and all activities related to music perception and action, such as extraction of high-level information from musical stimuli or gestural sound control, can be considered the basic constituents of sound and music computing applications.
+      <br /><br />
+      The cognitive science of music (as practised in, for example, cognitive musicology, experimental music psychology or the neurosciences of music) has its focus on the semantic gap that exists between our daily meaningful experiences with sound and music on the one hand, and the encoded physical energy of sound and music on the other. When dealing with music, we call upon content and meaning, whereas the encoded physical energy is just a way of storing information in a technological device. How are the two connected? How can we access the encoded information by means of meaningful actions? Research in cognitive science aims at providing new insights into this semantic gap problem. Several different approaches to solving this problem can be distinguished.
+      <br /><br />
+      A first research direction starts out from the premise that the human mind is embodied (Knoblich et al., 2006). Rather than trying to solve the semantic gap problem by looking at formal structures and higher-level or low-dimensional representational spaces, the relation between human meaning and encoded physical energy is here seen as being mediated by the human body. For example, if an ambiguous musical rhythm is presented, then it is assumed that the motor system of the human body engenders the anticipatory mechanisms (called emulation) that allow a disambiguated auditory perception of it. Action is here seen as a crucial component for auditory perception, with action and feedback mechanisms being considered at different processing levels, from feedback mechanisms in the auditory periphery (e.g. the role of outer hair cells in attenuation) to the role of intended actions in perception. The embodied viewpoint may revolutionise how we think about ICT development in that it calls for new technologies that mediate between the human mind and its musical environment, based on a multi-sensory approach to sound and music computing (Leman, 2007).
+      <br /><br />
+      <i>
+        Statement 3: The embodied viewpoint calls for new technologies to mediate between the human mind and the environment.
+      </i>
+      <br /><br />
+      A second research direction is concerned with the methodologies for acquiring knowledge about the semantic gap problem. In the last decade, these methodologies have been extended from behavioural to brain research. Knowledge about the brain is progressing rapidly and at multiple scales which include molecular, synaptic, cellular, cell assembly, and regional and functional anatomy as revealed by brain imaging. Today our tools include molecular biology techniques for probing the membrane and synaptic properties of neurons, physiological recording techniques to observe entire neuronal assemblies, non-invasive imaging techniques to probe activity within the human brain, computational tools to gather and process the resulting data, and theoretical tools to make sense of the complexity of what is observed. Some recent studies in neurophysiology include the use of awake preparations (often coupled with behavioural studies), multiple unit recordings, simultaneous invasive and non-invasive brain imaging techniques (to calibrate one with respect to the other), selective brain cooling, optical imaging and the coupling of one of these with genetic engineering or biochemical manipulations to probe specific stages in processing. Research in brain imaging includes the use of higher magnetic fields for structural and functional MRI (magnetic resonance imaging), increased numbers of channels in EEG (electroencephalography) or MEG (magnetoencephalography), simultaneous recording of fMRI and EEG, or EEG and MEG, and use of pre-surgical supradural or intracortical recordings from patients to obtain ‘close up’ snapshots of brain activity.
+      <br /><br />
+      An important facilitating factor in these developments is progress in hardware and software techniques for handling and interpreting the massive data sets produced by brain imaging. In short, there is presently a rapid development of different technology-driven methodologies that provide new insights into how the brain is involved in the semantic gap problem.
+      <br /><br />
+      <i>
+        Statement 4: New technology-driven methodologies are providing new insights into how the human brain processes sound and music.
+      </i>
+      <br /><br />
+      A third major research effort, situated in theoretical neurosciences, is about the tight interaction between signal processing and machine learning techniques on the one hand, and models of neural processing on the other. A common goal is to find techniques that can harness the extreme complexity of relevant patterns in data (for example databases of environmental, speech or musical sounds) or the structures and mechanisms observed within the brain. The computer here is used as an aid to control a degree of complexity of which our brains cannot otherwise easily comprehend. One promising angle of enquiry is the use of data-driven methods to simulate the processing mechanisms (natural or artificial) under the drive of the data patterns that it is to process. This method can be used as an alternative or complement to more traditional engineering techniques.
+      <br /><br />
+      The above developments lead to often rather wild speculations on the possible future benefits of neurosciences to computing. An example of such a hypothetical breakthrough might be the possibility of ‘downloading’ entire cognitive or perceptual processing mechanisms to software. This could result from a combination of progress in recording techniques, theoretical neurosciences and machine learning. Another hypothetical breakthrough (heralded by well-estabished cochlear implant technologies and recent experiments with animal models and impaired humans) could be the widespread development of brain-machine interfaces (BMI). This could result from a combination of progress in interface hardware (e.g. miniaturised electrode arrays), signal processing (to factor out ‘noise’) and machine learning (to translate between the different codes used by brain and machine). All this is likely to have a huge impact on the sound and music computing field. Examples are hearing aids (e.g. cochlear implants) that allow their users to listen to music at a high quality level, or an intracortical implant that would allow a quadriplegic to play the piano.
+      <br /><br />
+      <i>
+        Statement 5: Cognitive sciences and neurosciences offer a rapidly expanding window on the human mind and brain, thereby providing new possibilities for solving the semantic gap problem.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Research Trend 3: From subjective experience to cultural content
+    </h4>
+    <p>
+      Research in the humanities is focused on signification practices; that is, on how human beings make sense of their environment and give meaning to their lives. The humanities view this signification practice from a subjective and experiential point of view. Therefore, research of this kind includes anthropology, area studies, communications, cultural studies and media studies. The humanities not only provide insights into these aspects but also train people in the skills necessary for practitioners (e.g. in music playing, painting, film making). Traditionally, research methodologies in the humanities are based on analytic, descriptive, critical or even speculative and imitation approaches, although recent approaches also involve quantitative and empirical studies (e.g. Diamond, 1999; Foster, 1985; Tomasello, 1999). In the cultural and creative industries (KEA, 2006), the humanities can provide the content needed to develop a significant partnership between culture and technology.
+      <br /><br />
+      Several research efforts in the humanities address this issue. A first approach has adopted the belief that subjective factors (related to gender, education and social and cultural background) play a central role in how people deal with technology. Humanities research may provide the necessary analysis of the role of subjective factors and the social and cultural contexts in which technological applications will function. Knowledge of these factors needs to be incorporated into music retrieval systems and interactive music systems.
+      <br /><br />
+      <i>
+        Statement 6: Subjective factors play a central role in how people deal with technology in relation to sound and music.
+      </i>
+      <br /><br />
+      A second research approach is concerned with what is sometimes called ‘medialogy’; that is, an approach which combines technology and creativity to design new processes and tools for art, design and entertainment. It involves insight into the creative processes, thoughts and tools needed for media-productions and other arts to exist. Clearly, medialogy is at the crossroads of the human sciences, the creative arts and technology. As such, it is a central pillar of the creative industries.
+      <br /><br />
+      A third research approach is concerned with the transformation of the cultural sector into the digital domain. This involves the digitalisation of a large part of our cultural heritage. From the humanities point of view, the preservation and archiving of cultural heritage poses huge challenges with respect to issues such as the authenticity of documents, flexible multi-language access and the provision of proper content descriptions of objects from multifarious cultures.
+      <br /><br />
+      <i>
+        Statement 7: Technology, creative approaches to art, design and entertainment and the digitalisation of a large part of our cultural heritage stimulate each other.
+      </i>
+      <br /><br />
+      A fourth key topic in the humanities concerns the role of the human body, embodiment, and corporeal skills in signification practices. Human skills, which often require intensive learning, have been studied and described for centuries from a humanistic point of view, often from entirely different cultural perspectives. Accordingly, the humanities provide a rich source of theories, concepts and traditions that are highly revealing and inspiring for new empirical studies and technological applications. An example is the Laban theory of effort (Laban and Lawrence, 1947), which provides a speculative theory but very valuable insight into choreography and expressive moving. This theory can be straightforwardly related to music perception, leading to the interesting approach of gesture-based music retrieval. Another example concerns the philosophical views on intentional behaviour of the human body and how this is currently being integrated into a neuroscientific approach to empathy and social cognition (Metzinger, 2003). The focus on the human body in artistic research is clearly connected with the empirical study of embodiment in cognitive science. In fact, it is thanks to the humanities (e.g. phenomenology, post-structuralism, post-modernism) that this topic has become a genuine research topic on the agenda of empirical sciences that deal with perception, action and the use of tools and technologies. Indeed, some aspects of embodiment, involving emotions and the gesture related to them, can be straightforwardly explored and used in technology-based artistic and cultural applications, even if our knowledge about these processes is limited.
+      <br /><br />
+      In short, the humanities offer a very rich background from which the problem of the semantic gap can be addressed. Its focus on specific topics such as the human subject, embodiment and social and cultural interaction, along with its often descriptive analytic approach, is highly valuable from the perspective of content creation.
+      <br /><br />
+      <i>
+        Statement 8: The humanities offer the cultural background and content for sound and music computing research.
+      </i>
+      <br /><br />
+    </p>
+    <h4>
+      Research Trend 4: The rise of multidisciplinary research
+    </h4>
+    <p>
+      Scientific research is currently witnessing two opposing, though intimately related, approaches. On the one hand, it continues to differentiate into more and more specific and narrowly circumscribed sub-fields owing to the accelerating accumulation of ever more specific knowledge. At the same time, new multidisciplinary research fields are emerging within academia, for example in the life sciences, neurosciences and earth sciences. Understanding the complex phenomena facing mankind – from climate change to new epidemics to global economic and social developments – requires the integration of expertise from many fields. The growing importance of multidisciplinarity is being increasingly recognised in research funding agencies and educational organisations.
+      <br /><br />
+      According to a report recently presented at the OECD Global Science Forum Workshop (National Institutes for Health [NIH], 2006) “[t]he increasing multidisciplinary nature of research […] is an important overall trend in science policy. For example, during the past four years, the fraction of interdisciplinary research at the United States National Science Foundation has increased significantly”. The NIH Roadmap for Medical Research further states that “the traditional divisions […] may in some instances impede the pace of scientific discovery”. In response to this, the NIH is establishing “a series of awards that make it easier for scientists to conduct interdisciplinary research”.
+      <br /><br />
+      As early as the year 2000, The National Sciences and Engineering Research Council [NSERC] of Canada set up a special Advisory Group on Interdisciplinary Research (AGIR) with a mandate to study how interdisciplinary research could be better supported (NSERC, 2002). In 2003, the National Science Foundation [NSF] promoted a study on the convergence of technologies (NSF, 2003) which concluded that: “In the early decades of the 21st century, concentrated efforts can unify science based on the unity of nature, thereby advancing the combination of nanotechnology, biotechnology, information technology, and new technologies based in cognitive science”. Similarly, research funding institutions all over the world are beginning to recognise the need to give special attention to multidisciplinary research funding.
+      <br /><br />
+      Of course, the fundamental importance of multidisciplinary research is also acknowledged by the European Commission. In the field of ICT, which is of direct relevance to sound and music computing, the “Future and Emerging Technologies” (FET) programme is explicitly targeted towards innovative, multidisciplinary work – in the chapter dedicated to FET, the ICT work programme of FP7 calls for “interdisciplinary explorations of new and alternative approaches towards future and emerging ICT-related technologies, aimed at a fundamental reconsideration of theoretical, methodological, technological and/or applicative paradigms in ICT”, one of the goals of FET being to “[help] new interdisciplinary research communities to establish themselves as bridgeheads for further competitive RTD” (ICT-FET Work Programme, 2007).
+      <br /><br />
+      Sound and music computing is by definition an multidisciplinary field, ranging from the natural sciences like physics and acoustics through mathematics, statistics and computing, all the way to physiology, psychology and sociology. The global trend towards the recognition of multidisciplinarity should help sound and music computing establish itself more confidently as an encompassing discipline that studies a phenomenon of central relevance to humans in all its necessary breadth. In addition, the emergence of new multidisciplinary fields of research and application is producing new points of contact for sound and music computing.
+      <br /><br />
+      A prime example of such contact is the current rise of the so-called creative industries (KEA, 2006). While the notion creative industries refers to a sector of the economy, its current upsurge (also in terms of public awareness) also leads to new opportunities for creative multidisciplinary research at the intersection of art, design and technology. Sound and music computing can and will play an important role here. The case of the creative industries also highlights once more – if that were needed – the close ties between scientific research and the arts (see also the Industrial Context section). Artistic visions coupled with creative application ideas are likely to drive sound and music computing research in more ways than can currently be envisioned, resulting in entirely new environments, devices and cultural services.
+      <br /><br />
+      <i>
+        Statement 9: Multidisciplinary research is increasingly seen as a necessity and an asset, and special programmes for fostering and funding it are being developed. Sound and music computing can take advantage of this and should actively seek alliances with other disciplines, including the arts.
+      </i>
+      <br /><br />
+      To sum up, in this section we have identified some major trends related to the rapid progress in ICT, the development of cognitive science and the advent of brain science, the role of human sciences in addressing the human subject and its action-related contexts, and the multidisciplinary nature of scientific research. Sound and music research is at the cutting edge of these trends. It is driven by these general trends in research and it plays an active role in pushing the most advanced stages of each of these developments.
+    </p>
+    <h4>
+      References
+    </h4>
+    <p>
+      Diamond, J. (1999). Guns, germs, and steel. The fates of human societies. New York: Norton & Comp.
+      <br /><br />
+      European Commission – Research Area (2007). European research area. <a href="http://cordis.europa.eu/era/">http://cordis.europa.eu/era/</a> .
+      <br /><br />
+      European Commission – New Instruments (2004). Evaluation of the effectiveness of the New Instruments of Framework Programme VI. <a href="http://ica.cordis.lu/documents/documentlibrary/ADS0006763EN.pdf">http://ica.cordis.lu/documents/documentlibrary/ADS0006763EN.pdf</a>
+      <br /><br />
+      Foster, H. (Ed.) (1985). Postmodern culture. London and Sydney: Pluto Press.
+      <br /><br />
+      Hengeveld, P, Best, J.-P. , van Beumer, J. , Hooff, B. , van den Poot, H. , and R. de Westerveld (Eds.) (2000). Research trends in information and communication technology: Uncovering the agendas for the information age.Telematica Instituut, Enschede, The Netherlands.
+      <br /><br />
+      ICT-FET Work Programme (2007). Future and Emerging Technologies. European commission. Information society and media. <a href="http://cordis.europa.eu/ist/fet/">http://cordis.europa.eu/ist/fet/</a>
+      <br /><br />
+      ITRS Consortium (2007). The international technology roadmap for semiconductors. <a href="http://www.itrs.net/home.html">http://www.itrs.net/home.html</a>.
+      <br /><br />
+      KEA European Affairs [KEA] (2006). The economy of culture in Europe. Technical report. <a href="http://www.keanet.eu/Ecoculture/ecoculturepage.htm">http://www.keanet.eu/Ecoculture/ecoculturepage.htm</a>.
+      <br /><br />
+      Laban, R., & Lawrence, F. C. (1947). Effort. London: Macdonald & Evans.
+      <br /><br />
+      Leman, M. (2007). Embodied music cognition and mediation technology. Cambridge, MA: The MIT Press.
+      <br /><br />
+      Metzinger, T. (2003). Being no one: The self-model theory of subjectivity. Cambridge, Mass.: MIT Press.
+      <br /><br />
+      Microsoft Research Cambridge (2006). Towards 2020 Science. <a href="http://research.microsoft.com/towards2020science/">http://research.microsoft.com/towards2020science/</a>.
+      <br /><br />
+      National Institutes for Health [NIH] (2006). Interdisciplinary Research. <a href="http://nihroadmap.nih.gov/interdisciplinary">http://nihroadmap.nih.gov/interdisciplinary</a>.
+      <br /><br />
+      National Science Foundation (2004). National Science Foundation Strategic Plan FY 2003-2008. <a href="http://www.nsf.gov/pubs/2004/nsf04201/FY2003-2008.pdf">http://www.nsf.gov/pubs/2004/nsf04201/FY2003-2008.pdf</a>
+      <br /><br />
+      Natural Sciences and Engineering Research Council [NSERC] (2002). First report of the advisory group on interdisciplinary research. <a href="http://www.nserc.ca/pubs/agir/AGIR_e_report.pdf">http://www.nserc.ca/pubs/agir/AGIR_e_report.pdf</a>.
+      <br /><br />
+      NEM Consortium (2007). Networked and electronic media – European technology platform: Strategic research agenda. <a href="http://www.nem-initiative.org/">http://www.nem-initiative.org/</a>.
+      <br /><br />
+      Seiden, S. (2001). Can a computer proof be elegant? Communications of the ACM, 32: 111-114, 2001.
+      <br /><br />
+      Tomasello, M. (1999). The cultural origins of human cognition. Cambridge: Harvard University Press.
+      <br /><br />
+      Wilson, R.A. and Keil, F. (Eds.) (1999). The MIT Encyclopedia of the cognitive sciences (MITECS). Cambridge, Mass.: The MIT Press.
+    </p>
+
+    <div class="container" style="height: 15px";>  </div>
+  </div>
+
+  <div id="challenges" class="container-fluid" style="min-height: 100px; background: rgb(246, 246, 246)";>
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Challenges and Strategies</h1>
+    </div>
+
+    <p>
+      We identify five broad challenges of relevance to SMC research. The first two are centred on the actual research issues, the third one addresses educational aspects, the fourth one focuses on knowledge transfer and the last one is centred on social concerns.
+      <ol>
+        <li><b>Design better sound objects and environments:</b> The growing abundance of electronically generated sounds in our environment, coupled with the rapid advances in information and sensor technology, present SMC with unprecedented research challenges, but also opportunities to contribute to improving our audible world.</li>
+        <li><b>Understand, model, and improve human interaction with sound and music:</b> The human relation with sound and music is not just a perceptual and cognitive phenomenon: it is also a personal, bodily, emotional, and social experience. The better understanding of this relation from all these perspectives will bring truly useful and rewarding machine-mediated sonic environments and services.</li>
+        <li><b>Train multidisciplinary researchers in a multicultural society:</b> SMC is a highly multidisciplinary domain that requires special expertise. But the way the established academic disciplines are being taught makes it difficult to acquire the proper knowledge. Thus there is a need for the establishment of appropriate educational programmes for training these specialists.</li>
+        <li><b>Improve knowledge transfer:</b> A large part of SMC research is devoted to applications that can be directly exploited in the arts, in industry and in society at large. Proper knowledge transfer should result into an impact much larger than the current one.</li>
+        <li><b>Address social concerns:</b> The role of the SMC field goes beyond that of a mere provider of technological or commercial solutions. SMC has the potential to contribute to maintaining and furthering the richness of human culture and preventing the global technological trends that make the world uniform. Also, SMC should empower users, putting the relevant choices and decisions back into the hands of the individual.</li>
+      </ol>
+    </p>
+    <h2>
+      Strategies for addressing the challenges
+    </h2>
+    <p>
+      To address the first two challenges we have to be able to promote research in our field, leading it towards the appropriate direction.
+      <br /><br />
+      <b>Promote new paradigms for sound synthesis and processing:</b> The traditional concept of musical instrument is not anymore valid for promoting innovation. Any object can be turned into a musical instrument as soon as someone starts exploiting its expressive capabilities and employing some kind of virtuosity. This had happened with many everyday objects in the past, and it is likely to occur in the future, in a world of sensorised and networked objects and spaces. Current research has to explore new paradigms for the design of musical instruments and for the creative use of the technological infrastructures that are being developed.Research is also needed to improve synthesis algorithms, both those based on Signal/Spectral Models and those based on Physical Modelling. At a more structural level, Computer–Assisted Composition should be included and seamlessly integrated with these algorithms. For natural human/sound interactions at an individual level, all advances in Personal Sound devices should be encouraged. They might range from 3D audio over headphones to Computer/Brain Interfaces; from prophylactic uses as in cochlear implants to general–use biofeedback techniques. We also have to go beyond imitation and towards capturing the communicative potentiality of sound. Sound is a powerful information carrier through which to convey rapid and continuous information about objects, events, processes, functions and relations. Research should isolate the physical, acoustic and perceptual features that contribute to the salience of such items, so that sounds can be moulded according to specific communication needs.
+      <br /><br />
+      <b>Promote research in fields involved in the shaping of natural and artificial acoustic ecosystems:</b> The SMC community should enlarge its scope to give itself the potential to affect fields concerned with designing “sensible spaces” for a better quality of life on various scales: product design, architecture, urban planning, landscape design and conservation. Sound is increasingly perceived as an important component at all levels, not only as a source of pollution, but also as a facilitator of interaction and as a component of the aesthetic experience of a place or its genius loci. We should promote studies aimed at reducing sound and music pollution in public and private ecosystems. Our sense of hearing is a precious resource whose capabilities should be exploited but whose effectiveness can be impaired by oppressive and hostile acoustic environments. The SMC community should encourage studies, technologies and campaigns promoting a sparing and intelligent use of sound in public and private contexts, and support the involvement of psychologists, sociologists and policy makers.
+      <br /><br />
+      <b>Promote computational modelling approaches in research on auditory perception and cognition:</b> The final goal of most SMC research is to produce tools which can interact meaningfully with the user via sound, possibly integrated with other modalities. To do so, these tools will have to incorporate knowledge about sound perception and multimodal communication. Since auditory perception and cognition is a broad and multidisciplinary field of research, the focus of SMC research should be on aspects that are directly relevant to the goal mentioned above. Computational Auditory Scene Analysis is one such aspect. It should be studied and improved with the aim of identifying and tracking the different sound sources present in a given soundscape or piece of music. Auditory Attention is another aspect. This is a fundamental cognitive capability of human listeners, and it requires more study to assist in the design of effective interactive systems. Aspects of Memory and Learning are related to attention, and are necessary for SMC to bridge the gaps between time–scales (listening to a single note, to a whole piece of music). Also Musical Structural Analysis by human experts should inform the musicological aspects of SMC. In order to focus its research and demonstrate the utility of its methods, SMC should target specific applications that benefit human users. An application on which to focus is the development of devices that enhance aspects of normal auditory perception and cognition. For instance, such devices could focus the attention of the user on some aspect of the auditory scene, to help her getting a clearer understanding of it, and/or to contribute to a deeper understanding of other channels, such as the visual and haptic ones. In the educational field, learning applications should be encouraged. The use of such augmentary devices has a strong social aspect as they could play a crucial role in the design of Auditory Prostheses of the future, which should allow music listening in addition to speech comprehension.
+      <br /><br />
+      <b>Intensify research in expressivity and communication, developing an embodied approach to perception and action:</b> An essential aspect of sound and music that must be understood, beyond the physical, perceptual and cognitive phenomena themselves, is expressivity in sound and music communication and its relation to emotion. A prime field in which this can be studied is music performance, where expressivity is often just as important as the ‘actual’ music–structure itself. In particular, performance research should transcend its current (narrow) focus on mostly classical music. This favours abstract music–score– centred models that neglect the human in the loop. Instead, it should put more systematic effort into studying the processes of expression transmission in musical environments, with a focus on all three components of the communication channel: the expressive sound (music) itself, the performer and the listener. There is a growing consensus in cognitive science that perception, be it natural or artificial, cannot be fully understood without reference to action. This awareness is especially important in SMC research, where action is intrinsically linked to sound interaction and music making. Research in perception–action topics should thus be encouraged. Ergonomics is the most applied level of research where perception and action meet. At a more fundamental level, sensory–motor theories and embodiment of cognitive abilities are defining and formalising the important aspects of the perception and action loop.
+      <br /><br />
+      <b>Intensify multimodal and multidisciplinary research on computational methods for bridging the semantic gap in music:</b> The Semantic Gap in SMC — the discrepancy between what can be recognised in music signals by current state–of–the–art methods and what human listeners associate with music — is the main obstacle on the way towards truly intelligent and useful musical companions. Current research efforts aim at the automatic recognition and modelling of higher–level musical patterns (e.g., rhythmic or harmonic structure), but they still essentially adhere to the traditional bottom–up pattern analysis scenario. The bridging of the semantic gap will require a radical re–orientation (1) towards the integration of top–down modelling of (incomplete) musical knowledge and expectations, and (2) towards a widening of the notion of musical understanding. This re-orientation can be achieved by embracing and exploiting other media (including the Web), and modalities (including for example semantic issues related to the allusion of movement and gesture in music). This research will have to be notably multidisciplinary, involving, among others, specialists in musicology, music perception, artificial intelligence, machine learning, and human movement understanding.
+      <br /><br />
+      <b>Intensify interaction between research and the arts:</b> Artists have an extremely refined understanding — albeit (perhaps) not in ‘scientific’ terms —of issues of perception and perceptibility and, more importantly, of the effect of sound, including its emotional and social ramifications. In order to understand the human experience of sound and music in its full breadth, SMC needs to exploit this resource. Artists may bring up new questions and ways of looking at human and social contexts related to sound. Joint art/research projects, even those which, at first sight, focus on ‘artistic’ and not overtly ‘scientific’ questions, should be promoted and adequately funded. In fact, the strict distinction between the ‘artistic’ and the ‘scientific’ must continually be challenged. The SMC community should also make efforts to strengthen this viewpoint in funding agencies and among decision makers.
+      <br /><br />
+      In relation to the third challenge the strategies relate to how to create and promote appropriate educational programs for training the future SMC researchers.
+      <br /><br />
+      <b>Design appropriate multidisciplinary curricula for SMC:</b> Higher Education in SMC must take into account the wide variety of student backgrounds as well as the different final goals of their education. Master and PhD students enter the SMC field from different disciplines, and target their studies to a wide span of objectives, ranging from fundamental and applied research to creative endeavours such as composition and sound design. Therefore, appropriate curricula which allow specialisation must be designed to provide a wide spectrum of knowledge. It is also important to promote broader integration of Arts and Sciences.In the past, composers and content creators were a driving force behind SMC innovation. Their interaction with scientists constituted a positive ecosystem for technological innovation. In return, science provided many methodologies and tools which were greatly inspiring for several art forms. However, the drive for innovation coming from art has progressively diminished due to the increasing specialisation of the domains involved. The arts can again play a creative role when curricula in SMC are better integrated. Composition and Sound Design is a typical example where this integration is possible. Another example concerns innovative multimodal techniques for emotional and expressive analysis in Performance Practice and Musicology. Specific pro–active initiatives must be implemented to allow composers, musicians, musicologists and content creators to complement their training in Europe and abroad. The curricula should also promote cross–cultural integration in education. The recent surge in non–European industries and global markets requires a reconsideration of how education faces up to globalisation, multiculturalism and cross–cultural integration. In particular, the growing population of students, who come to Europe from different non–European cultures and backgrounds, requires appropriate education and pedagogical approaches that reflect a concern for multiculturalism.
+      <br /><br />
+      <b>Promote coordination between the different educational programs and related initiatives:</b> SMC research has a successful track record thanks to the complementarity and coordination between research centres, however this type of collaborations should be exported to the Higher Education domain. This can be achieved through the integration of Masters’ curricula, PhD programmes, and postgraduate activities. In this context, student/teacher mobility must be encouraged through appropriate funding actions. Stable and enduring support for common activities such as the SMC Summer School, and target–oriented SMC ateliers and workshops must be granted in order to provide continuity in Higher Education. There is also a need for enhancing the education material to be used in these programs. A substantial effort must be made to provide SMC–dedicated high–quality textbooks and tutorials that tackle the multidisciplinarity of the field, and a set of interactive multimedia electronic learning objects which can be exchanged and used in SMC–related curricula. There is also a crucial need for increased access to SMC information in order to attract students and potential industrial partners. An enhancement of the SMC portal is in order. It should provide more up–to–date and expanded information on SMC and related fields. This information must concern curricula, courses, news of events, scholarships, available funding, open positions, and similar information.
+      <br /><br />
+      To face the lack of proper knowledge transfer, identified in the fourth challenge of the SMC roadmap, the strategies mainly relate to the improvement of dissemination and of quality of our research results.
+      <br /><br />
+      <b>Promote dissemination and exploitation of SMC research and objectives:</b> The visibility and identity of SMC research should be enhanced, and greater efforts should be made to disseminate it and its objectives in venues outside the standard academic ones. We should promote the presence of SMC at conferences and industrial fairs, in special issues of scientific journals, and on mainstream media channels. We should promote tutorial installations in science museums and at festivals to educate the general public and especially to arouse the interest of children in the SMC field. We should also promote the presence of SMC in cultural activities such as concerts, exhibitions, and installations in public spaces. Representatives of academia and industry should meet more often for open discussions and exchange of information. It is important that companies explain their needs to researchers, so that academia can become aware of new applications and research opportunities. Conversely, it is equally essential that researchers inform companies about advances in academic research, advances which may not be widely known in industry. For this latter to be fruitful, it is important to hold demonstrations directly showing the exploitation potential of a research project. Given that relatively few research results of the SMC community are taken up by industry, researchers and students must be made aware of the possibilities for profit in their research results through direct industrial exploitation, for example by creating start–ups.
+      <br /><br />
+      <b>Promote academic quality standards and the use of the various models of IP protection of research result:</b> There is a wide variety of journals and conferences in which SMC research is being published. We should promote publication in those journals and conferences which apply a proper peer review process to the evaluation and selection of papers. However, in some research areas within the SMC field, there are no clear academic criteria for the evaluation of publications and research results. Therefore, there is also a general need for promoting quality in all SMC research activities. However researchers should also protect and exploit their work in other ways. Researchers should be aware of the various possibilities for disseminating their work and protecting their IP, knowing the advantages of each choice. Support should be given to the filing of patents, the overcoming of legal obstacles, and to the promotion of alternative means of legal protection, such as
+      <a href="https://creativecommons.org">Creative Commons</a> or <a href="https://www.fsf.org">Free Software</a> licenses.
+      <br /><br />
+      The need to improve social awareness, as identified in challenge five of the SMC roadmap, is a goal for which the strategies aim at changing our traditional approaches to engineering research.
+      <br /><br />
+      <b>Expand existing SMC methodologies emphasising user–centred and group experience–centred research:</b> The current methodologies for understanding music are typically based on experimental methods which address the cognitive system of a single listener in a laboratory environment. In practice, however, music is most of the time a social activity in which musical engagement is influenced by the behaviour of other participants. Existing empirical and experimental methodologies should be expanded towards understanding aspects of social music cognition. These involve the study of the social context in which musicians and listeners influence each other during musical activities. Also the tools for collaboration, information and communication exchange are now developed in the context of e–science and e–learning and there are no collaborative tools that incorporate all the music specific information, such as audio files, scores, or extracted audio features. Such tools should take into account the profile and experience of users.
+      <br /><br />
+      <b>Expand the horizon of SMC by incorporating the research in human sciences and promoting multi–cultural approaches:</b> Apart from cognitive theories of music such as tonality and rhythm categorisation, the human sciences (e.g. musicology, anthropology and sociology) have had little impact on the development of SMC technologies. And yet there is a large amount of knowledge about the social functioning of music that is currently unexploited. Cross–fertilisation between the human and natural sciences, as it is currently being developed in embodied music cognition, may offer new concepts and perspectives for understanding the social functioning of music. Good examples include concepts such as synchronisation, corporeal attuning in response to music, empathy and the sharing of actions. These concepts may provide a useful framework for the development of artistic applications that take into account social interaction as a basic feature of artistic expression. Current SMC research is also dominated by a narrow focus on traditional Western tonal music. SMC should make a conscious effort to transcend this focus, which tends to exclude SMC researchers from other cultures, making it difficult for them to publish results on their ‘native’ music. The goal must be to establish a common awareness in the SMC community of the importance of multicultural research. The musical and cultural expertise of foreign students from non–European countries, who are increasingly coming to study at European universities, should be actively used as a valuable resource in this endeavour.
+    </p>
+
+  </div>
+
+  <div id="conclusions" class="container-fluid" style="min-height: 100px">
+    <div  style="height: 150px; position: relative">
+      <h1 class="pagetitle">Conclusions</h1>
+    </div>
+
+    <p>
+      Sound and Music Computing is a highly multidisciplinary domain that is at the core of ICT-innovation in the cultural and creative industries. SMC has inherited the impressive artistic, scientific and technological history of Electroacoustic and Computer Music and expanded it into innovative realms such as artificial cognition, neurosciences and interactive design. This Roadmap is the result of a coordinated effort to identify and share with the community the medium and long term research issues that might contribute to industrial and social developments. This contribution is likely to have a particular impact in the cultural and creative industries. Given the planetary relevance of these industries, both in economic and state-of-the-art terms, the innovative pathway proposed in the Roadmap is of special relevance.
+      <br /><br />
+      This SMC Roadmap is targeted not only at scientific policy makers and stakeholders. It will also appeal to a wide public ranging from the research specialist to the curious layman, from the R&D engineer to the contemporary musician. Many of the challenges presented indicate that SMC requires support for basic fundamental research. This level of research must be catered for by academic researchers working in conjunction with visionary creators. Public funding is an absolute necessity at this level. However, the rapidly changing paradigms of the Information Society have completely transformed the opportunities for applied research in SMC. The progressive switch from -product industries-, such as musical instrument and audio device manufacturers, to -service industries-, such as sound and music information providers and content aggregators, offers new, unexplored avenues for SMC knowledge transfer in addition to the classical ones. The target industries for SMC have extended beyond specific music areas: the role and impact of sound and music is of growing importance in, for example, the multimedia industry, home entertainment and therapy and rehabilitation. In particular, the rising importance of the content industry as the fundamental asset for many other large industrial endeavours (such as the network and mobile industries) is certain to create opportunities that SMC must be ready to pick up. Furthermore, the musical instrument industry, the classic reference industry for SMC, is currently expanding into that of manufacturers of any appliance that supports audio interaction (i.e.practically any device that carries an audio transducer of some sort).
+      <br /><br />
+      This roadmap has been designed to maximise the impact of SMC research in several areas:
+      <br /><br />
+      <b>Fundamental Knowledge.</b> We still lack essential knowledge at very fundamental levels in topics related to SMC. Examples are perception and cognition, multi-modal interaction and music creation processes. This roadmap has provided a pathway for addressing these fundamental scientific issues.
+      <br /><br />
+      <b>Quality of Life.</b> The amount of sound and music is growing at a brisk pace, the audio channel being currently exploited in a wide range of applications which carry an unprecedented number of signals and messages. This roadmap has devoted much attention to research fields addressing audio channel pollution and cluttering because these fields will undoubtedly need robust expansion in the near future.
+      <br /><br />
+      <b>Cultural and Creative Industries.</b> Content industries are, in Europe, larger than the Chemicals, Rubber and Plastic industries put together. Furthermore, they are still rapidly evolving within the context of the Information Society. SMC's impact on these industries is bound to grow along with research discoveries and technological developments.
+      <br /><br />
+      <b>Information and Communication Technologies.</b> The SMC research outlined in this Roadmap will contribute to new solutions in content-based access to sound and music, thereby adding a new technological layer to current audio recordings and the mobile broadband industry.
+      <br /><br />
+      <b>Social Health.</b> As it develops, SMC research, by providing technology that fosters access to music, is bound to have an increasingly deep and wide impact on cultural identification and social bonding. Social and cultural issues have been a key concern of the Roadmap.
+      <br /><br />
+      In this Roadmap we have looked forward and have tried to identify future trends, while remaining very conscious that is impossible to predict reliably the future of SMC research. However it is clear that the future of SMC is bound to be connected to cross-fertilisation among new and previously loosely related disciplines, such as neurosciences, nanotechnologies, sound design and many more. SMC researchers need to be pro-active in this cross-fertilisation, promoting extensive joint research activities with neighbouring fields.
+      <br /><br />
+      The relevance of many of the contributions of this Roadmap is short lived. Given the exponential advances and changes that are taking place in most of the fields and topics covered, this document should be updated regularly if it is to reflect the current context and state of the art. This Roadmap has been the result of many contributions. Basically it belongs to the whole international SMC research community. As a means of promoting a shared view of our field, we encourage this community to take advantage of it.
+    </p>
+
+    <div class="container" style="height: 15px";>  </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+</body>
+</html>

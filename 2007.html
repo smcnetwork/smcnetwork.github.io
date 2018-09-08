@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <h2>Summer School in Sound and Music Computing</h2>
+  <h3>KTH Royal Institute of Technology<br />
+  Stockholm, Sweden<br />
+  July 2-6, 2007</h3>
+  <p>
+  This Summer School is organized by
+   the Music Acoustics Group of the KTH in Stockholm, with the goal to promote interdisciplinary education and research in the field of Sound and Music Computing (SMC). The School is aimed at graduate students working on their Master or PhD thesis, but it is open to any person carrying out research in this field.
+  </p>
+  <p>
+  This is the third SMC Summer School. The first two were organized by the <a href="http://www.s2s2.org/">S2S² Coordination Action</a>, last year it took place in Barcelona and two years ago in Genova.
+  </p>
+  <table width="100%" border="1">
+  	<tbody>
+  		<tr bgcolor="#ffffff">
+  			<td width="6%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#teachers">Teachers</a></span>
+  			</p>
+  			</td>
+  			<td width="13%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#experts">Invited<br />
+  			experts</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#program">Program</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#application">Application</a></span>
+  			</p>
+  			</td>
+  			<td width="10%">
+  			<p>
+  			<a href="#registration"><span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">Registration<br />
+  			fee</span></a>
+  			</p>
+  			</td>
+  			<td width="16%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#travelling">Travelling</a></span>
+  			</p>
+  			</td>
+  			<td width="13%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#social">Social<br />
+  			events</a></span>
+  			</p>
+  			</td>
+  			<td width="12%">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#venue">Venue</a></span>
+  			</p>
+  			</td>
+  		</tr>
+  	</tbody>
+  </table>
+  <h2><a id="teachers" name="teachers" title="teachers"></a>Teachers</h2>
+  <ul>
+  	<li>Anders Askenfelt (Royal Institute of Technology, Stockholm) </li>
+  	<li>Elvira Brattico (University of Helsinki, Finland)</li>
+  	<li>Roberto Bresin (Royal Institute of Technology, Stockholm) </li>
+  	<li>Nicola Bernardini (Conservatory of Padova)</li>
+  	<li>Cumhur Erkut (Helsinki University of Technology)</li>
+  	<li>Federico Fontana (University of Verona, Italy)</li>
+  	<li>Anders Friberg (Royal Institute of Technology, Stockholm)</li>
+  	<li>Lalya Gaye (Viktoria Institute, Gothenburg, Sweden)</li>
+  	<li>Minna Huotilainen (University of Helsinki, Finland)</li>
+  	<li>Olivier Lartillot (University of Jyväskylä, Finland)</li>
+  	<li>Pietro Polotti (Conservatory of Como)</li>
+  	<li>Davide Rocchesso (University of Verona)</li>
+  	<li>Stefania Serafin (Aalborg University Copenhagen)</li>
+  	<li>Patrick Susini (IRCAM) </li>
+  	<li>Johan Sundberg (Royal Institute of Technology, Stockholm) </li>
+  	<li>Sten Ternström (Royal Institute of Technology, Stockholm) </li>
+  	<li>Gualtiero Volpe (University of Genova) </li>
+  </ul>
+  <h2><a id="experts" name="experts" title="experts"></a>Invited Experts</h2>
+  <ul>
+  	<li>Jonas Engdegård (Senior Research Engineer, <a href="http://www.codingtechnologies.com">Coding Technologies</a>, Stockholm)</li>
+  	<li>Romain Haettel (<a href="http://www.ingemansson.com/">ÅF-Ingemansson AB</a>, Stockholm)</li>
+  	<li>Staffan Ljung (Manager for Entertainment Solutions, <a href="http://www.ericsson.com/">Ericsson</a>, Stockholm)</li>
+  	<li>Ernst Nathorst (CEO of <a href="http://www.propellerheads.se/">Propellerhead Software</a>, Stockholm)</li>
+  	<li>David Åström (<a href="http://www.myspace.com/kockyklubbanger">Kocky</a> / <a href="http://www.myspace.com/djsoulsupreme">Soul Supreme</a>, Stockholm) </li>
+  </ul>
+  <h2><a id="program" name="program" title="program"></a>Academic Program</h2>
+  <ul>
+  	<li> 6 hours of lectures by Minna Huotilainen and Elvira Brattico on Neurosciences and Music and 6 hours of lectures by Lalya Gaye on Mobile Music and Locative Audio Technology.</li>
+  	<li>3 hours of oral presentations by the participating students and discussions<br />
+  	on their research work.</li>
+  	<li>poster presentations by the participating students during coffee breaks (1.5 hour every day of the School)</li>
+  	<li>12 hours hands-on activities by the participating students in collaboration with the teachers of the Summer School</li>
+  	<li>4 hours of oral presentations and discussions by experts from industries in the field of Sound and Music Computing.</li>
+  	<li>2 hours of oral presentations by leaders of EU funded projects in the field of Sound and Music Computing.</li>
+  </ul>
+  <p>
+  The lectures are designed to be of interest to any graduate student or researcher in the field of Sound and Music Computing. The topics chosen for this year are <i>Neurosciences and Music</i> and <i>Mobile Music and Locative Audio Technology</i>; relevant topics in our research fields which have particular methodologies and research strategies. The lectures will present these particular methodologies and  their application in Music related problems.
+  </p>
+  <p>
+  All the participating students will give short presentations on their current research during a speed-talk of four minutes. The emphasis will be given on research questions and particularly on methodological issues related to their research project. Students will receive a written feedback from the teachers that should be useful for the continuation of their research.
+  </p>
+  <p>
+  All the participating students will present a poster about their PhD work. The posters will be on show for all the duration of the Summer School, with discussions during coffee breaks.
+  </p>
+  <p>
+  All students will work on mini-projects focusing on the themes discussed during the Summer School. Results of the mini-projects will be presented on the final day of the School. Mini-projects will give the opportunity for hands-on activities such as testing software tools or planning of experiments.
+  </p>
+  <p>
+  <b>Final program schedule: </b>
+  </p>
+  <table width="100%" border="1">
+  	<tbody>
+  		<tr bgcolor="#cccccc">
+  			<td width="5%" height="24"> </td>
+  			<td width="17%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Monday 2nd</span></b>
+  			</div>
+  			</td>
+  			<td width="16%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Tuesday 3rd</span></b>
+  			</div>
+  			</td>
+  			<td width="16%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Wednesday 4th<br />
+  			</span></b>
+  			</div>
+  			</td>
+  			<td colspan="2" width="22%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Thursday 5th</span></b>
+  			</div>
+  			</td>
+  			<td width="24%">
+  			<div align="center">
+  			<b><span style="font-size: x-small">Friday 6th</span></b>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">8:00</span></td>
+  			<td>
+  			<div align="center">
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><i><b>Registration</b></i></span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="5" bgcolor="#cccccc"> </td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">9:00</span></td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#neurosciences">Neurosciences and Music</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">        Elvira Brattico<br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#mobilemusic">Mobile Music and Locative Audio Technology</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">          Lalya Gaye</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#neurosciences">Neurosciences and Music</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">        Minna Huotilainen<br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2" rowspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><b><a href="#futuresessions">The Future Sessions</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><i>The future of music: What do we need? How will it be?</i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">          </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td bgcolor="#cccccc"> </td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">10:00</span>
+  			<p>&nbsp;</p>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><b><a href="#smcprojects">Sound and Music Computing in Europe<br />
+  			Part 1</a></b><br />
+  			Current EU projects in the SMC field</i></span>
+  			<p>&nbsp;</p>
+  			<p>&nbsp;</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">11:00<br />
+  			</span></td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Coffee break &amp; <a href="#posterpresentations">Poster presentations</a></span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">11:15</span></td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #333333"><i><b><a href="#mobilemusic">Mobile Music and Locative Audio Technology</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #333333">          Lalya Gaye<br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #333333"><i><b><a href="#neurosciences">Neurosciences and Music</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #333333">        Minna Huotilainen</span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; color: #333333">        </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #333333"><i><b><a href="#mobilemusic">Mobile Music and Locative Audio Technology</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #333333">          Lalya Gaye</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i><b><a href="#futuresessions">The Future Sessions</a></b></i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><i>The future of music: What do we need? How will it be?</i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">          </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#smcfuture">Sound and Music Computing in Europe<br />
+  			Part 2</a></b><br />
+  			The near future</i></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000">        </span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">13:00<br />
+  			</span></td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Lunch</span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">14:30</span></td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#speedtalks">Speed talks</a></b></i><br />
+  			</span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i>Short 4 min presentations by students</i> </span>
+  			</p>
+  			</div>
+  			</td>
+
+
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#speedtalks">Speed talks</a></b></i><br />
+  			</span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i>Short 4 min presentations by students</i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; color: #000000"><i><b><a href="#speedtalks">Speed talks</a></b></i><br />
+  			</span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; color: #000000"><br />
+  			<i>Short 4 min presentations by students</i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i> </i></a></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i>        Hands-on sessions</i><br />
+  			Mini-projects</a><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i> </i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i>        Mini-projects final presentations by students</i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">        </span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">15:30</span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small">      </span>
+  			</p>
+  			</td>
+  			<td colspan="6" bgcolor="#cccccc">
+  			<div align="center">
+  			<span style="font-size: x-small">Coffee break  &amp; <a href="#posterpresentations">Poster presentations</a></span>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">16:00 </span></td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i> </i></a></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i>        Hands-on sessions<br />
+  			Mini-projects</i></a><i><br />
+  			</i> </span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i> </i></a></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i>        Hands-on sessions</i><br />
+  			Mini-projects</a><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i> </i></a></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i>        Hands-on sessions</i><br />
+  			Mini-projects</a><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td colspan="2">
+  			<div align="center">
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i> </i></a></span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><a href="#miniprojects"><i>        Hands-on sessions</i><br />
+  			Mini-projects</a><br />
+  			</span>
+  			</p>
+  			</div>
+  			</td>
+  			<td>
+  			<div align="center">
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i> </i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif"><i>        Mini-projects final presentations by students</i></span>
+  			</p>
+  			<p>
+  			<span style="font-size: x-small; font-family: Arial,Helvetica,sans-serif">        </span>
+  			</p>
+  			</div>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">18:00</span>
+  			<p>&nbsp;</p>
+  			<p>
+  			<span style="font-size: x-small">      </span>
+  			</p>
+  			</td>
+  			<td bgcolor="#cccccc">
+  			<div align="center">
+  			Get together drink!
+  			</div>
+  			</td>
+  			<td colspan="5" bgcolor="#cccccc"> </td>
+  		</tr>
+  		<tr>
+  			<td bgcolor="#cccccc"><span style="font-size: x-small">19:00<br />
+  			</span></td>
+  			<td bgcolor="#cccccc"> </td>
+  			<td bgcolor="#cccccc"> </td>
+  			<td bgcolor="#cccccc"> </td>
+  			<td colspan="2" bgcolor="#cccccc">
+  			<p align="center">
+  			<span style="font-size: x-small"><a href="#social">Banquet</a> </span>
+  			</p>
+  			</td>
+  			<p>
+  			!
+  			</p>
+  			<td bgcolor="#cccccc"> </td>
+  		</tr>
+  	</tbody>
+  </table>
+  <h2><a id="neurosciences" name="neurosciences" title="neurosciences"></a>Neurosciences and Music</h2>
+  <p>
+  <b>July 2nd, 9:00-11:00</b><br />
+  <b>Main research topics in the neurosciences of music</b><br />
+  Elvira Brattico, PhD, <a href="http://www.cbru.helsinki.fi/">Cognitive Brain Research Unit</a>, Dept of Psychology, University of Helsinki, Finland<br />
+  <i><b>Abstract</b> Main research topics in the neurosciences of music: modularity, musical vs. language syntax and semantics, lateralization of brain functions for music, auditory cortex plasticity, brain structures devoted to musical performance and music emotions.</i>
+  </p>
+  <p>
+  <b>July 3rd, 11:15-13:00 </b><br />
+  <b>Methods of brain imaging research</b> (<a href="http://www.smcnetwork.org/files/Huotilainen-MethodsInBrainResearch.pdf">slides in PDF</a>)<br />
+  Minna Huotilainen, PhD, Docent, researcher, <a href="http://www.cbru.helsinki.fi/">Cognitive Brain Research Unit</a>, Dept of Psychology, University of Helsinki, Finland
+  </p>
+  <p>
+  <b>July 4th, 9:00-11:00</b><br />
+  <b>The development of musical abilities</b> (<a href="http://www.smcnetwork.org/files/Huotilainen-DevelopmentOfMusicalAbilities2_0.pdf">slides in PDF)</a><br />
+  Minna Huotilainen, PhD, Docent, researcher, <a href="http://www.cbru.helsinki.fi/">Cognitive Brain Research Unit</a>, Dept of Psychology, University of Helsinki, Finland
+  </p>
+  <h2><a id="mobilemusic" name="mobilemusic" title="mobilemusic"></a>Mobile Music and Locative Audio Technology</h2>
+  <p>
+  <a href="http://www.viktoria.se/~lalya/">Lalya Gaye</a>, PhD, <a href="http://www.viktoria.se/">Viktoria Institute</a>, Gothenburg, Sweden<br />
+  <b>July 2nd, 11:15-13:00</b><br />
+  <b>July 3rd, 9:00-11:00</b><br />
+  <b>July 4th, 11:15-13:00</b>
+  </p>
+  <p>
+  <a href="http://www.speech.kth.se/music/smcss2007/mobilemusic_summerschool_literature.pdf">Click here for suggested reading</a>
+  </p>
+  <p>
+  Part I
+  </p>
+  <ul>
+  	<li>Introducing mobile music and locative audio
+  	</li>
+  	<li>Background:<br />
+  	- Sound and mobility<br />
+  	- Technologicalexperiments, art and consumer products in urban life<br />
+  	- Locative media in general
+  	<p>&nbsp;</p>
+  	</li>
+  	<li>Main themes and projects. Characteristics, challenges and design opportunities of mobile music and locative audio.
+  	</li>
+  </ul>
+  <p>
+  Part II
+  </p>
+  <ul>
+  	<li>Technologies developed in research
+  	</li>
+  	<li>Available technologies
+  	</li>
+  	<li>Human-computer interaction methodologies, theories and design process applied to mobile music and locative audio
+  	</li>
+  </ul>
+  <h2><a id="speedtalks" name="speedtalks" title="speedtalks"></a>Speed Talks</h2>
+  <p>
+  In a maximum of 4 slides in total (remember that you will have 4 minutes for your presentation) present your research questions/problems/crazy ideas/etc. on which you would like feedback from those present.<br />
+  A printout of your slides will be available to the participants. Please notice that presentations longer than 4 slides will not be accepted!!!<br />
+  <a href="http://www.speech.kth.se/music/smcss2007/SMCSS_SpeedTalk_YourName_Stockholm2007.zip">Download here the powerpoint file with the instructions and the official format for the slides.</a>
+  </p>
+  <h2><a id="posterpresentations" name="posterpresentations" title="posterpresentations"></a>Poster presentations</h2>
+  <p>
+  Students are invited to present a poster about their research work.<br />
+  <a href="http://www.speech.kth.se/music/smcss2007/SMCSS_POSTER_YourName_Stockholm2007.zip">Download here the powerpoint file with the instructions and the official format for the poster.</a>
+  </p>
+  <h2><a id="miniprojects" name="miniprojects" title="miniprojects"></a>Hands-on sessions: Mini-projects</h2>
+  <p>
+  <a href="http://www.speech.kth.se/music/smcss2007/smcss07_miniprojects.pdf">Download here the PDF file with the list of proposed mini-projects.</a> Students can also propose alternative projects.
+  </p>
+  <h2><a id="futuresessions" name="futuresessions" title="futuresessions"></a>The Future Sessions, Thursday July 5th</h2>
+  <p>&nbsp;</p>
+  <h3>The future of music: What do we need? How will it be?</h3>
+  <p>
+  <b>9:00  Semi-parametric audio coding - Today and beyond</b> (<a href="http://www.smcnetwork.org/files/semi_parametric_audio_coding_SMC2007_0.pdf">slides in PDF format</a>)<br />
+  Jonas Engdegård, Senior Research Engineer, <a href="http://www.codingtechnologies.com">Coding Technologies</a><br />
+  <i><b>Abstract</b> By the time AAC (Advanced Audio Coder, the format used in e.g. iTunes music store) was standardized in 1997, the audio coding research community felt they had nearly reached the limit of how efficient a perceptual audio coder can be. However, the development of the last decade has resulted in large, unexpected improvements, mainly because of the introduction of semi-parametric audio coding tools. The by now widely spread aacPlus format, which is the successor of AAC, is based on a flexible approach of employing parametric tools such as Spectral Band Replication (SBR) and Parametric Stereo (PS) in combination with a waveform coder (AAC).<br />
+  This presentation will give a quick tutorial on perceptual audio coding including an overview of how the last decade's addition of technology has contributed to today's state of the art codecs, and a future outlook in the field of audio coding. </i>
+  </p>
+  <p>
+  <b>9:40  The future of music software</b> (<a title="slides" href="/files/KTH_Summer_School_2007_propellerheads_smallersize.pdf">slides in PDF format</a>)<br />
+  Ernst Nathorst, CEO of <a href="http://www.propellerheads.se/">Propellerhead Software</a><br />
+  <i><b>Abstract</b> Now that inexpensive computers are powerful enough to deliver a complete professional audio production and DSP can provide faithful renderings of practically any instrument we can imagine – where do we go from here? What are the next steps that music software needs to take in order to serve musicians better than today?</i>
+  </p>
+  <p>
+  <b>10:20  The future of music on mobile devices</b><br />
+  Staffan Ljung, Strategic Product Manager for Music, Ericsson<br />
+  <i><b>Abstract</b> Mobile music is arguably the most requested service by end consumers currently. The sales of mobile music has during the last 2 years had a tremendous impact on the over all digital music sales and the business is just taking its first steps out from the starting blocks.<br />
+  However, we need to remember that this is still an immature business where stakeholders eventually need to adapt their business models in order to ensure market growth. In all business it would me a major mistake not to listen to what the end consumer expects wants and needs.  The end user experience is a focus area where I think that most players in this segment have a lot of improvement to do. One part of the user experience is the &quot; in-store&quot; experience, a building brick which constantly is evolving due to a a bigger variety of choice in the stores, more professional recommendation engines, end consumer offerings etc. However the end user experience does not stop once the end consumer has bought a product from the store. Actually you could argue and say that it begins at that exact point in time. Therefore interoperability is one of the key hurdles that needs to be managed over the next years. How is this realised? What have Ericsson learnt out the past years in this area?</i>
+  </p>
+  <p>
+  <b>11:00  Coffee break</b>
+  </p>
+  <p>
+  <b>11:20  Independent music production</b><br />
+  David Åström, Kocky/Soul Supreme<br />
+  <i><b>Abstract</b> After a short presentation of the music I produce, I will discuss how modern music technology, both equipment and distribution, affects the artistic and creative process of music production. Some of the relevant issues in music production will be discussed. How is the role of the producer changing when advanced hardware and software tools are readily available to the consumer? How do different studios choose different equipment setups? How is the relationship between recording musicians and producers affected by advances in music technology?</i>
+  </p>
+  <p>
+  <b>12:00-13:00  Panel discussion</b>
+  </p>
+  <p>
+  Each students will:
+  </p>
+  <ul>
+  	<li>Mail a question to the speakers before the Summer School start</li>
+  	<li>Prepare a question for the panel discussion
+  	<ul>
+  		<li>
+  		<ul>
+  			<li>Curriculum vitae (max. 1 page)</li>
+  			<li>Certified copy of academic degree</li>
+  			<li>Summary of the research proposal (max. 2 pages)</li>
+  		</ul>
+  		<ul>
+  			<li>Tuesday July 3rd, from 17:00 to 1:00: <a href="http://www.debaser.nu/?id=1782">Bring the Noise!</a>, DJ evening at Debaser, free entrance</li>
+  			<li>Thursday July 5th at 19:00: Banquet at <a href="http://www.rosendalstradgard.se/">Rosendals Trädgård</a> with DJ and jam session</li>
+  			<li>Friday July 6th from 22:00 to 3:00:  <a href="http://www.debaser.nu/?id=1840">Summer Adventure</a>, Club at Debaser, free entrance</li>
+  			<li>A <a href="http://www.bkk.se/sida.php?id=9">kayak</a> tour?</li>
+  			<li>A <a href="http://www.discgolfpark.com/english/indexE.htm">discgolf</a> game?</li>
+  			<li><a href="http://www.stockholmtown.com/">Search for other events</a> in Stockholm during the summer school</li>
+  		</ul>
+  		<ul>
+  			<li>
+  			<p>
+  			<b>School</b>:
+  			</p>
+  			<ul>
+  				<li>the school <b>oral sessions</b> will take place in lecture room F2 at <a href="http://polyfe-1.sys.kth.se:8080/polopoly_fs/1.753!vv-a4.pdf">KTH central campus</a>, as well as coffee breaks. <br />
+  				Address: Lindstedtsvägen 26 SE-100 44 Stockholm (<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=lindstedtsv%E4gen+24+stockholm&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1629111&amp;CombiDetails%3AMapControl%3Acy=6583040&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">map</a>)
+  				<p>&nbsp;</p>
+  				</li>
+  				<li>the school <b>hands-on sessions</b> will take place in <a href="http://www.speech.kth.se">Department of Speech Music and Hearing</a><br />
+  				Address: Lindstedtsvägen 24, 100 44 Stockholm (<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=lindstedtsv%E4gen+24+stockholm&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1629111&amp;CombiDetails%3AMapControl%3Acy=6583040&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">map</a>)
+  				<p>&nbsp;</p>
+  				</li>
+  			</ul>
+  			</li>
+  			<li>
+  			<p>
+  			<b>Lunches</b>: Brazilia restaurant, in the <a href="http://polyfe-1.sys.kth.se:8080/polopoly_fs/1.753!vv-a4.pdf">KTH Campus</a>.  Here is the <a href="https://www.kth.se/internt/lunch/">menu</a>, if you can Swedish.<br />
+  			Address: Brinellvägen 64, 100 44 Stockholm (<a href="http://www.hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;wflWhite=1a1b&amp;wflPink=4a&amp;vad=&amp;var=Brinellv%e4gen+64&amp;StreetNumberId=100397979">map</a>)
+  			</p>
+  			</li>
+  			<li>
+  			<p>
+  			<b>Banquet</b>: <a href="http://www.rosendalstradgard.se/">Rosendals Trädgård</a>, with facilities for organizing a jam session.<br />
+  			Address: Rosendalsterrassen 12, 115 21 Stockholm (<a href="http://www.hitta.se/SearchCombi.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Rosendalsterrassen+12">map</a>)
+  			</p>
+  			</li>
+  		</ul>
+  		<ul><li>Banquet, Thursday July 5th: <a href="http://www.rosendalstradgard.se/">Rosendals Trädgård</a></li><li>A <a href="http://www.bkk.se/sida.php?id=9">kayak</a> tour?</li><li><a href="http://www.stockholmtown.com/">Search for other events</a> in Stockholm during the summer school</li></ul><ul><li><p><b>School</b>: </p><ul><li>the school <b>oral sessions</b> will take place in lecture room F2 at <a href="http://polyfe-1.sys.kth.se:8080/polopoly_fs/1.753!vv-a4.pdf">KTH central campus</a>, as well as coffee breaks. <br />          Address: LindstedtsvÃ¤gen 26 SE-100 44 Stockholm (<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=lindstedtsv%E4gen+24+stockholm&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1629111&amp;CombiDetails%3AMapControl%3Acy=6583040&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">map</a>)<p>&nbsp;</p></li><li>the school <b>hands-on sessions</b> will take place in <a href="http://www.speech.kth.se">Department of Speech Music and Hearing</a><br />          Address: LindstedtsvÃ¤gen 24, 100 44 Stockholm (<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=lindstedtsv%E4gen+24+stockholm&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1629111&amp;CombiDetails%3AMapControl%3Acy=6583040&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">map</a>)<p>&nbsp;</p></li></ul></li><li><p><b>Lunches</b>: Quantum restaurant, in the <a href="http://polyfe-1.sys.kth.se:8080/polopoly_fs/1.753!vv-a4.pdf">KTH Campus</a>.  Here is the <a href="https://www.kth.se/internt/lunch/">menu</a>, if you can Swedish.<br />          Address: Osquldas vÃ¤g 4, 100 44 Stockholm (<a href="http://www.hitta.se/SearchCombi.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Osquldas+v%e4g+4">map</a>)</p></li><li><p><b>Banquet</b>: <a href="http://www.rosendalstradgard.se/">Rosendals Trädgård</a>, with facilities for organizing a jam session.<br />          Address: Rosendalsterrassen 12, 115 21 Stockholm (<a href="http://www.hitta.se/SearchCombi.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Rosendalsterrassen+12">map</a>)</p></li></ul></li>
+  		<h2><a id="smcprojects" name="smcprojects" title="smcprojects"></a>Sound and Music Computing in Europe, PART 1, Friday July 6th</h2>
+  		<p>
+  The sessions <b>Sound and Music Computing in Europe</b> have been made possible thanks to the contribution by <a href="http://www.cost-sid.org/">COST IC0601 Action SID - Sonic Interaction Design</a>.
+  		 
+  		</p>
+  		<h3>Current EU projects in the SMC field </h3>
+  		<p>
+  		10:00 <a href="http://www.vemus.org/">VEMUS - Virtual European Music School</a>, Anders Askenfelt<br />
+  		10:15 <a href="http://closed.ircam.fr/">CLOSED - Closing the Loop of Sound Evaluation and Design</a>, Pietro Polotti<br />
+  		10:30 <a href="http://www.braintuning.fi/">BrainTuning - Tuning the Brain for Music</a>, Roberto Bresin<br />
+  		10:45 <a href="http://emcap.iua.upf.es/">EmCAP - Emergent Cognition through Active Perception</a>, Hendrik Purwins<br />
+  		11:00 <a href="http://www.taichi.cf.ac.uk/">TAI-CHI - Tangible Acoustic Interfaces for Computer-Human Interaction</a>, Gualtiero Volpe<br />
+  		11:15 <a href="http://www.mobile-life.org/">Mobile Life</a>, Lalya Gaye
+  		</p>
+  		<h2><a id="smcfuture" name="smcfuture" title="smcfuture"></a>Sound and Music Computing in Europe, PART 2, Friday July 6th</h2>
+  		<p>
+  The sessions <b>Sound and Music Computing in Europe</b> have been made possible thanks to the contribution by <a href="http://www.cost-sid.org/">COST IC0601 Action SID - Sonic Interaction Design</a>.
+  		 
+  		</p>
+  		<h3>The near Future</h3>
+  		<p>
+  		11:45 <a href="http://www.soundandmusiccomputing.org/roadmap">A SMC Roadmap</a>, Nicola Bernardini<br />
+  		12:00 <a href="http://www.cost-sid.org/">COST IC0601 Action SID - Sonic Interaction Design</a>, Nicola Bernardini<br />
+  		<b>12:15  INVITED TALK: Sound Quality: A Consultant Perspective</b> (<a href="http://www.smcnetwork.org/files/SoundQualityKTH.pdf">
+  slides in PDF format</a>)<br />
+  		Romain Haettel, <a href="http://www.ingemansson.com/">ÅF-Ingemansson AB</a><br />
+  		<i><b>Abstract</b> The quality of sound generated in consumer products is part of the attributes that communicate the total product quality to the customer. Known examples are door closing sounds for cars and sound and tactile quality of knobs, levers and other controls for handling the product. The sound quality aspect is not necessarily received consciously. The presentation gives some examples of practical sound quality development.</i>
+  		</p>
+  		<h2><a id="application" name="application" title="application"></a>Application</h2>
+  		<p>
+  		A maximum of <b>20 students</b> will be admitted to the school. The candidates will be evaluated by the teachers and the application should include the following documents in pdf format:
+  		</p>
+  		<p>
+  		Students have to send their applications to <a href="http://www.speech.kth.se/~roberto/">Roberto Bresin</a> before <b>May 1st</b>. Notification of acceptance will be given no later than May 10th.
+  		</p>
+  		<p>
+  		For people not wishing to make research presentations during the school, a brief curriculum vitae is sufficient and the deadline for application is <b>May 15th</b>.
+  		</p>
+  		<p>
+  		These people should also send their applications to <a href="http://www.speech.kth.se/~roberto/">Roberto Bresin</a>.
+  		</p>
+  		<h2><a id="registration" name="registration" title="registration"></a>Registration Fee</h2>
+  		<p>
+  		The regular registration fee is 300 €. This fee also covers the costs for lunch and various evening social events.
+  		</p>
+  		<p>
+  		The registration fee for students is 200 €. This fee also covers the costs for lunch and various evening social events.
+  		</p>
+  		<p>
+  		The deadline for registration is <b>May 31st.</b>
+  		</p>
+  		<p>
+  		<b>NEW!</b> Please find payment instructions <a href="http://www.speech.kth.se/music/smcss2007/BankInformationSMCSS07.pdf">here</a>.
+  		</p>
+  		<h2><a id="social" name="social" title="social"></a>Social events</h2>
+
+  <h2><a title="venue" name="venue" id="venue"></a>Venue</h2>
+
+  		<h2><a id="travelling" name="travelling" title="travelling"></a>Traveling and Accommodation</h2>
+  		<p>
+  		Participants will have to arrange their own travel and accommodation.
+  		</p>
+  		<p>
+  		We advise you to book accomodation early as the first week of July is very busy in Stockholm.
+  		</p>
+  		<p>
+  		<b>Booking services</b><br />
+  		<a href="http://www.stockholmtown.com/templates/Accomodation____7136.aspx?epslanguage=EN">Stockholmtown.com</a><br />
+  		<a href="http://www.visit-stockholm.com/index.htm">Visit Stockholm</a><br />
+  		<a href="http://www.sbacco.com/">Stockholm budget accomodation</a>
+  		</p>
+  		<p>
+  		Use <a href="http://www.hitta.se">hitta.se</a> to look up the location. The summer school will take place at <a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=lindstedtsv%E4gen+24&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1629147&amp;CombiDetails%3AMapControl%3Acy=6582970&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">Lindstedtsvägen 24</a>. The service is in Swedish, but is easy to use. &quot;Vad söker du?&quot; means &quot;what do you look for&quot;. Type in name, company or telephone number. The second field &quot;Var?&quot; means &quot;Where&quot;, and here you type in address. Use &quot;street 'street number' stockholm&quot;. You only need to fill out one field.
+  		</p>
+  		<p>
+  		<b>Camping</b>
+  		</p>
+  		<p>
+  		<i>Close to summer school</i><br />
+  		<a href="http://www.camping.se/templates/product____232.aspx?prodId=3184">Östermalms Camping</a>, just 5 minutes walk away.
+  		</p>
+  		<p>
+  		<i>Less central</i><br />
+  		<a href="http://www.visit-stockholm.com/accommodation-stockholm/framesmaster.htm?http://www.visit-stockholm.com/accommodation-stockholm/camping-stockholm.htm">From www.visit-stockholm.com</a>, all are quite far from the school.
+  		</p>
+  		<p>
+  		<b>Bed and breakfast/Hostels</b>
+  		</p>
+  		<p>
+  		<i>Close to summer school</i><br />
+  		Bed &amp; Breakfast<br />
+  		Rehnsgatan 21<br />
+  		Tel: +46815 28 38<br />
+  		Sleeping halls or single-rooms.<br />
+  		<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=Rehnsgatan+21&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0&amp;CombiDetails%3AMapControl%3Acx=1620780&amp;CombiDetails%3AMapControl%3Acy=6576792&amp;CombiDetails%3AMapControl%3ApointsHidden=&amp;CombiDetails%3AMapControl%3Az=3">hitta.se</a>
+  		</p>
+  		<p>
+  		City Backpackers<br />
+  		Upplandsgatan 2 A<br />
+  		Tel: +46820 69 20<br />
+  		2-, 4- or 8-bed rooms<br />
+  		E-mail: <a href="mailto:city.backpackers@swipnet.se">city.backpackers@swipnet.se</a><br />
+  		<a href="http://www.citybackpackers.se" title="www.citybackpackers.se">www.citybackpackers.se</a><br />
+  		<a href="http://hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Upplandsgatan+2+A&amp;StreetNumberId=100475977">hitta.se</a>
+  		</p>
+  		<p>
+  		Columbus Hotell och Vandrarhem<br />
+  		Tjärhovsgatan 11<br />
+  		Tel: +468644 17 17<br />
+  		2-, 4- or 6-bed rooms<br />
+  		Getting there: Subway to Medborgarplatsen, Bus 46, 48, 52.<br />
+  		<a href="http://hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Tj%e4rhovsgatan+11&amp;StreetNumberId=100472197">hitta.se</a>
+  		</p>
+  		<p>
+  		Hotel Mitt i City<br />
+  		Västmannagatan 13<br />
+  		Tel:+46821 76 30<br />
+  		Sleeping halls, 12 girls/18 boys or single-rooms.<br />
+  		<a href="http://hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=v%e4stmannagatan+13&amp;StreetNumberId=100478150">hitta.se</a>
+  		</p>
+  		<p>
+  		Långholmen Vandrarhem och Hotell<br />
+  		Gamla kronohäktet<br />
+  		Tel: +468668 05 10<br />
+  		Getting there: Subway to Hornstull or Bus 40.<br />
+  		<a href="http://www.langholmen.com" title="www.langholmen.com">www.langholmen.com</a><br />
+  		<a href="http://hitta.se/SearchCombi.aspx?__VIEWSTATE=%2FwEPDwUKMTg4NDI3NTMzNWRk&amp;UCSB%3AWflWhite=1a1b&amp;UCSB%3AWflPink=4a&amp;SearchType=4&amp;UCSB%3ABBX1=&amp;UCSB%3ABBY1=&amp;UCSB%3ABBX2=&amp;UCSB%3ABBY2=&amp;UCSB%3ATextBoxWho=&amp;UCSB%3ATextBoxWhere=l%E5ngholmen%2C+stockholm&amp;UCSB%3AButtonSearch=%A0%A0hitta%21%A0%A0">hitta.se</a>
+  		</p>
+  		<p>
+  		<i>Less central</i><br />
+  		Bredängs vandrarhem<br />
+  		Stora sällskapets väg 51<br />
+  		Tel: +46897 62 00, 97 70 71<br />
+  		2- or 4-bed rooms.<br />
+  		Getting there: Subway to Bredäng, short walk (5 min).<br />
+  		<a href="http://hitta.se/SearchCombi.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Stora+s%e4llskapets+v%e4g+51">hitta.se</a>
+  		</p>
+  		<p>
+  		Solna Vandrarhem<br />
+  		Enköpingsvägen 16<br />
+  		Tel: +468655 00 55<br />
+  		Getting there: Subway to Solna Centrum, bus 505 (10 min) to Råstahem.<br />
+  		<a href="http://www.solna-vandrarhem.se" title="www.solna-vandrarhem.se">www.solna-vandrarhem.se</a><br />
+  		<a href="http://hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=Enk%f6pingsv%e4gen+16&amp;StreetNumberId=200073606">hitta.se</a>
+  		</p>
+  		<p>
+  		Ängby Camping<br />
+  		Blackebergsvägen 24<br />
+  		Tel: +46837 04 20<br />
+  		Cottages. 4 beds in each.<br />
+  		Getting there: Subway to Ängbyplan, short walk (5 min)<br />
+  		<a href="http://hitta.se/ViewDetailsPlace.aspx?SearchType=4&amp;UCSB%3aWflWhite=1a1b&amp;UCSB%3aWflPink=4a&amp;UCSB%3aTextBoxWho=&amp;UCSB%3aTextBoxWhere=blackebergsv%e4gen&amp;StreetNumberId=100395294">hitta.se</a>
+  		</p>
+  		<p>
+  		<b>Hotels</b>
+  		</p>
+  		<p>
+  		<i>Close to summer school</i><br />
+  		<a href="http://info.aos.se/E/V/STOSE/0004/48/57/1.html">Art Hotel</a>, Johannesgatan 12<br />
+  		<a href="http://www.stureparkens.nu/">Stureparkens gästvåning</a>, Sturegatan 58<br />
+  		<a href="http://www.elite.se/eng/hotell/stockholm/plaza/">Elite Hotel Stockholm Plaza</a>, Birger Jarlsgatan 29<br />
+  		<a href="http://www.rexhotel.se/">Rex Hotel</a>, Luntmakargatan 73<br />
+  		<a href="http://www.hellsten.se/">Hellsten Hotel</a>, Luntmakargatan 68<br />
+  		<a href="http://www.choicehotels.no/html/en-gb1139830.jsp">Hotel Tapto</a>, Jungfrugatan 57<br />
+  		<a href="http://www.elite.se/eng/hotell/stockholm/arcadia/">Hotell Arcadia</a>, Körsbärsvägen 1
+  		</p>
+  		<div class="field field-type-nodereference field-field-see-also">
+  		<br />
+  		</div>
+  		<div class="book-navigation">
+  		<div class="page-links clear-block">
+  		<a href="/smc-old/summerschool/barcelona2006" title="Go to next page" class="page-next"><br />
+  		</a>
+  		</div>
+  		</div>
+  	</ul>
+  	</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>

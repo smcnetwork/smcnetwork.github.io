@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+
+  body {
+    position: relative;
+    font-family: Montserrat, sans-serif;;
+    color: #555;
+  }
+
+  .jumbotron {
+    font-family: Montserrat, sans-serif;
+    background: #1B6884;
+    text-align: center;
+    color: white;
+    height: 200px;
+  }
+
+  .headercontent {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+  }
+
+
+  .panel-footer.panel-custom {
+    background: #1B6884;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .scrollspy-example {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .navbar-default {
+    font-family: Montserrat, sans-serif;
+    background-color: #1B6884;
+    letter-spacing: 2px;
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-default .nav-tabs .nav-link {
+      color: white;
+  }
+
+  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+    color: #1B6884 !important;
+    background-color: #fff !important;
+  }
+
+  .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .card-header {
+    background: #1B6884;
+    color: white;
+    height: 125px;
+  }
+
+  .card-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagetitle {
+  position: relative;
+  float: left;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#spy" data-offset="50" >
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-default fixed-top" >
+
+      <a class="navbar-brand" href="index.html#">
+        <img src="logo.png" alt="Logo" style="width:40px;">
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="spy" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs ml-auto nav-fill">
+            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding: 0">
+      <div class="jumbotron">
+        <h3 class="headercontent">
+        Sound and Music Computing Network
+        </h3>
+      </div>
+  </header>
+
+  <div class="container" style="height: 15px";>  </div>
+
+  <div class="container" id="main"  style="min-height: 600px";>
+    <div class="col-sm-12">
+      <span class="Apple-style-span"><iframe src="http://www.barcelonaskyline.com/showframe.php" name="bcnsky" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="75" scrolling="no" width="500">noframes</iframe><p>
+
+  <b>The soundscapes of Barcelona</b></p>
+  <b>Title:</b> Sound and Music Computing Summer School<br />
+  <b>Dates:</b> July 17-20, 2010.<br />
+  <b>Place:</b> Universitat Pompeu Fabra, Barcelona, Spain<br />
+  <b>Web:</b> <a href="http://smcnetwork.org/summer_school/barcelona2010" title="http://smcnetwork.org/summer_school/barcelona2010">http://smcnetwork.org/summer_school/barcelona2010</a><br />
+  <b>Alternate web / Blog: </b> <a href="http://soundscapesofbarcelona.wordpress.com" title="http://soundscapesofbarcelona.wordpress.com">http://soundscapesofbarcelona.wordpress.com</a> <br />
+  <b>Contact:</b> Please, fill <a href="/node/1270">this</a> form.
+
+  <p>The <a href="http://smc2010.smcnetwork.org/" target="0">SMC Conference</a> is the forum for international exchanges around the core interdisciplinary topics of Sound and Music Computing. Prior to the Conference there will be the SMC <b>Summer School</b>.</p><p>The goal of this <b>Summer School</b> is to give an opportunity to young researchers interested in the field to learn about some of the core interdisciplinary topics and to share their own experiences with other young researchers, through the study of the soundscapes of Barcelona. For that, we will use <a href="http://www.freesound.org/" target="0">Freesound.org</a>, a huge collaborative database of sounds, released under the <a href="http://creativecommons.org/licenses/sampling+/1.0/" target="0">Creative Commons Sampling Plus</a> license.</p>
+
+  <p>The creation and study of the soundscape of Barcelona will be divided into different subtopics, covering all the required aesthetic and technical aspects for soundscape analysis and creation. For that, the program of the summer school is divided into lectures and hand-on practical sessions. </p><p>The School caters to suit different student backgrounds and interests. If your background is an Electrical Engineering, Computer Science, Music, Art, Sound recording, Design, etc., there is something new for you to learn at this Summer School.</p>
+
+  <hr />
+
+  <h2>Index</h2>
+
+  <ul>
+      <li><a href="#acad">Academic program</a> (<a href="#acad_over">Overview</a>,<a href="#acad_sche">Schedule</a>, <a href="#acad_cour">Course material</a>)</li>
+      <li><a href="#team">Team</a>  (<a href="#team_coor">Coordination</a>, <a href="#team_teac">Teachers</a>, <a href="#team_tuto">Tutors for the hands-on practical sessions</a>)    </li>
+      <li><a href="#appl">Application</a> (<a href="#appl_impo">Important dates</a>, <a href="#appl_regi">Registration forms</a>, <a href="#appl_price">Fees</a>)</li>
+      <li><a href="#trav">Travelling and Accomodation</a> (<a href="#trav_loca">Location</a>, <a href="#trav_arri">How to arrive</a>, <a href="#trav_acco">Accomodation</a>)</li>
+  </ul>
+
+  <hr />
+
+  <h2><a title="acad" name="acad"></a>Academic program</h2>
+
+  <h3><a title="acad_over" name="acad_over"></a>Overview</h3>
+
+  The four days program includes lectures and hands-on practical sessions. The 3 main lectures cover the following topics:
+
+  <ul>
+      <li><b>Soundscape composition: Documentation, listening, and creation using computers</b>: Acoustic ecology and Soundscape composition, by Barry Truax.</li>
+      <li><b>Sound and music content processing</b>: Theory and applications of sound and music description, by Fabien Gouyon.</li>
+      <li><b>Introduction to recording techniques using handheld recorders</b>: Technical concepts for recording and mixing audio in optimal conditions, by Enric Guaus.</li>
+  </ul>
+
+  <p>The hands-on practical sessions cover the following topics:</p>
+
+  <ul>
+      <li><b>Composition of Realistic and Interactive Soundscape</b>: Analyse, record and annotate a target soundscape of Barcelona, in order to re-compose it, by Mattia Schirosa.</li>
+      <li><b>Augmented Soundscapes</b>: Creation of augmented soundscapes, starting from recordings of real soundscapes, using realtime machine listening and signal processing techniques, by Stefan Kersten.</li>
+      <li><b>SMC Tales</b>: Develop a mobile phone application for collaborative story telling, by Vincent Akkermans.</li>
+      <li><b>Tangilble interface for graph based music representation</b>: Building a tangible interface for the music representation used in radio freesound, by Gerard Roma.</li>
+  </ul>
+
+  <h3><a title="acad_sche" name="acad_sche"></a>Schedule</h3>
+
+  <table border="1">
+      <tbody>
+          <tr bgcolor="silver">
+              <th>Time</th>
+              <th>Sat, 17th.</th>
+              <th>Sun, 18th.</th>
+              <th>Mon, 19th.</th>
+              <th>Tue, 20th.</th>
+              <th>Wed, 21th.</th>
+          </tr>
+          <tr>
+              <td>10:00 - 11:30</td>
+              <td> </td>
+              <td>Lecture: Soundscape composition</td>
+              <td>Lecture: Soundscape composition</td>
+              <td>Lecture: Soundscape composition</td>
+              <td></td>
+          </tr>
+          <tr bgcolor="silver">
+              <td>11:30 - 12:00</td>
+              <td> </td>
+              <td>Coffee break</td>
+              <td>Coffee break</td>
+              <td>Coffee break</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>12:00 - 13:30</td>
+              <td> </td>
+              <td>Lecture: Sound and music content processing</td>
+              <td>Lecture: Sound and music content processing</td>
+              <td>Lecture: Sound aand music content processing</td>
+             <td></td>
+          </tr>
+         <tr bgcolor="silver">
+              <td>13:30 - 15:00</td>
+              <td> </td>
+              <td>Lunch</td>
+              <td>Lunch</td>
+              <td>Lunch</td>
+              <td></td>
+         </tr>
+         <tr>
+              <td>15:00 - 16:30</td>
+              <td>Course presentation</td>
+              <td>Sound Walk</td>
+              <td>Projects</td>
+              <td>Projects</td>
+              <td></td>
+         </tr>
+         <tr>
+              <td>16:30 - 18:00</td>
+              <td>Lecture: Sound Recording</td>
+              <td>Sound Walk</td>
+              <td>Projects</td>
+              <td>Projects</td>
+              <td></td>
+          </tr>
+         <tr>
+              <td>18:00 - 19:30</td>
+              <td>Lecture: Sound Recording</td>
+              <td>Projects</td>
+              <td>Projects</td>
+              <td>Projects</td>
+              <td>Summer School Concert</td>
+          </tr>
+      </tbody>
+  </table>
+
+  <p>More detailed information can be found in this <a href="https://www.google.com/calendar/render?cid=rp4q97dkgfj2kpm18o1ndiiekg%40group.calendar.google.com" target=0>Google Calendar</a></p>
+
+  <h3><a title="acad_cour" name="acad_cour"></a>Course material</h3>
+  <ul>
+      <li>Lectures:
+          <ul>
+              <li><b>Soundscape Composition: Documentation, listening, and creation using computers:</b> The World Soundscape Project (WSP) was established as an educational and research group at Simon Fraser University during the early 1970s, and documented soundscapes as part of an over-arching concern to draw attention to the importance of the sonic environment. R. Murray Schafer's definitive soundscape text, <i>TheTuning of the World</i>, and Barry Truax's reference work <i>Handbook for Acoustic Ecology</i> were outcomes of these early years, followed by Truax's publication <i>Acoustic Communication</i> that deals with all aspects of sound and the impact of technology. Inthe field of sonic design, the computer increasingly provides toolsfor dealing with both the basic material of sound composition, suchas granular synthesis, convolution and digital signal processing, and the creation of multi-channel soundscape compositions using recorded materials. Prof. Truax’s presentations will outline the background of acoustic ecology as an area of both scientific research and artistic endeavour, leading into a discussion of soundscape composition as an art form per se, ranging from the pioneering workof the WSP to contemporary compositional approaches to creative presentations of soundscape materials.</li>
+              <li><b>Sound and music content processing</b>: The amount and availability of different media (professionally
+  produced or user-generated content) is continuously increasing. This is profoundly changing the ways we interact with sound and music today and how we expect to do it tomorrow. Music Information Retrieval (MIR) is a fast-paced multidisciplinary field of research where different long-tradition disciplines (such as e.g. Signal Processing, Information Science, Computer Science, Musicology) meet to empower these changes. This lecture will provide an overview of MIR research, we will look into ways to extract semantic information from a number of media (from specific audio signals to contextual annotations). A special focus will be put on surveying state-of-the-art algorithms and available systems for the automatic description of music audio signals from a musical perspective (focusing on musically-meaningful dimensions, such as e.g. rhythm, harmony, timbre). We will explore diverse uses of this step of information extraction, such as music search and recommendation, music signal transformations or real-time music performance.</li>
+              <li>Sound recording: Not all the handheld recorders do the same. Not all the audio formats sounds equal. This lecture will provide the basic concepts of audio recording and microphone techniques to perform high quality recordings taking into account  different aspects such as directivity, stereo techniques and portability.</li>
+          </ul>
+      </li>
+      <li>Projects:
+          <ul>
+              <li><b>Composition of Realistic and Interactive Soundscape:</b> The process focus on recording and annotation techniques to compose realistic virtual Soundscape using an MTG system for Soundscape interactive composition. There will be 4 phases: soundscape analysis and recordings, annotations and database creation, virtual soundscape composition, soundscape performance. The students will analyze on-site a target Soundscape, they will define relevant Sound objects, set-up and performs the recordings using shot-gun microphones. Then, in a second phase, they will annotate interesting segment through Sonic Visualiser, creating and preparing the soundscape database. Finally, they will creates the virtual SoundConcepts using the MTG system for Soundscape generation & composition, written in SuperCollider language. In the final performance the student will play the soundscape moving a listener around the virtual space and controlling the soundscape parameters defined during the annotations. The environment recordings will be held in acoustically interesting environment, such as the Cathedral, the Boqueria or St Antoni Marketplace, the Barceloneta beach, the kitchen of the Hostelería Hofmann school, a Factory. Note that when we speak about acoustically interesting environment we means both the sonic properties of the acoustic space (the Cathedral) and the scenographic properties of its actors: the presence of interesting sources producing a notable activity of aesthetically interesting sound events (the Marketplace, the Factory, a huge Kitchen).</li>
+             <li><b>Augmented Soundscapes</b>: The capabilities of portable devices such as current generation mobile phones and media players is still severely limited in terms of computing power and storage space, such that only a subset of today's analysis and synthesis algorithms can be run in realtime. The goal of this workshop is to develop techniques and applications around the concept of augmented soundscapes according to the following assumption: What if we had available now the computing power of current desktop devices in a mobile package? Without the limitations of today's mobile technology, how would we design augmented reality applications? In this workshop we will create augmented soundscapes, starting from recordings of real soundscapes, that will be recorded by the participants during the first day of the workshop workshops. Using realtime machine listening techniques like onset detection, event extraction and segmentation, tempo tracking, etc. we will extract prominent features from real soundscapes. These features will be used to process and recompose the audio material with signal processing techniques such as granular resynthesis, concatenative synthesis, audio mosaicing and spectral modification. The processes to be developed by the participants can include --but are not limited to-- electroacoustic compositions, musically augmented soundscapes, auditory display and data sonification applications, etc. The goal of the workshop is to develop a single particular augmented soundscape in a small group, with the focus of presenting the results in a final concert or interactive performance.</li>
+              <li><b>SMC Tales</b>: The goal of the 'SMC tales' workshop is to develop a mobile phone application for collaborative story telling. The phone will be used during the conference to extract from the visitors a story that they create together. The story is formed by adding a recording of a single sentence at a time. But before the story can be extended, the story teller is presented with the last five recordings in the story. They can then choose to advance the story in whatever way they want. After the new storyteller has recorded a sentence, he can transform his voice to a robot, a kid, an old woman, and other types of voices. When satisfied with the result, the recording, together with a picture of the storyteller, gps data, possibly any subjective annotations, is uploaded to a server. The resulting story can then be listened to by visiting the 'SMC tales' website.
+  </li>
+              <li><b>Tangilble interface for graph based music representation</b>: The purpose of this workshop is to build a tangible interface for the music representation used in radio freesound (<a href="http://radio.freesound.org" title="http://radio.freesound.org">http://radio.freesound.org</a>). In radio freesound, a music composition is represented by a graph where nodes represent sounds, and edges represent transitions between sounds. This representation is aimed at collaborative composition based on a shared repository of sounds (freesound). Collaborative work, on the other hand,  is one of the main applications of Tangible User Interfaces (TUIs). By representing sounds of the database as tangible objects, users will be able to discuss, manipulate and exchange compositions without the restrictions of a single-user computer interface. An example of this approach is tangible sequencer (<a href="http://www.tangiblesequencer.com/" title="http://www.tangiblesequencer.com/">http://www.tangiblesequencer.com/</a>). Before the workshop, participants will have recorded, edited, labelled and uploaded their sounds to freesound. These sounds will be used to develop and test the interface.</li>
+          </ul>
+      </li>
+  </ul>
+
+  <hr />
+
+  <h2><a title="team" name="team"></a>Team</h2>
+
+  <h3><a title="team_coor" name="team_coor"></a>Coordination</h3>
+
+  <ul>
+      <li>SMC Conference chair: <a href="http://www.dtic.upf.edu/~xserra" target="0">Xavier Serra</a></li>
+      <li>Summer school chair: <a href="http://www.iua.upf.edu/~eguaus" target="0">Enric Guaus</a></li>
+  </ul>
+
+  <h3><a title="team_teac" name="team_teac"></a>Teachers</h3>
+
+  The faculty for the lecture sessions is:
+
+  <ul>
+      <li><a href="http://www.sfu.ca/~truax/" target="0">Barry Truax</a> is a Professor in both the School of Communication and the School for the Contemporary Arts at Simon Fraser University, Canada, where he has taught courses in acoustic communication and electroacoustic music. As a composer, he is best known for his work with the PODX computer music system that he has used for tape solo works and for pieces that combine tape with live performers or computer graphics. His music has been released on 8 solo CDs, including the double CD of his opera <i>Powers of Two</i>,and most recently <i>Spirit Journies</i>, a set of virtual soundscapes. In 1991 his work, <i>Riverrun</i>, was awarded the Magisterium at the International Competition of Electroacoustic Music in Bourges, France, a category open only to electroacoustic composers of 20 or more years experience.</li>
+      <li><a href="http://www.inescporto.pt/~fgouyon/" target=0>Fabien Gouyon</a> is Invited Assistant Professor in the Faculty of Engineering of the University of Porto, in Portugal, and senior research scientist at the Telecommunications and Multimedia Unit of INESC Porto where he co-leads the Sound and Music Computing research
+  group. His main research and teaching activities are in Music Information Retrieval and Music Pattern Recognition. He has published over 50 papers in peer-reviewed international conferences and journals, published a book on computational rhythm description, gave the first tutorial on the topic at the International Conference on Music Information Retrieval in 2006 and participated to the writing of the European Roadmap for Sound and Music Computing, published in 2007.</li>
+      <li><a href="http://enricguaus.wordpress.com" target="0">Enric Guaus</a> is a researcher in sound and music computing at the Music Technology Group (MTG), Universitat Pompeu Fabra (UPF), and at the Artificial Intelligence Research Institute (IIIA), Spanish National Research Council (CSIC). He obtained a PhD in Computer Science and Digital Communications in 2009 with a dissertation on automatic music genre classification. His research interests cover music information retrieval and human interfaces for musical instruments. He is assistant professor in audio and music processing at the Universitat Pompeu Fabra (UPF) and lecturer un acoustics, electronics and computer science at the Escola Superior de Música de Catalunya (ESMUC).</li>
+  </ul>
+
+  <h3><a title="team_tuto" name="team_tuto"></a>Tutors for the hands-on practical sessions</h3>
+
+  The tutors for the practical sessions are:
+  <ul>
+      <li><b>Vincent Akkermans</b> is a system architect at the Music Technology Groups (MTG, Universitat Pompeu Fabra (UPF). He got his master's degree in Sound and Music Technology at Utrecht School of the Arts, in 2008. He got internships to work at the Patchingzone, STEIM, the Netherlands Architecture Institute, and the Music Technology Group (MTG). Currently, he is working at the MTG integrating  the most recent technologies of the Web 2.0, advanced on-line tools for music creation, and large sound and music repositories.</li>
+      <li><a href="http://mtg.upf.edu/people/skersten" target=0>Stefan Kersten</a> is a is a researcher and PhD candidate at the Music Technology Group (MTG), Universitat Pompeu Fabra (UPF). His research focuses on sound texture modeling for analysis and synthesis and automated soundscape generation techniques. In his work with the <a href="http://dissonoisex.org/" target=0>DissoNoiSex</a> collective, he explores the fringes of human interaction in interactive sound and video installations. He is an expert SuperCollider user, and has taught signal processing techniques in various workshops around the world.</li>
+      <li><b>Gerard Roma</b> got involved in programming computers while searching for new sounds and musical tools. He is currently a researcher and Phd Candidate at MTG-UPF. His work focuses on computational models and techniques for collaborative music creation.
+  <!-- is a researcher and Phd Candidate at Music Technology Group (MTG), Universitat Pompeu Fabre (UPF). He got his bachelor on Philosophy in 1997, at Universitat Autònoma de Barcelona (UAB) and his MSc in Information and Communication technologies in 2008, at the Universitat Pompeu Fabra (UPF). He is currently involved in programming computers while searching for new sounds and musical tools. His work focuses on computational models and techniques for collaborative music creation.--></li>
+      <li><b>Mattia Schirosa</b> is an Interaction Sound Design Researcher working at the Music Technology Group (MTG), Universitat Pompeu Fabra (UPF). He obtained the Cinema and Multimedia Engineer Master Degree in 2009, in Turin. He worked in several augmented reality productions for theatre, at the Music Technology research Lab, and in various media productions. His research interests focus on Soundscape exploration/composition and Acoustic Ecology research. He worked on the development of a software application written in SuperCollider.</li></ul>
+
+  <hr />
+
+  <h2><a name="appl" title="appl"></a>Application</h2>
+
+  <h3><a name="appl_impo" title="appl_impo"></a>Important dates</h3>
+
+  <ul>
+      <li>Deadline for applications: <b>Friday 30 April 2010</b></li>
+      <li>Notification of acceptance: <b>Monday 17 May 2010</b></li>
+      <li>Deadline for Student's project submission: <b>Friday 2 July 2010</b></li>
+  </ul>
+
+  <h3><a name="appl_regi" title="appl_regi"></a>Registration forms</h3>
+
+  Applications must include the following documents in pdf format:
+
+  <ul>
+      <li>Curriculum vitae (max. 1 page)</li>
+      <li>Proof of university enrollment.</li>
+      <li>Short description of the student research interest and motivation to participate (max. 2 pages)</li>
+  </ul>
+
+  The three pdf files must be incuded in a name_surname.zip file. The application must be sent using <a href="/node/1270">this</a> form.
+
+  <h3><a name="appl_price" title="appl_price"></a>Fees</h3>
+
+  <p>There is a student registration fee of <b>150 Euros</b> to the Summer School. This fee covers coffee breaks and course material. This fee also grants the access to the <a href="http://smc2010.smcnetwork.org/programme.htm" target=blank>SMC Tutorials</a> for those students that also attend the SMC conference. This fee does NOT cover costs for meals.</p>
+
+  <hr />
+
+  <h2><a name="trav" title="trav"></a>Travelling and Accomodation</h2>
+
+  <h3><a name="trav_loca" title="trav_loca"></a>Location</h3>
+
+  <p>The <a href="http://smc2010.smcnetwork.org/" target="0">SMC Conference</a> and the <b>Summer School</b> take place at the Communication Campus of the Universitat Pompeu Fabra in Barcelona.</p><iframe src="http://maps.google.es/maps/ms?ie=UTF8&amp;hl=es&amp;msa=0&amp;msid=117148905086145887093.000476452a7ed478d890f&amp;ll=41.404122,2.19397&amp;spn=0.011266,0.018239&amp;output=embed" marginheight="0" marginwidth="0" frameborder="0" height="300" scrolling="no" width="540"></iframe><br /><small>See <a href="http://maps.google.es/maps/ms?ie=UTF8&amp;hl=es&amp;msa=0&amp;msid=117148905086145887093.000476452a7ed478d890f&amp;ll=41.404122,2.19397&amp;spn=0.001497,0.001781&amp;source=embed" style="color: #0000ff; text-align: left">Communication campus - Poblenou</a> on a bigger map</small><p>More information at the <a href="http://smc2010.smcnetwork.org/venue.htm#location" target="0">SMC Conference - Location</a> web page.</p><h3><a name="trav_arri" title="trav_arri"></a>How to arrive</h3><p>To reach the Communication-Poblenou campus we recommend the public transport:</p><ul>    <li>Subway: L1 - Glòries     </li><li>Bus: 7, 92, 192, N7     </li><li>Tram: T4 - Ca l'Aranyó</li></ul><p>More information at the <a href="http://smc2010.smcnetwork.org/venue.htm#how_to_arrive" target="0">SMC Conference - How to arrive</a> web page.</p><h3><a name="trav_acco" title="trav_acco"></a>Accomodation</h3><p> There is a large list of hotels, residences and apartments near the campus. Please, go to the <a href="http://smc2010.smcnetwork.org/venue.htm#accomodation" target="0">SMC Conference - Accomodation</a> web page.</p></span>  <div id="book-navigation-250" class="book-navigation">
+
+          <div class="page-links clear-block">
+                <a href="/summerschool/porto2009" class="page-previous" title="Go to previous page">‹ Porto 2009</a>
+                      <a href="/summer_school" class="page-up" title="Go to parent page">up</a>
+                      <a href="/summer_school/padova2011" class="page-next" title="Go to next page">Padova 2011 ›</a>
+            </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="panel-footer panel-custom">All content is licensed under a <b><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" style="color: white; text-decoration: underline;";>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></b> unless otherwise specified.</div>
+
+</body>
+</html>
