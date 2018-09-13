@@ -12,96 +12,113 @@
 
   <style>
 
-  body {
-    position: relative;
-    font-family: Montserrat, sans-serif;;
-    color: #555;
-  }
+    body {
+      position: relative;
+      font-family: Montserrat, sans-serif;;
+      color: #555;
+    }
 
-  .jumbotron {
-    font-family: Montserrat, sans-serif;
-    background: #1B6884;
-    text-align: center;
-    color: white;
-    height: 200px;
-  }
+    a:link {
+      text-decoration: none;
+    }
 
-  .headercontent {
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 40px;
-    padding-top: 35px;
-  }
-
-
-  .panel-footer.panel-custom {
-    background: #1B6884;
-    color: white;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .scrollspy-example {
-    position: relative;
-    height: 250px;
-    overflow: auto;
-  }
-
-  .navbar-default {
-    font-family: Montserrat, sans-serif;
-    background-color: #1B6884;
-    letter-spacing: 2px;
-  }
-
-  .custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255);
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-
-  .navbar-default .nav-tabs .nav-link {
+    .jumbotron {
+      font-family: Montserrat, sans-serif;
+      background: rgb(91, 76, 135);
+      text-align: center;
       color: white;
-  }
+      min-height: 200px;
+    }
 
-  .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
-    color: #1B6884 !important;
-    background-color: #fff !important;
-  }
+    .headercontent {
+      font-family: Montserrat, sans-serif;
+      color: white;
+      font-size: 40px;
+      padding-top: 35px;
+    }
 
-  .sticky.is-sticky {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-  }
 
-  .card-header {
-    background: #1B6884;
-    color: white;
-    height: 125px;
-  }
+    .panel-footer.panel-custom {
+      background: rgb(91, 76, 135);
+      color: white;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 
-  .card-title {
-    text-align: center;
+    .scrollspy-example {
+      position: relative;
+      height: 250px;
+      overflow: auto;
+    }
+
+    .navbar-default {
+      font-family: Montserrat, sans-serif;
+      background-color: rgb(91, 76, 135);
+      letter-spacing: 2px;
+    }
+
+    .custom-toggler.navbar-toggler {
+      border-color: rgb(255,255,255);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar-default .nav-tabs .nav-link {
+        color: white;
+    }
+
+    .navbar-default .nav-tabs li a:hover, .navbar-default .nav-tabs .nav-link.active {
+      color: rgb(91, 76, 135) !important;
+      background-color: #fff !important;
+    }
+
+    .sticky.is-sticky {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .card-header {
+      background: rgb(91, 76, 135);
+      color: white;
+      height: 175px;
+    }
+
+    .card-footer {
+      background: rgb(91, 76, 135);
+      color: white;
+      height: 50px;
+    }
+
+    .card-footer-text {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .card-title {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .pagetitle {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    float: left;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-
-  .pagetitle {
-  position: relative;
-  float: left;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 </style>
 
@@ -119,13 +136,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="spy" class="navbar-collapse collapse">
-          <ul class="nav nav-tabs ml-auto nav-fill">
-            <li class="nav-item"><a class="nav-link" href="index.html#smc">SMC Conference</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#roadmap">Roadmap</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
-          </ul>
-      </div>
     </nav>
 
     <div class="container-fluid" style="padding: 0">
@@ -142,7 +152,7 @@
     <div class="col-sm-12">
       <h2><img src="http://smc2009.smcnetwork.org/venue/local-info.html/porto-pics/Wikipedia-PortoFlat.jpg/image" alt="Porto skyline" align="top" height="133" width="768" /> <br /></h2><h2 align="center"><i>Interacting with sounds of Porto</i></h2><h2 align="center">2009 Summer School in Sound and Music Computing &amp; SID Training School on Interactions with Environmental Sounds</h2><p><a href="http://www.casadamusica.pt/" target="_blank" title="Casa Da Música, Porto - Portugal">Casa Da Música </a>, Porto, Portugal, July 18-21, 2009 </p><p><span>The 2009 Sound and Music Computing Summer School is organized as a Training School of <a href="http://www.cost-sid.org/" target="_blank">The COST IC0601 Action on Sonic Interaction Design (SID)</a>. </span>The theme of this summer school is <b>Interacting with Sounds of Porto</b>. This summer school explores the potential of recording, processing, sharing and interacting with city sounds.</p><p>This is the fifth SMC Summer School (after the Genova and Barcelona editions funded by the European Coordination Action IST-FET S2S² and later editions in Stockholm and Genova again) and the second Training School of the COST Action on Sonic Interaction Design. It takes place just before the <a href="http://smc2009.smcnetwork.org/" target="_blank" title="SMC09">6th Sound and Music Computing Conference</a>.</p><p>This Summer School aims at giving an opportunity to young researchers interested in the field of Sound and Music Computing to showcase their ideas, learn new skills and work with senior researchers. The School caters to suit different student backgrounds. If your background is an Electrical Engineering, Computer Science, Music, Art, Sound recording, Design, etc., there is something new for you to learn at this Summer School. </p><table border="1" width="100%"><tbody><tr><td><a href="#program">Academic program </a></td><td><a href="http://summerschoolsmc2009.wordpress.com/" target="_blank">Blog</a> </td><td><a href="#team">Team</a></td><td><a href="#application">Application</a></td><td><a href="#links">Related links </a></td><td><a href="#accomodation">Travelling and Accomodation</a> <br /></td></tr></tbody></table><br /><br /><a id="program" name="program" title="program"></a><h3>Academic program </h3><p>During 4 days, the program includes lectures, as well as hands-on practical sessions under the supervision of tutors who provide one-to-one mentoring on artistic and/or scientific projects focused on interactions with sounds that reflect the city of Porto and its activities.</p><p>Lectures and hands-on practical sessions take place in the <a href="http://digitopia-cdm.net/" target="_blank">Digitopia </a>installations in the Casa da Musica. </p><p>Speed talks and poster sessions are also organized for students to give an overview and receive feedback on their current research, and to foster scientific cross-fertilization.</p><p>The summer school includes 3 main lectures: </p><ol><li><b>Design of new interfaces for musical expression</b><b>. </b>This lecture reviews existing examples of novel interfaces for musical expression (also known as gestural controllers or control surfaces), as well as the various sensing technologies used in these devices. We will also discuss ways to design mapping strategies between interface output variables and sound synthesis input variables and approaches to the design of novel interfaces and digital musical instruments. <a href="#material1">Course material</a>. </li><li><b>Registering the soundscape</b>. This lecture presents basic aesthetic, technical, and cultural aspects of audio field recording, interactive approaches to sound design with environmental sounds, and the nature of the roles that soundscape composition can play in our lives. </li><li><b>Sound edition, description and retrieval, social networks</b>. Present current technologies for sound edition, description and retrieval, and introduce students to the use of the Freesound.org platform with which they will edit, tag and share their sound recordings. <a href="#material3">Slides of presentations</a>.</li></ol><div>In practical hands-on sessions, participants, alone or in small groups, are asked to record environmental sounds related to their project, to describe these sounds and upload them to Freesound.org. Using the obtained sonic material (which can be complemented with other sounds), the participants are asked, under supervision of tutors, to develop artistic and/or scientific projects. </div><div>Projects are defined in accordance between students and summer school tutors. <!-- (see <a href="/system/files/SMCTutorProposals_0.pdf" target="_blank">here</a>). --></div><div>A <a href="http://summerschoolsmc2009.wordpress.com/" target="_blank">blog</a> provides an interactive communication channel between teachers and students (e.g. for daily description of project developments, and/or teaching and learning experiences), and it serves as a dissemination forum of the school's achievements. <!-- It includes most of the teaching and learning experiences are being described and where the students will describe their respective project development.--></div><p>Universidade Católica Portuguesa certifies <span style="font-weight: bold" class="Apple-style-span">3 ECTS</span> to the summer school students.</p><div><p><b>Preliminary schedule</b></p><table border="1" width="100%"><tbody><tr><td bgcolor="#cccccc" width="10%"> </td><td bgcolor="#cccccc">Saturday 18/07<br /></td><td bgcolor="#cccccc" width="20%">Sunday 19/07</td><td bgcolor="#cccccc" width="20%">Monday 20/07 </td><td bgcolor="#cccccc" width="20%">Tuesday 21/07 </td></tr><tr><td bgcolor="#cccccc">10:30</td><td>Lecture 1<br /></td><td>Lecture 1 </td><td>Lecture 1 </td><td>Lecture 1 </td></tr><tr><td bgcolor="#cccccc">11:30</td><td bgcolor="#cccccc">Coffee break &amp; poster presentations</td><td bgcolor="#cccccc">Coffee break &amp; poster presentations<br /></td><td bgcolor="#cccccc">Coffee break &amp; poster presentations </td><td bgcolor="#cccccc">Coffee break &amp; poster presentations </td></tr><tr><td bgcolor="#cccccc">12:00</td><td>Lecture 2<br /></td><td>Lecture 2 </td><td>Lecture 2 </td><td>Lecture 2 </td></tr><tr><td bgcolor="#cccccc">13:00</td><td>Lecture 3<br /></td><td>Lecture 3 </td><td>Lecture 3 </td><td>Lecture 3 </td></tr><tr><td bgcolor="#cccccc">14:00</td><td bgcolor="#cccccc">Lunch</td><td bgcolor="#cccccc">Lunch</td><td bgcolor="#cccccc">Lunch</td><td bgcolor="#cccccc">Lunch</td></tr><tr><td bgcolor="#cccccc">15:00</td><td>Tutor presentations<br />Student speed talks</td><td>Hands-on session</td><td>Hands-on session</td><td>Hands-on session</td></tr><tr><td bgcolor="#cccccc">17:00</td><td bgcolor="#cccccc">17:20 <br />Coffee break &amp; tips on &quot;How to move around Porto&quot;</td><td bgcolor="#cccccc">Coffee break &amp; poster presentations </td><td bgcolor="#cccccc">Coffee break &amp; poster presentations </td><td bgcolor="#cccccc">Coffee break &amp; poster presentations </td></tr><tr><td bgcolor="#cccccc">17:30</td><td>Team building.</td><td><p>&nbsp;</p><p>Hands-on session </p></td><td>Hands-on session</td><td>Project presentation by students. <br /></td></tr><tr><td bgcolor="#cccccc">20:30</td><td>Get together drink and dinner.</td><td> </td><td> </td><td> </td></tr></tbody></table><p>&nbsp;</p><p><span style="font-weight: bold" class="Apple-style-span">Course material</span></p></div><p><a name="material1" title="material1"></a><u>Lecture 1</u>:</p><p>E. R. Miranda and M. M. Wanderley. 2006. <a href="http://www.amazon.com/New-Digital-Musical-Instruments-Interaction/dp/089579585X/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227908808&amp;sr=1-1">New Digital Musical Instruments: Control and Interaction Beyond the Keyboard</a>. Middleton, WI: A-R Editions Inc. ISBN: 0-89579-585-X </p><p><a name="material3" title="material3"></a><u>Lecture 3</u>:</p><p>Bram de Jong: <a href="/system/files/freesound-presentation.pdf">slides from Freesound presentation</a></p><p>Xavier Serra: <a href="http://www.dtic.upf.edu/~xserra/presentacions/SMC-School-2009-Xavier-Serra.pdf">slides from presentations of days 2, 3, 4 </a></p><a name="team" title="team"></a><h3>Team</h3><h4>Coordination </h4><ul><li><a href="http://mtg.upf.edu/~egomez" target="_blank">Emilia Gómez</a> (Universitat Pompeu Fabra, Barcelona)</li><li><a href="http://www.inescporto.pt/~fgouyon/" target="_blank">Fabien Gouyon</a> (INESC Porto)</li><li><a href="http://www.inescporto.pt/~lmartins/" target="_blank">Luis Gustavo Martins</a> (Universidade Católica Portuguesa, Porto)</li></ul><h4>Teachers</h4><ul><li><a href="http://people.mcgill.ca/marcelo.wanderley/" target="_blank">Marcelo Wanderley, </a><a href="http://www.idmil.org">Input Devices and Music Interaction Laboratory</a> - <br />CIRMMT - Schulich School of Music, McGill University (lecture 1).<br /><div align="justify"><i>Marcelo M. Wanderley has published several book chapters and papers in various areas related to new interfaces for musical expression and was the Chair of the 2003 International Conference on New Interfaces for Musical Expression (NIME03). In 2006, he co-authored (with Eduardo R. Miranda) the textbook “New Digital Musical Instruments: Control and Interaction Beyond the Keyboard”, A-R Editions, the first comprehensive reference on this area. He is currently Associate Professor in Music Technology at the Schulich School of Music, McGill University, Montreal, Québec, Canada. </i><br /></div></li><li><a href="http://www.chadabe.com/">Joel Chadabe, President, Electronic Music Foundation </a>(lecture 2)<br /><div align="justify"><i>Composer, author Joel Chadabe is a pioneer in the development of interactive music systems. His music has been performed in New York, Paris, Tokyo, Buenos Aires, Venice, Rome, Amsterdam, Berlin, Linz, Stockholm, San Francisco, London, and other cities worldwide; and recorded on EMF Media, Deep Listening, and other labels. He is the author of 'Electric Sound', a history of electronic music. His articles have been published in leading journals. As president of Intelligent Music, he oversaw the first publications of interactive music software. He has received grants from NEA, New York State Council on the Arts, Ford Foundation, Rockefeller Foundation, Fulbright Commission, and other organizations, and he is the recipient of the SEAMUS 2007 Lifetime Achievement Award. </i><br /></div><div align="justify"><i>Mr. Chadabe is currently Professor Emeritus at State University of New York, faculty at Manhattan School of Music, visiting faculty at NYU; and president of Electronic Music Foundation. </i><br /></div></li><li><a href="http://www.iua.upf.edu/~xserra/">Xavier Serra, Music Technology Group, Universitat Pompeu Fabra </a>(lecture 3)<br /><div align="justify"><i>Xavier Serra (Barcelona, 1959) is the head of the Music Technology Group of the Universitat Pompeu Fabra in Barcelona. After a multidisciplinary academic education he obtained a PhD in Computer Music from Stanford University in 1989 with a dissertation on the spectral processing of musical sounds that is considered a key reference in the field. His research interests cover the understanding, modeling and generation of musical signals by computational means, with a balance between basic and applied research and approaches from both scientific/technological and humanistic/artistic disciplines. Dr. Serra is very active in promoting initiatives in the field of Sound and Music Computing at the local and international levels, being editor and reviewer of a number of journals, conferences and research programs of the European Commission, and also giving lectures on current and future challenges of the field. He is the principal investigator of more than 15 major research projects funded by public and private institutions, the author of 31 patents and of more than 50 research publications.</i><br /></div></li></ul><h4>Tutors and proposed topics: </h4><ul><li><a href="http://www.dfki.uni-kl.de/~baumann/" target="_blank">Stephan Baumann, DFKI</a></li><li><a href="http://richie.idc.ul.ie/eoin/" target="_blank">Eoin Brazil, University of Limerick</a> </li><li>Bram de Jong, Freesound project</li><li><a href="http://www.inescporto.pt/%7Elmartins" target="_blank">Luis Gustavo Martins, Universidade Católica, Porto</a></li><li><a href="http://www.ruipenha.pt/en/News/News.html" target="_blank">Rui Penha, Casa da Música, Porto</a></li><li><a href="http://www.imi.aau.dk/~sts/" target="_blank">Stefania Serafin (Aalborg University, Copenhagen)</a><a href="http://profs.sci.univr.it/~fontana/" target="_blank"></a></li><li><a href="http://profs.sci.univr.it/~fontana/" target="_blank">Federico Fontana (University of Verona)</a></li></ul><!-- <h4>You can find <a href="/system/files/SMCTutorProposals_0.pdf" target="_blank">here</a> a description of the topics proposed by the summer school tutors.</h4>--><span style="font-weight: normal" class="Apple-style-span"><a name="application" title="application"></a></span><p><span style="font-weight: bold; font-size: 14px" class="Apple-style-span">Application</span></p><p>The deadline for applications for the summer school has now passed, and notifications of acceptance have been already sent. </p><p>Applications did include the following documents in pdf format:</p><ul><li>Curriculum vitae (max. 1 page) </li><li>Proof of enrollment at a School or University. </li><li>Short description of the student research interest and motivation to participate, including a project proposal for the summer school (main theme: Interacting with sounds of Porto) (max. 2 pages) </li></ul><p>21 students have been selected by the Summer School team to participate in this year's summer school. <!-- After completion of all projects, the Scientific Committee will proceed to an evaluation and the best project will receive a prize during the Sound and Music Computing Conference (23-25 July 2009) in the Casa da Música. --></p><p>Admitted students are requested to<b> bring a poster </b>at the Summer School summarizing their research project. </p><p>For additional information, please use <a href="/summerschool/porto2009/information">this form</a>. </p><p><span style="text-decoration: line-through" class="Apple-style-span">Deadline for applications: </span><b><span style="text-decoration: line-through" class="Apple-style-span">April 24th 2009</span></b><span style="text-decoration: line-through" class="Apple-style-span"> For sending your application, please use </span><span style="text-decoration: line-through" class="Apple-style-span">this form</span><span style="text-decoration: line-through" class="Apple-style-span">.</span></p><p><span style="text-decoration: line-through" class="Apple-style-span">Notification of acceptance: </span><b><span style="text-decoration: line-through" class="Apple-style-span">May 12th</span></b></p><p>There is a <b>student registration fee of 200 Euros</b> to the Summer School (covering costs for meals, coffee breaks, 1 dinner, material, etc). The COST Action IC0601 on Sonic Interaction Design provides <b>financial help</b> to a selection of students under the form of individual fixed grants of <b>500 Euros</b>. <!-- <span style="font-weight: bold" class="Apple-style-span">fo</span><span style="font-weight: bold" class="Apple-style-span">r students from outside Portugal</span> and <span style="font-weight: bold" class="Apple-style-span">200 Euros</span> <span style="font-weight: bold" class="Apple-style-span">for local students</span>-->(preference is given to students whose proposal projects best fit SID topics -see <a href="http://www.cost-sid.org/">here</a>).</p><p>Summer School students are also encouraged to attend the <span style="font-weight: bold" class="Apple-style-span">Sound and Music Computing Conference</span> (23-25th July 2009). A <span style="font-weight: bold" class="Apple-style-span">special reduced-price package</span> is available to summer school students that grants assistance to<span style="font-weight: bold" class="Apple-style-span"> all events</span> between July 18-25 (the conference, tutorials and summer school). Click <a href="http://smc2009.smcnetwork.org/registration.html">here</a> for price details.</p><h3><a name="accomodation" title="accomodation"></a>Travelling and accomodation <br /></h3>Participants must arrange their own travel and accommodation.<br />For more info on <b>special rates hotels</b>, traveling tips and local information, please see <a href="http://smc2009.smcnetwork.org/venue">here</a>. <p>&nbsp;</p><p><a name="links" title="links"></a></p><h3>Inspiration links<br /></h3><ul><li><a href="http://barcelona.freesound.org/" target="_blank">Sons de Barcelona</a> </li><li><a href="http://research.urbantapestries.net/" target="_blank">Urban Tapestries</a> </li><li><a href="http://www.eartotheearth.org/php/" target="_blank">Ear to the Earth</a> </li><li><a href="http://www.davosoundscape.ch/" target="_blank">Davos Soundscape</a> </li><li><a href="http://www.gpsdrawing.com/" target="_blank">GPS Drawing</a> </li><li><a href="http://www.biomapping.net/" target="_blank">BioMapping</a> </li><li><a href="http://e.fluxt.com/sonic_panoramas.php" target="_blank">Sonic Panoramas</a></li><li><a href="http://mlab.taik.fi/asef/231/" target="_blank">Hearing Helsinki </a></li><li><a href="http://www.riwid.net/improve/" target="_blank">Improve software</a> </li><li><a href="http://www.netzradio.de/stadtmusik/page.php?ID=467">Stadt Musik</a></li><li><a href="http://urbansync.wordpress.com/" target="_blank">Urban Sync</a> (<a href="http://www.youtube.com/watch?v=TpkH1pq6jpc" target="_blank">Video about UrbanSync in Porto</a>) </li><li>Sonic City (<a href="http://www.viktoria.se/fal/projects/soniccity/" target="_blank">1</a>,<a href="http://www.tii.se/reform/projects/pps/soniccity/index.html" target="_blank">2</a>)</li><li><a href="http://www.ruipenha.pt/WMD/World_Music_Day.html" target="_blank">Recordings on World Music Day in Porto</a></li><li><a href="http://www.freesound.org/usersViewSingle.php?id=680310" target="_blank">Sound of Genova</a> in SMC sumer school 2008</li><li><a href="http://www.soundcities.com/" target="_blank">SoundCities</a> </li><li><a href="http://touchmusic.org.uk" target="_blank">Touvh music</a></li><li><a href="http://www.zero-th.org/RecycledSound.html" target="_blank">Recycled Soundscapes</a></li><li><a href="http://www.reverberant.com/SM/index.htm" target="_blank">SonicMapping</a> </li><li><a href="http://kalerne.net/joomla/index.php" target="_blank">Kalerne</a></li><li><a href="http://volumecollectif.free.fr/cordemais/" target="_blank">Cordemais écoute l’electricité</a> </li><li><a href="http://www.silenceradio.org/" target="_blank">Silence radio</a> </li><li><a href="http://www.tunedcity.de/" target="_blank">Tuned City</a> </li><li><a href="http://www.tunedcity.de/?page_id=170" target="_blank">Hearing Berlin</a> </li><li><a href="http://desartsonnants.over-blog.com/" target="_blank">Espace des arts sonnants</a> </li><li><a href="http://stanza.co.uk/" target="_blank">Stanza</a> </li><li><a href="http://www.bmbcon.demon.nl/justin/" target="_blank">Justin Benett</a> </li><li><a href="http://www.chriswatson.net" target="_blank">Chris Watson</a> </li><li><a href="http://www.janawinderen.com" target="_blank">Jana Winderen</a> </li><li><a href="http://bjnilsen.com/" target="_blank">BJ Nilsen</a> </li><li><a href="http://dm.risd.edu/~fbehrendt/sound/" target="_blank">Sound, Media &amp; Urban Spaces</a></li><li><a href="http://mobilesound.wordpress.com/" target="_blank">Mobile sound</a> </li><li><a href="http://www.luckykitchen.com/aa_works/porto_cd.html" target="_blank">Porto Audio Portrait</a> </li><li><a href="http://www.errantbodies.org/labelle.html" target="_blank">Artist Brandon LaBelle</a> </li></ul><p>T<span style="font-family: Helvetica" class="Apple-style-span">hanks to Daniel Arfib, Karmen Franinovic, Stephan Baumann, Trond <span style="font-family: Verdana" class="Apple-style-span"><span style="font-family: Helvetica" class="Apple-style-span">Lossius, Antti Ikonen, Ademar Aguiar and Michael Harding for links. </span></span></span></p><p>&nbsp;</p><div style="text-align: center"><img src="http://smc2009.smcnetwork.org/sid_logo.png/" height="70" width="171" /></div><p>&nbsp;</p>  <div id="book-navigation-250" class="book-navigation">
 
-        
+
 
     </div>
   </div>
