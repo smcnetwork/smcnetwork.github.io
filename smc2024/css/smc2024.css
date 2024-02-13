@@ -178,6 +178,39 @@ nav li {
 	display: none;
 }
 
+/*keynotes*/
+.keynote-container {
+    display: flex;
+}
+
+.keynote-photo {
+	flex: 0.33;
+}
+
+.keynote-photo img {
+	margin-bottom: 0;
+}
+
+.keynote-text {
+	flex: 0.66;
+  margin-left: 2rem;
+}
+
+@media (max-width: 720px) {
+	.keynote-container {
+    display: block;
+	}
+
+	.keynote-photo {
+		width: 100%;
+	}  
+
+	.keynote-text {
+		margin-top: 0;
+	  margin-left: 0;
+	}
+}
+
 /*.slider{position:relative}*/
 .slider {
 	position: relative;
