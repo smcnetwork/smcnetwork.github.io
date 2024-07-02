@@ -337,3 +337,16 @@ tbody {
 		}
 	}
 }
+
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  background-color: rgba(255,255,255,0.3);
+  border: none;
+  line-height: 3rem;
+}
